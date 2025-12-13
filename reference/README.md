@@ -4,6 +4,7 @@ This directory contains a modular, cross-referenced knowledge base for a fantasy
 
 ## File map
 - [templates.md](templates.md) — Shared ID scheme and data entry templates.
+- [economy.md](economy.md) — Coinage, pricing bands, wages, and regional supply/demand flags.
 - [biomes.md](biomes.md) — Biomes, habitats, and landmass types with linked flora/fauna/material IDs.
 - [fauna.md](fauna.md) — Bestiary entries with spawn, abilities, and loot.
 - [flora.md](flora.md) — Plants, fungi, and harvest details.
