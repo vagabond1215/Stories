@@ -1,6 +1,7 @@
 # Templates and ID conventions
 
 ## ID prefixes
+- `BIO-###` — Biomes, habitats, and landmass types
 - `FAU-###` — Fauna/monsters
 - `FLR-###` — Flora/fungi
 - `MAT-###` — Raw/refined materials
@@ -28,6 +29,10 @@
 ## Material template
 | ID | Name | Type | Source (IDs/biome) | Refinement | Uses (IDs) | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
+
+## Biome/habitat template
+| ID | Name | Category | Landmass type | Climate/Environment | Notable features | Native flora/fauna/material IDs | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Equipment template
 | ID | Name | Slot | Quality | Effects | Coverage/Restrictions | Weight | Components (IDs) | Notes |

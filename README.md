@@ -5,6 +5,7 @@ This repository hosts a modular fantasy RPG reference database designed for worl
 ## Structure
 - `reference/README.md` — Top-level index of the database files and guidance on cross-references.
 - `reference/templates.md` — ID conventions and table templates for adding new data.
+- `reference/biomes.md` — Biomes, habitats, and landmass types that anchor spawns and resources.
 - Domain files: `fauna.md`, `flora.md`, `materials.md`, `equipment.md`, `crafting_recipes.md`, `technology.md`, `structures.md`, `spells.md`, `profiles.md`, `inventories.md`.
 
 ## Contribution workflow
