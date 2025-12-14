@@ -28,7 +28,8 @@
 - Insects & arthropods
   - FAU-246–FAU-250 — chitin plates, venom sacs, and silk or wax byproducts.
 
-## Common Fauna Index (250 species)
+## Fauna Index (250 species)
+All fauna entries align to the plain-language groupings above through their ID ranges so every creature type is captured in this single unified bestiary.
 | ID | Name | Appearance | Difficulty | Skills | Abilities | Spawn (location/habitat/time/weather) | Trigger | Loot (IDs) | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | FAU-001 | Glacial Roc | Titanic raptor with ice-lined feathers and opal beak | Hard | Aerial Grapple, Wind Shear | Frost Screech (cone slow), Wing Buffet (knockback) | Highpeak Range cliffs (BIO-009 alpine); alpine updrafts; dawn; clear or snowy weather | Rare random; heightened chance near STR-002 | MAT-004 Roc Feather, MAT-005 Frost-Touched Talon | Avoids settlements unless provoked; circling shadow telegraphs dive |

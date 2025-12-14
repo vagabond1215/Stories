@@ -26,7 +26,8 @@
 - Herbs, spices, and medicinal greens
   - FLR-231–FLR-250 — aromatic leaves, roots, and flowers for tonics and dyes.
 
-## Common Flora Index (250 species)
+## Flora Index (250 species)
+All flora entries map back to the plain-language categories above via their ID ranges, ensuring every plant, crop, or fungus is covered in a single unified list.
 | ID | Name | Appearance | Habitat/time | Harvest method | Yield (IDs) | Uses (IDs) | Hazards/notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | FLR-001 | Sunmoss | Golden-green carpet that glows at noon | Temperate/alpine south-facing stones (BIO-002, BIO-009); midday; clear weather | Scrape gently with dull blade; dry quickly | MAT-001 Sunmoss Fibre | CRF-003, SPL-002, EQP-004 | Dries brittle if left in shade; attracts pollinator sprites |
