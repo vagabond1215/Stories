@@ -1,31 +1,32 @@
 # Fauna (Bestiary)
 
-## Species Tree
-- Kingdom Animara
-  - Phylum Aethera
-    - Class Cryopterygia
-      - Order Rociformes
-        - Family Glaciidae
-          - Genus Ophicorax
-            - Species Glacial Roc (FAU-001)
-  - Phylum Mycozoa
-    - Class Myconida
-      - Order Lanternshroom
-        - Family Bogmycetes
-          - Genus Lumicyon
-            - Species Bog Myconid (FAU-002)
-  - Phylum Amphibia Ignis
-    - Class Salamandra
-      - Order Embercrawlers
-        - Family Emberfenidae
-          - Genus Cinderscale
-            - Species Emberfen Salamander (FAU-003)
-  - Phylum Felidae Spectra
-    - Class Noctilyncis
-      - Order Glasslynx
-        - Family Marrowcattae
-          - Genus Vitralynx
-            - Species Glassmarrow Lynx (FAU-004)
+## Category Tree (plain-language)
+- Raptors & flighted hunters
+  - FAU-001 Glacial Roc — talons and feathers for claw charms and arrow fletching.
+- Living fungi & sporekin
+  - FAU-002 Bog Myconid — edible fungus flesh and spore bait.
+- Salamanders & wetland crawlers
+  - FAU-003 Emberfen Salamander — scales and meat with ember residue.
+- Felines & stealth predators
+  - FAU-004 Glassmarrow Lynx — pelts and bone shards; ambush specialists.
+- Grazers & hoofstock (deer, elk, moose, reindeer)
+  - FAU-005–FAU-021 — meat, soft hide, and shank/long bones for tools.
+- Bovines & herdbeasts (bison, yak, buffalo, cattle, camels)
+  - FAU-022–FAU-048 — thick hides, heavy bones, and rich meat for stews.
+- Antelopes, gazelles, sheep, and goats
+  - FAU-026–FAU-044 — lean meat, soft hides, and horn or bone offcuts.
+- Canines & coursers
+  - FAU-060–FAU-120 — meat, hide, and claws suitable for light gear and bait.
+- Ursines & heavy predators
+  - FAU-140–FAU-170 — dense pelts, heavy bones, and claws for trophy work.
+- Small game & burrowers (lagomorphs, rodents)
+  - FAU-180–FAU-210 — quick-yield meat, fur, and bones for traps and camp rations.
+- Reptiles & amphibious hunters (crocodiles, lizards, turtles)
+  - FAU-211–FAU-230 — scaled hides, meat, and tooth/claw sets.
+- Avians & songbirds
+  - FAU-231–FAU-245 — feathers, light meat, and hollow bones for instruments.
+- Insects & arthropods
+  - FAU-246–FAU-250 — chitin plates, venom sacs, and silk or wax byproducts.
 
 ## Common Fauna Index (250 species)
 | ID | Name | Appearance | Difficulty | Skills | Abilities | Spawn (location/habitat/time/weather) | Trigger | Loot (IDs) | Notes |

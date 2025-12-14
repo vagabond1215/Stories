@@ -1,31 +1,30 @@
 # Flora and Fungi
 
-## Species Tree
-- Kingdom Verdantia
-  - Phylum Lumenophyta
-    - Class Solarbryopsida
-      - Order Photomni
-        - Family Solasmossae
-          - Genus Sunmossia
-            - Species Sunmoss (FLR-001)
-  - Phylum Umbrafungi
-    - Class Miremycetes
-      - Order Lanternspora
-        - Family Gloomcapaceae
-          - Genus Violemyces
-            - Species Gloomcap Fungus (FLR-002)
-  - Phylum Pyrophyta
-    - Class Emberreediopsida
-      - Order Ventgras
-        - Family Emberreedaceae
-          - Genus Cinderphragmites
-            - Species Emberreed (FLR-003)
-  - Phylum Sylvifera
-    - Class Thornbryopsida
-      - Order Argentirose
-        - Family Silverthornaceae
-          - Genus Argentibramble
-            - Species Silverthorn Bramble (FLR-004)
+## Category Tree (plain-language)
+- Mosses & groundcovers
+  - FLR-001 Sunmoss — bright fibre mats harvested for cloth and spellpaper.
+- Fungi & puffballs
+  - FLR-002 Gloomcap Fungus — edible caps and spore bait.
+- Wetland reeds & grasses
+  - FLR-003 Emberreed — resinous stalks that burn clean.
+- Brambles & berry thickets
+  - FLR-004 Silverthorn Bramble — mirrored thorns and vitamin-rich hips.
+- Nut-bearing trees (oaks, walnuts, hickories)
+  - FLR-005–FLR-069 — acorns and nuts plus reliable hardwood and straw.
+- Sapwoods & syrup trees (maples, ashes, elms)
+  - FLR-015–FLR-079 — sap, leaves, and straight-grain lumber for planks and charcoal.
+- Conifers & resin trees (pines, spruces, firs, cedars)
+  - FLR-022–FLR-053 — cones for seed, sticky resin for sealant, fragrant needles for teas.
+- Birches, poplars, and willows
+  - FLR-054–FLR-088 — flexible hardwood, leaves for forage, and bark for cordage.
+- Fibre & husk crops (flax, reeds, basts)
+  - FLR-090–FLR-140 — bast fibres, straw, and reed cores for weaving and thatch.
+- Legumes & pods (peas, beans, lentils)
+  - FLR-150–FLR-190 — protein-rich beans, fodder straw, and seed stock.
+- Orchards & fruiting groves (stonefruit, pome, citrus)
+  - FLR-191–FLR-230 — fresh fruit, preserves, fragrant peel, and seed pits for oil.
+- Herbs, spices, and medicinal greens
+  - FLR-231–FLR-250 — aromatic leaves, roots, and flowers for tonics and dyes.
 
 ## Common Flora Index (250 species)
 | ID | Name | Appearance | Habitat/time | Harvest method | Yield (IDs) | Uses (IDs) | Hazards/notes |
