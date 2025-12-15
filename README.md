@@ -9,6 +9,12 @@ This repository hosts a modular fantasy RPG reference database designed for worl
 - `reference/biomes.md` — Biomes, habitats, and landmass types that anchor spawns and resources.
 - Domain files: `fauna.md`, `flora.md`, `materials.md`, `equipment.md`, `crafting_recipes.md`, `technology.md`, `structures.md`, `spells.md`, `profiles.md`, `inventories.md`.
 
+## Quickstart
+- Build JSON exports from markdown tables:
+  - `python tools/build_exports.py`
+- Validate IDs, cross-references, cycles, and schema compliance:
+  - `python tools/validate_reference_db.py`
+
 ## Contribution workflow
 1. Choose the appropriate domain file in `reference/` and follow the template headers.
 2. Assign the next sequential ID with the correct prefix (e.g., `FAU-004`).

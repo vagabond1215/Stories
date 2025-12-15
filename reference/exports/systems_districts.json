@@ -1,0 +1,172 @@
+[
+  {
+    "key": "district.agriculture",
+    "name": "Agrarian Fields",
+    "qualifying_tags": [
+      "farming"
+    ],
+    "min_buildings": 3,
+    "radius": 4,
+    "bonuses": [
+      "bo+0.08_per_building_cap0.24",
+      "r+0.03_with_drainage"
+    ],
+    "penalties": [
+      "pest_weight+",
+      "fire_risk+in_drought"
+    ],
+    "notable_adjacency_pairs": [
+      "agriculture+residential=food_security_up",
+      "agriculture+maritime=fishery_boost"
+    ]
+  },
+  {
+    "key": "district.arcane",
+    "name": "Arcane Enclave",
+    "qualifying_tags": [
+      "arcana"
+    ],
+    "min_buildings": 2,
+    "radius": 2,
+    "bonuses": [
+      "qt+1_all",
+      "r+0.05_if_grounded"
+    ],
+    "penalties": [
+      "upkeep+0.15",
+      "event_weight+"
+    ],
+    "notable_adjacency_pairs": [
+      "arcane+residential=mana_comfort",
+      "arcane+industrial=wild_flux"
+    ]
+  },
+  {
+    "key": "district.artisan",
+    "name": "Artisan Quarter",
+    "qualifying_tags": [
+      "craft",
+      "textile"
+    ],
+    "min_buildings": 3,
+    "radius": 2,
+    "bonuses": [
+      "em+0.08_per_building_cap0.24",
+      "qt+1_when_guildhall_present"
+    ],
+    "penalties": [
+      "housing_desirability-"
+    ],
+    "notable_adjacency_pairs": [
+      "artisan+residential=comfort_up",
+      "artisan+industrial=throughput_up"
+    ]
+  },
+  {
+    "key": "district.civic",
+    "name": "Civic Core",
+    "qualifying_tags": [
+      "civic"
+    ],
+    "min_buildings": 3,
+    "radius": 2,
+    "bonuses": [
+      "r+0.08_with_fire_service",
+      "event_recovery-0.10"
+    ],
+    "penalties": [
+      "upkeep+0.05"
+    ],
+    "notable_adjacency_pairs": [
+      "civic+residential=order_bonus",
+      "civic+industrial=tax_resistance"
+    ]
+  },
+  {
+    "key": "district.industrial",
+    "name": "Industrial Yard",
+    "qualifying_tags": [
+      "metallurgy",
+      "craft"
+    ],
+    "min_buildings": 3,
+    "radius": 3,
+    "bonuses": [
+      "em+0.10_per_building_cap0.30",
+      "r+0.05_with_fire_watch",
+      "labor_pool+1_at5"
+    ],
+    "penalties": [
+      "housing_desirability-",
+      "fire_risk+"
+    ],
+    "notable_adjacency_pairs": [
+      "industrial+residential=desirability_drop",
+      "industrial+arcane=unsteady_mana"
+    ]
+  },
+  {
+    "key": "district.maritime",
+    "name": "Maritime Front",
+    "qualifying_tags": [
+      "maritime",
+      "logistics"
+    ],
+    "min_buildings": 3,
+    "radius": 3,
+    "bonuses": [
+      "em+0.12_with_STR-145_plus",
+      "cap+10_per_storage"
+    ],
+    "penalties": [
+      "storm_risk+",
+      "upkeep+0.10"
+    ],
+    "notable_adjacency_pairs": [
+      "maritime+industrial=shipwright_speed",
+      "maritime+civic=tariff_bonus"
+    ]
+  },
+  {
+    "key": "district.military",
+    "name": "Garrison Grounds",
+    "qualifying_tags": [
+      "military",
+      "civic"
+    ],
+    "min_buildings": 2,
+    "radius": 2,
+    "bonuses": [
+      "patrol_risk-0.10",
+      "em+0.05_for_weaponsmiths"
+    ],
+    "penalties": [
+      "morale-when_unfed",
+      "upkeep+0.10"
+    ],
+    "notable_adjacency_pairs": [
+      "military+industrial=armament_flow",
+      "military+residential=desirability_drop"
+    ]
+  },
+  {
+    "key": "district.residential",
+    "name": "Residential Block",
+    "qualifying_tags": [
+      "housing"
+    ],
+    "min_buildings": 3,
+    "radius": 2,
+    "bonuses": [
+      "morale+",
+      "r+0.03_with_sanitation"
+    ],
+    "penalties": [
+      "labor_pool-when_overcrowded"
+    ],
+    "notable_adjacency_pairs": [
+      "residential+agriculture=food_rations",
+      "residential+artisan=amenity_bonus"
+    ]
+  }
+]

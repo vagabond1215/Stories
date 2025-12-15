@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Technology",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "tier", "prerequisites", "unlocks", "time_cost", "notes"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^TEC-\\d{3}$"},
+          "name": {"type": "string"},
+          "tier": {"type": "integer"},
+          "prerequisites": {
+            "type": "array",
+            "items": {"type": "string", "pattern": "^TEC-\\d{3}$"}
+          },
+          "unlocks": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "time_cost": {"type": "string"},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "type"],
+        "properties": {
+          "from": {"type": "string", "pattern": "^TEC-\\d{3}$"},
+          "to": {"type": "string", "pattern": "^TEC-\\d{3}$"},
+          "type": {"type": "string"}
+        }
+      }
+    },
+    "unlocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tech_id", "unlocks"],
+        "properties": {
+          "tech_id": {"type": "string", "pattern": "^TEC-\\d{3}$"},
+          "unlocks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "type"],
+              "properties": {
+                "id": {"type": "string"},
+                "type": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["nodes", "edges", "unlocks"]
+}

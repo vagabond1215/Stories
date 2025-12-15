@@ -1,0 +1,3553 @@
+{
+  "nodes": [
+    {
+      "id": "TEC-001",
+      "name": "Basic Bog Ironworking",
+      "tier": 1,
+      "prerequisites": [],
+      "unlocks": [
+        "STR-001",
+        "STR-003",
+        "STR-004",
+        "CRF-001",
+        "CRF-003",
+        "CRF-004",
+        "CRF-005",
+        "JOB-005",
+        "SPL-003"
+      ],
+      "time_cost": "3 days research; 50 MAT-002",
+      "notes": "Establishes basic metallurgy, herbal salves, and safe tool handling"
+    },
+    {
+      "id": "TEC-002",
+      "name": "Aerial Weaponry",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-001"
+      ],
+      "unlocks": [
+        "STR-002",
+        "CRF-002",
+        "EQP-001"
+      ],
+      "time_cost": "4 days research; MAT-004 sample",
+      "notes": "Focuses on anti-flying tactics and fletching techniques"
+    },
+    {
+      "id": "TEC-003",
+      "name": "Arcane Conduction",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-001"
+      ],
+      "unlocks": [
+        "STR-005",
+        "CRF-006",
+        "EQP-003",
+        "SPL-001"
+      ],
+      "time_cost": "5 days research; MAT-006 shard",
+      "notes": "Teaches channeling elemental flows through crystalline media"
+    },
+    {
+      "id": "TEC-004",
+      "name": "Clay Working",
+      "tier": 1,
+      "prerequisites": [],
+      "unlocks": [
+        "STR-006",
+        "STR-008",
+        "CRF-007",
+        "CRF-008",
+        "JOB-033"
+      ],
+      "time_cost": "2 days research; MAT-009 clay samples x6; MAT-010 grit pans; EQP-006 study loan",
+      "notes": "Introduces clay scouting, wedging, and temper ratios for hand-formed goods"
+    },
+    {
+      "id": "TEC-005",
+      "name": "Kiln Construction",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-004"
+      ],
+      "unlocks": [
+        "STR-007",
+        "CRF-009",
+        "CRF-010",
+        "JOB-034",
+        "MAT-012"
+      ],
+      "time_cost": "3 days research; MAT-011 test bricks x12; EQP-005 fuel x1; kiln shims chiselled",
+      "notes": "Details stacked-clamp firing, vent control, and draw testing for first durable ceramics"
+    },
+    {
+      "id": "TEC-006",
+      "name": "Alloy Smelting",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-001"
+      ],
+      "unlocks": [
+        "STR-009",
+        "STR-010",
+        "CRF-011",
+        "CRF-012",
+        "JOB-035",
+        "EQP-008"
+      ],
+      "time_cost": "4 days research; MAT-014 nodules x10; MAT-019 tin grit x6; MAT-081 flux sand x2",
+      "notes": "Introduces side-draft bloom tapping and tin additions for durable bronze builds"
+    },
+    {
+      "id": "TEC-007",
+      "name": "Starsteel Refining",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-006",
+        "TEC-003"
+      ],
+      "unlocks": [
+        "CRF-013",
+        "CRF-014",
+        "MAT-018",
+        "EQP-009"
+      ],
+      "time_cost": "6 days research; MAT-020 fragments x8; MAT-006 shard x1; oil brine prepared",
+      "notes": "Guides meteoric consolidation and quartz-stabilized quenches for mythic alloys"
+    },
+    {
+      "id": "TEC-008",
+      "name": "Textile Preparation",
+      "tier": 1,
+      "prerequisites": [],
+      "unlocks": [
+        "STR-011",
+        "STR-012",
+        "CRF-015",
+        "CRF-018",
+        "JOB-036",
+        "EQP-010"
+      ],
+      "time_cost": "2 days research; MAT-021 stalk bundles x8; MAT-025 cotton bolls x4",
+      "notes": "Covers retting, breaking, and seed removal for bast and boll fibres"
+    },
+    {
+      "id": "TEC-009",
+      "name": "Spinning & Loomcraft",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-008"
+      ],
+      "unlocks": [
+        "STR-013",
+        "STR-014",
+        "CRF-016",
+        "CRF-017",
+        "CRF-019",
+        "CRF-020",
+        "JOB-037",
+        "EQP-011"
+      ],
+      "time_cost": "3 days research; MAT-022 fibre hanks x6; MAT-026 carded cotton x4; MAT-003 loom beams x2",
+      "notes": "Standardizes spindle drafting, warp tension, and shuttle throws for uniform cloth"
+    },
+    {
+      "id": "TEC-010",
+      "name": "Wool Handling",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-008"
+      ],
+      "unlocks": [
+        "CRF-021",
+        "CRF-022",
+        "CRF-023",
+        "JOB-038",
+        "EQP-012"
+      ],
+      "time_cost": "2 days research; MAT-029 fleece bales x6; clean water kegs x2",
+      "notes": "Teaches washing temperatures, lanolin recovery, and loft-preserving spin"
+    },
+    {
+      "id": "TEC-011",
+      "name": "Leather Tanning",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-010"
+      ],
+      "unlocks": [
+        "STR-015",
+        "CRF-024",
+        "CRF-025",
+        "JOB-039",
+        "EQP-013"
+      ],
+      "time_cost": "3 days research; MAT-204 hides x6; bark liquor x2; MAT-008 resin x2",
+      "notes": "Sets up vat aeration, bark liquor mixing, and rawhide stretch schedules"
+    },
+    {
+      "id": "TEC-012",
+      "name": "Stonecutting & Mortarwork",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-004",
+        "TEC-001"
+      ],
+      "unlocks": [
+        "STR-017",
+        "CRF-026",
+        "CRF-027",
+        "MAT-036",
+        "MAT-037",
+        "JOB-002"
+      ],
+      "time_cost": "3 days research; MAT-035 blocks x10; chisels sharpened",
+      "notes": "Formalizes squaring stone, mixing binders, and staging wall courses"
+    },
+    {
+      "id": "TEC-013",
+      "name": "Ropeworking & Framing",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-008",
+        "TEC-012"
+      ],
+      "unlocks": [
+        "STR-016",
+        "CRF-029",
+        "JOB-004",
+        "MAT-039"
+      ],
+      "time_cost": "3 days research; MAT-022 fibre hanks x8; MAT-035 blocks x4",
+      "notes": "Extends ropewalks and scaffolds for safer timber and masonry builds"
+    },
+    {
+      "id": "TEC-014",
+      "name": "Crop Stewardship & Irrigation",
+      "tier": 1,
+      "prerequisites": [],
+      "unlocks": [
+        "STR-019",
+        "JOB-006"
+      ],
+      "time_cost": "2 days research; MAT-010 gravel pans x6; seed bundles prepared",
+      "notes": "Lays out furrows, sluices, and rotations for staple fields"
+    },
+    {
+      "id": "TEC-015",
+      "name": "Herdkeeping Basics",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "JOB-007"
+      ],
+      "time_cost": "2 days research; salt licks x2; MAT-029 fleece bales x4",
+      "notes": "Covers pen rotation, shearing cadence, and dairy handling"
+    },
+    {
+      "id": "TEC-016",
+      "name": "Fieldcraft & Trapping",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "JOB-008"
+      ],
+      "time_cost": "2 days research; MAT-039 lashings x2; bait kits",
+      "notes": "Codifies snare placement, scent masking, and pelt recovery"
+    },
+    {
+      "id": "TEC-017",
+      "name": "Foraging & Herbalism",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "JOB-009",
+        "CRF-003"
+      ],
+      "time_cost": "2 days research; MAT-001 bundles x4; MAT-063 wild herbs x4",
+      "notes": "Catalogs safe harvest windows, tincturing, and storage"
+    },
+    {
+      "id": "TEC-018",
+      "name": "Riverwork & Netcraft",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-013",
+        "TEC-014"
+      ],
+      "unlocks": [
+        "JOB-010"
+      ],
+      "time_cost": "2 days research; MAT-039 coils x2; reed floats",
+      "notes": "Teaches knotcraft for nets, weirs, and bank stabilization"
+    },
+    {
+      "id": "TEC-019",
+      "name": "Timber Felling",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-001"
+      ],
+      "unlocks": [
+        "JOB-011",
+        "MAT-041"
+      ],
+      "time_cost": "2 days research; wedges x4; greased saws",
+      "notes": "Covers safe felling cuts, skidding, and seasoning stacks"
+    },
+    {
+      "id": "TEC-020",
+      "name": "Joinery & Cartwork",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-013",
+        "TEC-019"
+      ],
+      "unlocks": [
+        "JOB-012"
+      ],
+      "time_cost": "3 days research; MAT-003 fittings x4; MAT-039 rope x2",
+      "notes": "Standardizes mortise/tenon layouts, cart frames, and wheel hubs"
+    },
+    {
+      "id": "TEC-021",
+      "name": "Controlled Burns",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-019"
+      ],
+      "unlocks": [
+        "STR-018",
+        "CRF-028",
+        "JOB-003"
+      ],
+      "time_cost": "3 days research; MAT-041 logs x12; MAT-009 clay seal x4",
+      "notes": "Teaches clamp mounding, airflow control, and ember management"
+    },
+    {
+      "id": "TEC-022",
+      "name": "Metallurgy Theory",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-006",
+        "TEC-021"
+      ],
+      "unlocks": [
+        "JOB-013",
+        "TEC-033"
+      ],
+      "time_cost": "4 days research; MAT-038 x6; slag taps tested",
+      "notes": "Tracks carbon control, fluxing, and quench media for stronger iron"
+    },
+    {
+      "id": "TEC-023",
+      "name": "Textile Arts",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-009"
+      ],
+      "unlocks": [
+        "JOB-015",
+        "MAT-024",
+        "MAT-028",
+        "MAT-032"
+      ],
+      "time_cost": "3 days research; MAT-023 yarn cones x6; dye bath notes",
+      "notes": "Formalizes weaving patterns, finishing, and dyestuff scheduling"
+    },
+    {
+      "id": "TEC-024",
+      "name": "Fermentation & Brewing",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "JOB-016"
+      ],
+      "time_cost": "3 days research; malt mashes x3; clean water carboys",
+      "notes": "Details grain mashing, yeast management, and cask racking"
+    },
+    {
+      "id": "TEC-025",
+      "name": "Cooperage Basics",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-013"
+      ],
+      "unlocks": [
+        "JOB-016",
+        "JOB-019"
+      ],
+      "time_cost": "3 days research; hoop iron x4; MAT-039 lashings x4",
+      "notes": "Covers staves, hoops, and sealants for transport casks"
+    },
+    {
+      "id": "TEC-026",
+      "name": "Leavening & Hearth Baking",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-024"
+      ],
+      "unlocks": [
+        "JOB-017"
+      ],
+      "time_cost": "2 days research; starter jars x3; MAT-037 tubs",
+      "notes": "Explains starters, proofing, and hearth peel timings"
+    },
+    {
+      "id": "TEC-027",
+      "name": "Mechanical Drives",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-013",
+        "TEC-019"
+      ],
+      "unlocks": [
+        "JOB-018"
+      ],
+      "time_cost": "4 days research; gear blanks x4; grease pots",
+      "notes": "Sets ratios for capstans, grindstones, and winch trains"
+    },
+    {
+      "id": "TEC-028",
+      "name": "Water Control",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "JOB-018",
+        "STR-019"
+      ],
+      "time_cost": "4 days research; sluice boards; flood maps",
+      "notes": "Covers sluices, waterwheels, and overflow safety"
+    },
+    {
+      "id": "TEC-029",
+      "name": "Smoke Preservation",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-021"
+      ],
+      "unlocks": [
+        "JOB-010",
+        "JOB-019"
+      ],
+      "time_cost": "2 days research; salt blocks x2; MAT-038 fuel",
+      "notes": "Outlines cold-smoking times, brines, and hanging racks"
+    },
+    {
+      "id": "TEC-030",
+      "name": "Camp Kitchen Craft",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-024"
+      ],
+      "unlocks": [
+        "JOB-019"
+      ],
+      "time_cost": "2 days research; stock bones; spice sachets",
+      "notes": "Organizes field kitchens, ration packing, and broth reduction"
+    },
+    {
+      "id": "TEC-031",
+      "name": "Distillation",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-024"
+      ],
+      "unlocks": [
+        "JOB-020"
+      ],
+      "time_cost": "3 days research; copper coils; clean water jackets",
+      "notes": "Provides safe heat gradients for spirits, oils, and essences"
+    },
+    {
+      "id": "TEC-032",
+      "name": "Reagent Handling",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-031"
+      ],
+      "unlocks": [
+        "JOB-020"
+      ],
+      "time_cost": "3 days research; MAT-006 shards x1; waxed stoppers",
+      "notes": "Establishes lab safety, glassware prep, and sealed storage"
+    },
+    {
+      "id": "TEC-033",
+      "name": "Mine Safety",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-021"
+      ],
+      "unlocks": [
+        "JOB-021"
+      ],
+      "time_cost": "3 days research; vent charts; rope ladders",
+      "notes": "Mandates shoring, airflow, and escape shafts for deeper digs"
+    },
+    {
+      "id": "TEC-034",
+      "name": "Squad Drills",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-001"
+      ],
+      "unlocks": [
+        "JOB-022"
+      ],
+      "time_cost": "2 days research; drill spears x6; field flags",
+      "notes": "Sets unit spacing, spear blocks, and signaling"
+    },
+    {
+      "id": "TEC-035",
+      "name": "Watch Rotas",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-034"
+      ],
+      "unlocks": [
+        "JOB-022"
+      ],
+      "time_cost": "2 days research; roster boards; signal horns",
+      "notes": "Establishes patrol routes, alarm calls, and duty schedules"
+    },
+    {
+      "id": "TEC-036",
+      "name": "Horsemanship",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "JOB-023"
+      ],
+      "time_cost": "3 days research; fodder stores; tack kits",
+      "notes": "Covers saddle fit, pacing, and pack rotation"
+    },
+    {
+      "id": "TEC-037",
+      "name": "Cartography Basics",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-035",
+        "TEC-036"
+      ],
+      "unlocks": [
+        "JOB-023"
+      ],
+      "time_cost": "3 days research; MAT-040 parchment x4; MAT-006 shard x1",
+      "notes": "Introduces surveying, map grids, and landmark notation"
+    },
+    {
+      "id": "TEC-038",
+      "name": "Literacy & Scribes",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-023"
+      ],
+      "unlocks": [
+        "JOB-024",
+        "JOB-026"
+      ],
+      "time_cost": "3 days research; MAT-040 sheets x4; ink cakes x2",
+      "notes": "Establishes copying, binding, and script standards"
+    },
+    {
+      "id": "TEC-039",
+      "name": "Rhetoric & Ciphering",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-038"
+      ],
+      "unlocks": [
+        "JOB-024"
+      ],
+      "time_cost": "3 days research; cipher wheels; vellum drafts",
+      "notes": "Trains debate, coded missives, and argument layouts"
+    },
+    {
+      "id": "TEC-040",
+      "name": "Hazard Sense",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-034"
+      ],
+      "unlocks": [
+        "JOB-025"
+      ],
+      "time_cost": "2 days research; chalk kits; rope harness",
+      "notes": "Teaches trap spotting, ropework, and collapse probes"
+    },
+    {
+      "id": "TEC-041",
+      "name": "Lockwork Basics",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-023"
+      ],
+      "unlocks": [
+        "JOB-025"
+      ],
+      "time_cost": "3 days research; pick sets; brass blanks",
+      "notes": "Covers pin stacks, ward cuts, and safe bypass"
+    },
+    {
+      "id": "TEC-042",
+      "name": "Merchant Law",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-038"
+      ],
+      "unlocks": [
+        "JOB-026",
+        "JOB-027"
+      ],
+      "time_cost": "3 days research; stamped seals x6; ledger sets",
+      "notes": "Codifies tolls, tariffs, and trade writs"
+    },
+    {
+      "id": "TEC-043",
+      "name": "Stewardship",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-042"
+      ],
+      "unlocks": [
+        "JOB-027"
+      ],
+      "time_cost": "3 days research; inventory slates; grain tallies",
+      "notes": "Organizes stores, labor rotas, and tithe flows"
+    },
+    {
+      "id": "TEC-044",
+      "name": "Civic Leadership",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-043",
+        "TEC-035"
+      ],
+      "unlocks": [
+        "JOB-028"
+      ],
+      "time_cost": "4 days research; council minutes; MAT-040 charters",
+      "notes": "Establishes councils, levy calls, and decree postings"
+    },
+    {
+      "id": "TEC-045",
+      "name": "Dispute Mediation",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-044"
+      ],
+      "unlocks": [
+        "JOB-028"
+      ],
+      "time_cost": "3 days research; witness logs; seal sets",
+      "notes": "Guides arbitration, hearings, and public postings"
+    },
+    {
+      "id": "TEC-046",
+      "name": "Liturgy & Comforts",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-038",
+        "TEC-017"
+      ],
+      "unlocks": [
+        "JOB-029"
+      ],
+      "time_cost": "3 days research; incense cones x6; MAT-040 sheets x2",
+      "notes": "Sets rites, herbal comforts, and shrine care"
+    },
+    {
+      "id": "TEC-047",
+      "name": "Diplomacy",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-039",
+        "TEC-044"
+      ],
+      "unlocks": [
+        "JOB-030"
+      ],
+      "time_cost": "3 days research; banner kits; travel escorts",
+      "notes": "Trains hosts in protocol, treaties, and safe passage writs"
+    },
+    {
+      "id": "TEC-048",
+      "name": "Etiquette & Heraldry",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-047"
+      ],
+      "unlocks": [
+        "JOB-030"
+      ],
+      "time_cost": "2 days research; herald rolls; crest paints",
+      "notes": "Formalizes address, gift customs, and banner calls"
+    },
+    {
+      "id": "TEC-049",
+      "name": "Arcanum Basics",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-003",
+        "TEC-038"
+      ],
+      "unlocks": [
+        "JOB-031"
+      ],
+      "time_cost": "4 days research; MAT-006 shard x2; MAT-040 vellum x2",
+      "notes": "Establishes rune forms, circle chalking, and reagent prep"
+    },
+    {
+      "id": "TEC-050",
+      "name": "Focus Harmonics",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-049"
+      ],
+      "unlocks": [
+        "JOB-031",
+        "JOB-032"
+      ],
+      "time_cost": "4 days research; MAT-006 shards tuned; oil brine x1",
+      "notes": "Aligns foci, resonance oils, and multi-channel glyphs"
+    },
+    {
+      "id": "TEC-051",
+      "name": "Elemental Forms",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-050"
+      ],
+      "unlocks": [
+        "JOB-032"
+      ],
+      "time_cost": "4 days research; training blades; ward oil",
+      "notes": "Codifies stances, channel timing, and rune guard"
+    },
+    {
+      "id": "TEC-052",
+      "name": "Siege Engineering",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-012",
+        "TEC-022"
+      ],
+      "unlocks": [
+        "STR-016",
+        "STR-017"
+      ],
+      "time_cost": "5 days research; MAT-036 blocks x12; MAT-039 coils x6",
+      "notes": "Lays out hoists, mantlets, and counterweight throwers"
+    },
+    {
+      "id": "TEC-053",
+      "name": "Navigation & Shipwrighting",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-019",
+        "TEC-037"
+      ],
+      "unlocks": [
+        "JOB-023"
+      ],
+      "time_cost": "5 days research; MAT-039 rigging x6; star charts",
+      "notes": "Enables river barges, coastal sailcraft, and long-run provisioning"
+    },
+    {
+      "id": "TEC-054",
+      "name": "Printing Press",
+      "tier": 5,
+      "prerequisites": [
+        "TEC-038",
+        "TEC-023"
+      ],
+      "unlocks": [
+        "STR-074",
+        "CRF-030"
+      ],
+      "time_cost": "5 days research; MAT-040 sheets x20; carved type blocks",
+      "notes": "Multiplies script output for laws, maps, and arcane manuals"
+    },
+    {
+      "id": "TEC-055",
+      "name": "Banking & Charters",
+      "tier": 5,
+      "prerequisites": [
+        "TEC-042",
+        "TEC-047"
+      ],
+      "unlocks": [
+        "JOB-026",
+        "JOB-027"
+      ],
+      "time_cost": "5 days research; coin assays; vault plans",
+      "notes": "Establishes guild contracts, loans, and trusted ledgers"
+    },
+    {
+      "id": "TEC-056",
+      "name": "Gunpowder Formulation",
+      "tier": 5,
+      "prerequisites": [
+        "TEC-021",
+        "TEC-031"
+      ],
+      "unlocks": [
+        "CRF-028",
+        "STR-018"
+      ],
+      "time_cost": "6 days research; saltpeter crocks; charcoal fines",
+      "notes": "Permits black-powder mixing for charges, mines, and rockets"
+    },
+    {
+      "id": "TEC-057",
+      "name": "Renaissance Engineering",
+      "tier": 5,
+      "prerequisites": [
+        "TEC-052",
+        "TEC-027"
+      ],
+      "unlocks": [
+        "STR-017"
+      ],
+      "time_cost": "6 days research; MAT-036 arches x12; cog plans",
+      "notes": "Extends cranes, gear trains, and aqueduct span designs"
+    },
+    {
+      "id": "TEC-058",
+      "name": "Balloonry & Lift Gas",
+      "tier": 5,
+      "prerequisites": [
+        "TEC-053",
+        "TEC-056"
+      ],
+      "unlocks": [
+        "JOB-022"
+      ],
+      "time_cost": "6 days research; treated cloth bolts; oil burners",
+      "notes": "Supports tethered balloons, blimps, and heated air reconnaissance"
+    },
+    {
+      "id": "TEC-059",
+      "name": "Clay Prospecting & Quarrying",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-004"
+      ],
+      "unlocks": [
+        "STR-020",
+        "STR-021",
+        "JOB-033"
+      ],
+      "time_cost": "2 days research; MAT-009 core samples x8; MAT-010 drainage gravel x4",
+      "notes": "Maps clay lenses, benches dig faces, and teaches sump drainage with stone cribbing and log pads like medieval survival sand pits"
+    },
+    {
+      "id": "TEC-060",
+      "name": "Wheel Throwing & Finishing",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-059"
+      ],
+      "unlocks": [
+        "STR-022",
+        "CRF-080",
+        "CRF-081",
+        "JOB-001"
+      ],
+      "time_cost": "3 days research; MAT-011 flywheel bricks x6; EQP-006 tuned chisels",
+      "notes": "Codifies centering, kick rhythms, and trimming for wheel-thrown ware; expands to leather belts, pebble ballast, and shared shed space from village builder craft lines"
+    },
+    {
+      "id": "TEC-061",
+      "name": "Draft Kiln Design",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-059",
+        "TEC-005"
+      ],
+      "unlocks": [
+        "STR-023",
+        "STR-024",
+        "CRF-009",
+        "CRF-010",
+        "JOB-034"
+      ],
+      "time_cost": "3 days research; MAT-011 test arches x12; vent charts",
+      "notes": "Adds flues, baffles, and stacking plans for hotter, even firings; supports peat, charcoal, or split-log fuels and ties kiln-tending shifts to mason and firekeeper roles as seen in settlement sims"
+    },
+    {
+      "id": "TEC-062",
+      "name": "Ore Sorting & Roast Beds",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-006",
+        "TEC-033"
+      ],
+      "unlocks": [
+        "STR-025",
+        "CRF-056",
+        "JOB-021"
+      ],
+      "time_cost": "3 days research; MAT-095 ore samples x6; MAT-010 drainage gravel x4",
+      "notes": "Teaches grading ores, washing fines, and pre-roasting to drive off damp like frontier mining camps; stresses tailings berms and roofed sluices"
+    },
+    {
+      "id": "TEC-063",
+      "name": "Fulling & Dyehouse Layouts",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-009",
+        "TEC-010"
+      ],
+      "unlocks": [
+        "STR-027",
+        "CRF-021",
+        "CRF-023",
+        "CRF-045",
+        "JOB-038",
+        "JOB-015"
+      ],
+      "time_cost": "3 days research; MAT-040 dye tests x4; heated water tubs",
+      "notes": "Outlines treadle fulling, vat stacking, and cloth staging under awnings so wool and linen finishing can stay weather-safe as in medieval cloth halls"
+    },
+    {
+      "id": "TEC-064",
+      "name": "Timber Seasoning & Wheelwrighting",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-019",
+        "TEC-020"
+      ],
+      "unlocks": [
+        "STR-028",
+        "STR-029",
+        "CRF-032",
+        "CRF-033",
+        "CRF-035",
+        "JOB-011",
+        "JOB-012"
+      ],
+      "time_cost": "3 days research; MAT-041 stickers x12; MAT-003 beams x4",
+      "notes": "Schedules air-drying stacks, sticker spacing, and hub-jig layouts to prevent warp; mirrors sawpit yards and wagon shops from survival builders"
+    },
+    {
+      "id": "TEC-065",
+      "name": "Finery & Tempering Practice",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-022",
+        "TEC-006"
+      ],
+      "unlocks": [
+        "STR-026",
+        "CRF-040",
+        "CRF-041",
+        "JOB-013"
+      ],
+      "time_cost": "4 days research; MAT-016 tuyere bricks x8; oil brine cooled",
+      "notes": "Adds finery hearth control, slag skimming, and quench recipes for sharper tools with leaner fuel draws modeled on late-medieval forges"
+    },
+    {
+      "id": "TEC-066",
+      "name": "Charcoal Production",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-019"
+      ],
+      "unlocks": [
+        "STR-018",
+        "CRF-028",
+        "MAT-038",
+        "MAT-537",
+        "JOB-003"
+      ],
+      "time_cost": "2 days research; MAT-041 log stacks x8; draft maps",
+      "notes": "Codifies mound stacking, soil sealing, and ember arresting for clean fuel batches"
+    },
+    {
+      "id": "TEC-067",
+      "name": "Ore Roasting & Sorting",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-066",
+        "TEC-033"
+      ],
+      "unlocks": [
+        "STR-025",
+        "CRF-056",
+        "MAT-532",
+        "MAT-533",
+        "MAT-534"
+      ],
+      "time_cost": "3 days research; ore trays; vented roofs staged",
+      "notes": "Grades ores, dries damp loads, and channels tailings for safer bloom charges"
+    },
+    {
+      "id": "TEC-068",
+      "name": "Copper Smelting",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-066"
+      ],
+      "unlocks": [
+        "STR-009",
+        "CRF-011",
+        "MAT-015"
+      ],
+      "time_cost": "3 days research; MAT-014 nodules x8; slag ladles",
+      "notes": "Establishes wind control, slag tapping, and bloom folding for first workable copper"
+    },
+    {
+      "id": "TEC-069",
+      "name": "Tin Smelting",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-068"
+      ],
+      "unlocks": [
+        "MAT-019",
+        "CRF-012"
+      ],
+      "time_cost": "3 days research; MAT-019 tins; MAT-081 flux bags",
+      "notes": "Oversees tin washing, low-flame melts, and alloy charge timing"
+    },
+    {
+      "id": "TEC-070",
+      "name": "Bloom Refinement",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-068",
+        "TEC-067"
+      ],
+      "unlocks": [
+        "MAT-523",
+        "CRF-040",
+        "CRF-041",
+        "EQP-017"
+      ],
+      "time_cost": "4 days research; MAT-038 charcoal sacks x6; quench tubs",
+      "notes": "Sets repeated folding, scale scraping, and finery reheats for denser iron billets"
+    },
+    {
+      "id": "TEC-071",
+      "name": "Steelworking",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-070",
+        "TEC-022"
+      ],
+      "unlocks": [
+        "EQP-025",
+        "EQP-026",
+        "MAT-524"
+      ],
+      "time_cost": "4 days research; MAT-081 flux sand x4; quenchant oil",
+      "notes": "Controls carburization boxes, soak temperatures, and staged tempers for reliable steel"
+    },
+    {
+      "id": "TEC-072",
+      "name": "Pattern Welding",
+      "tier": 4,
+      "prerequisites": [
+        "TEC-071"
+      ],
+      "unlocks": [
+        "EQP-027",
+        "EQP-028"
+      ],
+      "time_cost": "4 days research; MAT-523 billets x4; clamp jigs",
+      "notes": "Braids layered steels, selective quenching, and peened seams for high-grade arms"
+    },
+    {
+      "id": "TEC-073",
+      "name": "Mythic Metallurgy",
+      "tier": 5,
+      "prerequisites": [
+        "TEC-072",
+        "TEC-007"
+      ],
+      "unlocks": [
+        "EQP-029",
+        "MAT-525"
+      ],
+      "time_cost": "5 days research; MAT-020 fragments x6; MAT-006 resonance shard",
+      "notes": "Aligns arcane flux, crucible steel heats, and meteoric blends for legendary alloys"
+    },
+    {
+      "id": "TEC-074",
+      "name": "Fishing Practices",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-018"
+      ],
+      "unlocks": [
+        "STR-090",
+        "STR-093"
+      ],
+      "time_cost": "2 days research; net weights",
+      "notes": "Codifies cast timing, baiting, and river safety"
+    },
+    {
+      "id": "TEC-075",
+      "name": "Net Weaving",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-018"
+      ],
+      "unlocks": [
+        "STR-091",
+        "STR-151"
+      ],
+      "time_cost": "2 days research; cordage kits",
+      "notes": "Standardizes knots, mending, and drying lines"
+    },
+    {
+      "id": "TEC-076",
+      "name": "Food Preservation",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-029"
+      ],
+      "unlocks": [
+        "STR-092",
+        "STR-119",
+        "STR-127"
+      ],
+      "time_cost": "3 days research; salt blocks; smoke tests",
+      "notes": "Improves salting, smoking, and cool storage"
+    },
+    {
+      "id": "TEC-077",
+      "name": "Maritime Logistics",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-053"
+      ],
+      "unlocks": [
+        "STR-094",
+        "STR-095",
+        "STR-146",
+        "STR-147",
+        "STR-149",
+        "STR-152",
+        "STR-153"
+      ],
+      "time_cost": "4 days research; quay ledgers",
+      "notes": "Coordinates harbor crews, manifests, and crane signals"
+    },
+    {
+      "id": "TEC-078",
+      "name": "Harbor Construction",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-053"
+      ],
+      "unlocks": [
+        "STR-145",
+        "STR-148"
+      ],
+      "time_cost": "4 days research; piling charts",
+      "notes": "Details quay foundations, fendering, and drainage"
+    },
+    {
+      "id": "TEC-079",
+      "name": "Optics & Beacons",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-037"
+      ],
+      "unlocks": [
+        "STR-120",
+        "STR-129",
+        "STR-144",
+        "STR-150"
+      ],
+      "time_cost": "3 days research; polished lenses",
+      "notes": "Aligns lenses, mirrors, and beacon fuels"
+    },
+    {
+      "id": "TEC-080",
+      "name": "Grain Storage",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "STR-121"
+      ],
+      "time_cost": "2 days research; grain samples",
+      "notes": "Raises floors, baffles drafts, and seals gaps"
+    },
+    {
+      "id": "TEC-081",
+      "name": "Bulk Handling",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-080"
+      ],
+      "unlocks": [
+        "STR-122"
+      ],
+      "time_cost": "3 days research; chute molds",
+      "notes": "Teaches safe fill/empty cycles for tall bins"
+    },
+    {
+      "id": "TEC-082",
+      "name": "Warehousing",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-077",
+        "TEC-043"
+      ],
+      "unlocks": [
+        "STR-124"
+      ],
+      "time_cost": "3 days research; bay plans",
+      "notes": "Organizes bays, stevedore rotas, and tally slips"
+    },
+    {
+      "id": "TEC-083",
+      "name": "Inventory Management",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-043"
+      ],
+      "unlocks": [
+        "STR-128"
+      ],
+      "time_cost": "3 days research; wax tablets",
+      "notes": "Standardizes ledgers, stock counts, and loss checks"
+    },
+    {
+      "id": "TEC-084",
+      "name": "Security Architecture",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-042"
+      ],
+      "unlocks": [
+        "STR-125",
+        "STR-147"
+      ],
+      "time_cost": "3 days research; lockwork drafts",
+      "notes": "Reinforces vaulting, warded entries, and patrol loops"
+    },
+    {
+      "id": "TEC-085",
+      "name": "Workshop Planning",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-020"
+      ],
+      "unlocks": [
+        "STR-126",
+        "STR-135",
+        "STR-139"
+      ],
+      "time_cost": "3 days research; bench layouts",
+      "notes": "Improves shop flow, benches, and shelving"
+    },
+    {
+      "id": "TEC-086",
+      "name": "Precision Toolmaking",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-020",
+        "TEC-065"
+      ],
+      "unlocks": [
+        "STR-134",
+        "STR-138",
+        "STR-140",
+        "STR-141",
+        "STR-143"
+      ],
+      "time_cost": "4 days research; fine files; oilstones",
+      "notes": "Adds fine tolerances, jigs, and inspection"
+    },
+    {
+      "id": "TEC-087",
+      "name": "Basic Smithing Practice",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-001"
+      ],
+      "unlocks": [
+        "STR-130",
+        "STR-142"
+      ],
+      "time_cost": "3 days research; fuel stock",
+      "notes": "Establishes forge cadence, quenches, and safety"
+    },
+    {
+      "id": "TEC-088",
+      "name": "Bellows & Airflow Control",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-087"
+      ],
+      "unlocks": [
+        "STR-131",
+        "STR-132",
+        "STR-133"
+      ],
+      "time_cost": "3 days research; bellows leather",
+      "notes": "Tunes blast timing, seals, and heat management"
+    },
+    {
+      "id": "TEC-089",
+      "name": "Weapon Forging",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-065"
+      ],
+      "unlocks": [
+        "STR-136"
+      ],
+      "time_cost": "4 days research; billet sets",
+      "notes": "Patterns distal tapers, edges, and heat cycles"
+    },
+    {
+      "id": "TEC-090",
+      "name": "Armor Construction",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-065"
+      ],
+      "unlocks": [
+        "STR-137"
+      ],
+      "time_cost": "4 days research; stake plans",
+      "notes": "Teaches plate raising, rivet setting, and fitting"
+    },
+    {
+      "id": "TEC-091",
+      "name": "Perennial Cultivation",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "STR-106",
+        "STR-107",
+        "STR-108",
+        "STR-109"
+      ],
+      "time_cost": "3 days research; pruning guides",
+      "notes": "Manages pruning, trellising, and perennial rotations"
+    },
+    {
+      "id": "TEC-092",
+      "name": "Basic Carpentry Shelters",
+      "tier": 1,
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "STR-154",
+        "STR-155",
+        "STR-159",
+        "STR-160",
+        "STR-161"
+      ],
+      "time_cost": "2 days research; wattle frames",
+      "notes": "Sets walling, hearth siting, and weatherproofing"
+    },
+    {
+      "id": "TEC-093",
+      "name": "Masonry Housing",
+      "tier": 2,
+      "prerequisites": [
+        "TEC-012",
+        "TEC-092"
+      ],
+      "unlocks": [
+        "STR-156",
+        "STR-157"
+      ],
+      "time_cost": "3 days research; stone lintels",
+      "notes": "Introduces stone footings, chimneys, and framing ties"
+    },
+    {
+      "id": "TEC-094",
+      "name": "Sanitation Works",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-028"
+      ],
+      "unlocks": [
+        "STR-162",
+        "STR-172",
+        "STR-173",
+        "STR-174"
+      ],
+      "time_cost": "3 days research; lime slaking",
+      "notes": "Plans drains, pits, covers, and sewage flow"
+    },
+    {
+      "id": "TEC-095",
+      "name": "Fire Safety & Brigade",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-021"
+      ],
+      "unlocks": [
+        "STR-164",
+        "STR-165",
+        "STR-166"
+      ],
+      "time_cost": "3 days research; alarm drills",
+      "notes": "Establishes alarm towers, bucket trains, and pumps"
+    },
+    {
+      "id": "TEC-096",
+      "name": "Preventative Maintenance",
+      "tier": 3,
+      "prerequisites": [
+        "TEC-020"
+      ],
+      "unlocks": [
+        "STR-098",
+        "STR-115",
+        "STR-168",
+        "STR-101"
+      ],
+      "time_cost": "3 days research; checklist slates",
+      "notes": "Schedules inspections, lubrication, and repairs"
+    }
+  ],
+  "edges": [
+    {
+      "from": "TEC-001",
+      "to": "TEC-002",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-001",
+      "to": "TEC-003",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-001",
+      "to": "TEC-006",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-001",
+      "to": "TEC-012",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-001",
+      "to": "TEC-019",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-001",
+      "to": "TEC-034",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-001",
+      "to": "TEC-087",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-003",
+      "to": "TEC-007",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-003",
+      "to": "TEC-049",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-004",
+      "to": "TEC-005",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-004",
+      "to": "TEC-012",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-004",
+      "to": "TEC-059",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-005",
+      "to": "TEC-061",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-006",
+      "to": "TEC-007",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-006",
+      "to": "TEC-022",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-006",
+      "to": "TEC-062",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-006",
+      "to": "TEC-065",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-007",
+      "to": "TEC-073",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-008",
+      "to": "TEC-009",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-008",
+      "to": "TEC-010",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-008",
+      "to": "TEC-013",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-009",
+      "to": "TEC-023",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-009",
+      "to": "TEC-063",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-010",
+      "to": "TEC-011",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-010",
+      "to": "TEC-063",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-012",
+      "to": "TEC-013",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-012",
+      "to": "TEC-052",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-012",
+      "to": "TEC-093",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-013",
+      "to": "TEC-018",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-013",
+      "to": "TEC-020",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-013",
+      "to": "TEC-025",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-013",
+      "to": "TEC-027",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-015",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-016",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-017",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-018",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-024",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-028",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-036",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-080",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-091",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-092",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-017",
+      "to": "TEC-046",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-018",
+      "to": "TEC-074",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-018",
+      "to": "TEC-075",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-020",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-021",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-027",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-053",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-064",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-066",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-020",
+      "to": "TEC-064",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-020",
+      "to": "TEC-085",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-020",
+      "to": "TEC-086",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-020",
+      "to": "TEC-096",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-021",
+      "to": "TEC-022",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-021",
+      "to": "TEC-029",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-021",
+      "to": "TEC-033",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-021",
+      "to": "TEC-056",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-021",
+      "to": "TEC-095",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-022",
+      "to": "TEC-052",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-022",
+      "to": "TEC-065",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-022",
+      "to": "TEC-071",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-023",
+      "to": "TEC-038",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-023",
+      "to": "TEC-041",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-023",
+      "to": "TEC-054",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-024",
+      "to": "TEC-026",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-024",
+      "to": "TEC-030",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-024",
+      "to": "TEC-031",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-027",
+      "to": "TEC-057",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-028",
+      "to": "TEC-094",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-029",
+      "to": "TEC-076",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-031",
+      "to": "TEC-032",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-031",
+      "to": "TEC-056",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-033",
+      "to": "TEC-062",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-033",
+      "to": "TEC-067",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-034",
+      "to": "TEC-035",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-034",
+      "to": "TEC-040",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-035",
+      "to": "TEC-037",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-035",
+      "to": "TEC-044",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-036",
+      "to": "TEC-037",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-037",
+      "to": "TEC-053",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-037",
+      "to": "TEC-079",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-038",
+      "to": "TEC-039",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-038",
+      "to": "TEC-042",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-038",
+      "to": "TEC-046",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-038",
+      "to": "TEC-049",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-038",
+      "to": "TEC-054",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-039",
+      "to": "TEC-047",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-042",
+      "to": "TEC-043",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-042",
+      "to": "TEC-055",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-042",
+      "to": "TEC-084",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-043",
+      "to": "TEC-044",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-043",
+      "to": "TEC-082",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-043",
+      "to": "TEC-083",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-044",
+      "to": "TEC-045",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-044",
+      "to": "TEC-047",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-047",
+      "to": "TEC-048",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-047",
+      "to": "TEC-055",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-049",
+      "to": "TEC-050",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-050",
+      "to": "TEC-051",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-052",
+      "to": "TEC-057",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-053",
+      "to": "TEC-058",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-053",
+      "to": "TEC-077",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-053",
+      "to": "TEC-078",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-056",
+      "to": "TEC-058",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-059",
+      "to": "TEC-060",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-059",
+      "to": "TEC-061",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-065",
+      "to": "TEC-086",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-065",
+      "to": "TEC-089",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-065",
+      "to": "TEC-090",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-066",
+      "to": "TEC-067",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-066",
+      "to": "TEC-068",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-067",
+      "to": "TEC-070",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-068",
+      "to": "TEC-069",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-068",
+      "to": "TEC-070",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-070",
+      "to": "TEC-071",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-071",
+      "to": "TEC-072",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-072",
+      "to": "TEC-073",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-077",
+      "to": "TEC-082",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-080",
+      "to": "TEC-081",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-087",
+      "to": "TEC-088",
+      "type": "prereq"
+    },
+    {
+      "from": "TEC-092",
+      "to": "TEC-093",
+      "type": "prereq"
+    }
+  ],
+  "unlocks": [
+    {
+      "tech_id": "TEC-001",
+      "unlocks": [
+        {
+          "id": "CRF-001",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-003",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-004",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-005",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-005",
+          "type": "job"
+        },
+        {
+          "id": "SPL-003",
+          "type": "spl"
+        },
+        {
+          "id": "STR-001",
+          "type": "str"
+        },
+        {
+          "id": "STR-003",
+          "type": "str"
+        },
+        {
+          "id": "STR-004",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-002",
+      "unlocks": [
+        {
+          "id": "CRF-002",
+          "type": "crf"
+        },
+        {
+          "id": "EQP-001",
+          "type": "eqp"
+        },
+        {
+          "id": "STR-002",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-003",
+      "unlocks": [
+        {
+          "id": "CRF-006",
+          "type": "crf"
+        },
+        {
+          "id": "EQP-003",
+          "type": "eqp"
+        },
+        {
+          "id": "SPL-001",
+          "type": "spl"
+        },
+        {
+          "id": "STR-005",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-004",
+      "unlocks": [
+        {
+          "id": "CRF-007",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-008",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-033",
+          "type": "job"
+        },
+        {
+          "id": "STR-006",
+          "type": "str"
+        },
+        {
+          "id": "STR-008",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-005",
+      "unlocks": [
+        {
+          "id": "CRF-009",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-010",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-034",
+          "type": "job"
+        },
+        {
+          "id": "MAT-012",
+          "type": "mat"
+        },
+        {
+          "id": "STR-007",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-006",
+      "unlocks": [
+        {
+          "id": "CRF-011",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-012",
+          "type": "crf"
+        },
+        {
+          "id": "EQP-008",
+          "type": "eqp"
+        },
+        {
+          "id": "JOB-035",
+          "type": "job"
+        },
+        {
+          "id": "STR-009",
+          "type": "str"
+        },
+        {
+          "id": "STR-010",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-007",
+      "unlocks": [
+        {
+          "id": "CRF-013",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-014",
+          "type": "crf"
+        },
+        {
+          "id": "EQP-009",
+          "type": "eqp"
+        },
+        {
+          "id": "MAT-018",
+          "type": "mat"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-008",
+      "unlocks": [
+        {
+          "id": "CRF-015",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-018",
+          "type": "crf"
+        },
+        {
+          "id": "EQP-010",
+          "type": "eqp"
+        },
+        {
+          "id": "JOB-036",
+          "type": "job"
+        },
+        {
+          "id": "STR-011",
+          "type": "str"
+        },
+        {
+          "id": "STR-012",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-009",
+      "unlocks": [
+        {
+          "id": "CRF-016",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-017",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-019",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-020",
+          "type": "crf"
+        },
+        {
+          "id": "EQP-011",
+          "type": "eqp"
+        },
+        {
+          "id": "JOB-037",
+          "type": "job"
+        },
+        {
+          "id": "STR-013",
+          "type": "str"
+        },
+        {
+          "id": "STR-014",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-010",
+      "unlocks": [
+        {
+          "id": "CRF-021",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-022",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-023",
+          "type": "crf"
+        },
+        {
+          "id": "EQP-012",
+          "type": "eqp"
+        },
+        {
+          "id": "JOB-038",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-011",
+      "unlocks": [
+        {
+          "id": "CRF-024",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-025",
+          "type": "crf"
+        },
+        {
+          "id": "EQP-013",
+          "type": "eqp"
+        },
+        {
+          "id": "JOB-039",
+          "type": "job"
+        },
+        {
+          "id": "STR-015",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-012",
+      "unlocks": [
+        {
+          "id": "CRF-026",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-027",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-002",
+          "type": "job"
+        },
+        {
+          "id": "MAT-036",
+          "type": "mat"
+        },
+        {
+          "id": "MAT-037",
+          "type": "mat"
+        },
+        {
+          "id": "STR-017",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-013",
+      "unlocks": [
+        {
+          "id": "CRF-029",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-004",
+          "type": "job"
+        },
+        {
+          "id": "MAT-039",
+          "type": "mat"
+        },
+        {
+          "id": "STR-016",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-014",
+      "unlocks": [
+        {
+          "id": "JOB-006",
+          "type": "job"
+        },
+        {
+          "id": "STR-019",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-015",
+      "unlocks": [
+        {
+          "id": "JOB-007",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-016",
+      "unlocks": [
+        {
+          "id": "JOB-008",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-017",
+      "unlocks": [
+        {
+          "id": "CRF-003",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-009",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-018",
+      "unlocks": [
+        {
+          "id": "JOB-010",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-019",
+      "unlocks": [
+        {
+          "id": "JOB-011",
+          "type": "job"
+        },
+        {
+          "id": "MAT-041",
+          "type": "mat"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-020",
+      "unlocks": [
+        {
+          "id": "JOB-012",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-021",
+      "unlocks": [
+        {
+          "id": "CRF-028",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-003",
+          "type": "job"
+        },
+        {
+          "id": "STR-018",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-022",
+      "unlocks": [
+        {
+          "id": "JOB-013",
+          "type": "job"
+        },
+        {
+          "id": "TEC-033",
+          "type": "tec"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-023",
+      "unlocks": [
+        {
+          "id": "JOB-015",
+          "type": "job"
+        },
+        {
+          "id": "MAT-024",
+          "type": "mat"
+        },
+        {
+          "id": "MAT-028",
+          "type": "mat"
+        },
+        {
+          "id": "MAT-032",
+          "type": "mat"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-024",
+      "unlocks": [
+        {
+          "id": "JOB-016",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-025",
+      "unlocks": [
+        {
+          "id": "JOB-016",
+          "type": "job"
+        },
+        {
+          "id": "JOB-019",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-026",
+      "unlocks": [
+        {
+          "id": "JOB-017",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-027",
+      "unlocks": [
+        {
+          "id": "JOB-018",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-028",
+      "unlocks": [
+        {
+          "id": "JOB-018",
+          "type": "job"
+        },
+        {
+          "id": "STR-019",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-029",
+      "unlocks": [
+        {
+          "id": "JOB-010",
+          "type": "job"
+        },
+        {
+          "id": "JOB-019",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-030",
+      "unlocks": [
+        {
+          "id": "JOB-019",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-031",
+      "unlocks": [
+        {
+          "id": "JOB-020",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-032",
+      "unlocks": [
+        {
+          "id": "JOB-020",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-033",
+      "unlocks": [
+        {
+          "id": "JOB-021",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-034",
+      "unlocks": [
+        {
+          "id": "JOB-022",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-035",
+      "unlocks": [
+        {
+          "id": "JOB-022",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-036",
+      "unlocks": [
+        {
+          "id": "JOB-023",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-037",
+      "unlocks": [
+        {
+          "id": "JOB-023",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-038",
+      "unlocks": [
+        {
+          "id": "JOB-024",
+          "type": "job"
+        },
+        {
+          "id": "JOB-026",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-039",
+      "unlocks": [
+        {
+          "id": "JOB-024",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-040",
+      "unlocks": [
+        {
+          "id": "JOB-025",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-041",
+      "unlocks": [
+        {
+          "id": "JOB-025",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-042",
+      "unlocks": [
+        {
+          "id": "JOB-026",
+          "type": "job"
+        },
+        {
+          "id": "JOB-027",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-043",
+      "unlocks": [
+        {
+          "id": "JOB-027",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-044",
+      "unlocks": [
+        {
+          "id": "JOB-028",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-045",
+      "unlocks": [
+        {
+          "id": "JOB-028",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-046",
+      "unlocks": [
+        {
+          "id": "JOB-029",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-047",
+      "unlocks": [
+        {
+          "id": "JOB-030",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-048",
+      "unlocks": [
+        {
+          "id": "JOB-030",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-049",
+      "unlocks": [
+        {
+          "id": "JOB-031",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-050",
+      "unlocks": [
+        {
+          "id": "JOB-031",
+          "type": "job"
+        },
+        {
+          "id": "JOB-032",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-051",
+      "unlocks": [
+        {
+          "id": "JOB-032",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-052",
+      "unlocks": [
+        {
+          "id": "STR-016",
+          "type": "str"
+        },
+        {
+          "id": "STR-017",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-053",
+      "unlocks": [
+        {
+          "id": "JOB-023",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-054",
+      "unlocks": [
+        {
+          "id": "CRF-030",
+          "type": "crf"
+        },
+        {
+          "id": "STR-074",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-055",
+      "unlocks": [
+        {
+          "id": "JOB-026",
+          "type": "job"
+        },
+        {
+          "id": "JOB-027",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-056",
+      "unlocks": [
+        {
+          "id": "CRF-028",
+          "type": "crf"
+        },
+        {
+          "id": "STR-018",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-057",
+      "unlocks": [
+        {
+          "id": "STR-017",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-058",
+      "unlocks": [
+        {
+          "id": "JOB-022",
+          "type": "job"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-059",
+      "unlocks": [
+        {
+          "id": "JOB-033",
+          "type": "job"
+        },
+        {
+          "id": "STR-020",
+          "type": "str"
+        },
+        {
+          "id": "STR-021",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-060",
+      "unlocks": [
+        {
+          "id": "CRF-080",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-081",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-001",
+          "type": "job"
+        },
+        {
+          "id": "STR-022",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-061",
+      "unlocks": [
+        {
+          "id": "CRF-009",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-010",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-034",
+          "type": "job"
+        },
+        {
+          "id": "STR-023",
+          "type": "str"
+        },
+        {
+          "id": "STR-024",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-062",
+      "unlocks": [
+        {
+          "id": "CRF-056",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-021",
+          "type": "job"
+        },
+        {
+          "id": "STR-025",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-063",
+      "unlocks": [
+        {
+          "id": "CRF-021",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-023",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-045",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-015",
+          "type": "job"
+        },
+        {
+          "id": "JOB-038",
+          "type": "job"
+        },
+        {
+          "id": "STR-027",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-064",
+      "unlocks": [
+        {
+          "id": "CRF-032",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-033",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-035",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-011",
+          "type": "job"
+        },
+        {
+          "id": "JOB-012",
+          "type": "job"
+        },
+        {
+          "id": "STR-028",
+          "type": "str"
+        },
+        {
+          "id": "STR-029",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-065",
+      "unlocks": [
+        {
+          "id": "CRF-040",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-041",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-013",
+          "type": "job"
+        },
+        {
+          "id": "STR-026",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-066",
+      "unlocks": [
+        {
+          "id": "CRF-028",
+          "type": "crf"
+        },
+        {
+          "id": "JOB-003",
+          "type": "job"
+        },
+        {
+          "id": "MAT-038",
+          "type": "mat"
+        },
+        {
+          "id": "MAT-537",
+          "type": "mat"
+        },
+        {
+          "id": "STR-018",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-067",
+      "unlocks": [
+        {
+          "id": "CRF-056",
+          "type": "crf"
+        },
+        {
+          "id": "MAT-532",
+          "type": "mat"
+        },
+        {
+          "id": "MAT-533",
+          "type": "mat"
+        },
+        {
+          "id": "MAT-534",
+          "type": "mat"
+        },
+        {
+          "id": "STR-025",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-068",
+      "unlocks": [
+        {
+          "id": "CRF-011",
+          "type": "crf"
+        },
+        {
+          "id": "MAT-015",
+          "type": "mat"
+        },
+        {
+          "id": "STR-009",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-069",
+      "unlocks": [
+        {
+          "id": "CRF-012",
+          "type": "crf"
+        },
+        {
+          "id": "MAT-019",
+          "type": "mat"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-070",
+      "unlocks": [
+        {
+          "id": "CRF-040",
+          "type": "crf"
+        },
+        {
+          "id": "CRF-041",
+          "type": "crf"
+        },
+        {
+          "id": "EQP-017",
+          "type": "eqp"
+        },
+        {
+          "id": "MAT-523",
+          "type": "mat"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-071",
+      "unlocks": [
+        {
+          "id": "EQP-025",
+          "type": "eqp"
+        },
+        {
+          "id": "EQP-026",
+          "type": "eqp"
+        },
+        {
+          "id": "MAT-524",
+          "type": "mat"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-072",
+      "unlocks": [
+        {
+          "id": "EQP-027",
+          "type": "eqp"
+        },
+        {
+          "id": "EQP-028",
+          "type": "eqp"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-073",
+      "unlocks": [
+        {
+          "id": "EQP-029",
+          "type": "eqp"
+        },
+        {
+          "id": "MAT-525",
+          "type": "mat"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-074",
+      "unlocks": [
+        {
+          "id": "STR-090",
+          "type": "str"
+        },
+        {
+          "id": "STR-093",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-075",
+      "unlocks": [
+        {
+          "id": "STR-091",
+          "type": "str"
+        },
+        {
+          "id": "STR-151",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-076",
+      "unlocks": [
+        {
+          "id": "STR-092",
+          "type": "str"
+        },
+        {
+          "id": "STR-119",
+          "type": "str"
+        },
+        {
+          "id": "STR-127",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-077",
+      "unlocks": [
+        {
+          "id": "STR-094",
+          "type": "str"
+        },
+        {
+          "id": "STR-095",
+          "type": "str"
+        },
+        {
+          "id": "STR-146",
+          "type": "str"
+        },
+        {
+          "id": "STR-147",
+          "type": "str"
+        },
+        {
+          "id": "STR-149",
+          "type": "str"
+        },
+        {
+          "id": "STR-152",
+          "type": "str"
+        },
+        {
+          "id": "STR-153",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-078",
+      "unlocks": [
+        {
+          "id": "STR-145",
+          "type": "str"
+        },
+        {
+          "id": "STR-148",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-079",
+      "unlocks": [
+        {
+          "id": "STR-120",
+          "type": "str"
+        },
+        {
+          "id": "STR-129",
+          "type": "str"
+        },
+        {
+          "id": "STR-144",
+          "type": "str"
+        },
+        {
+          "id": "STR-150",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-080",
+      "unlocks": [
+        {
+          "id": "STR-121",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-081",
+      "unlocks": [
+        {
+          "id": "STR-122",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-082",
+      "unlocks": [
+        {
+          "id": "STR-124",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-083",
+      "unlocks": [
+        {
+          "id": "STR-128",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-084",
+      "unlocks": [
+        {
+          "id": "STR-125",
+          "type": "str"
+        },
+        {
+          "id": "STR-147",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-085",
+      "unlocks": [
+        {
+          "id": "STR-126",
+          "type": "str"
+        },
+        {
+          "id": "STR-135",
+          "type": "str"
+        },
+        {
+          "id": "STR-139",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-086",
+      "unlocks": [
+        {
+          "id": "STR-134",
+          "type": "str"
+        },
+        {
+          "id": "STR-138",
+          "type": "str"
+        },
+        {
+          "id": "STR-140",
+          "type": "str"
+        },
+        {
+          "id": "STR-141",
+          "type": "str"
+        },
+        {
+          "id": "STR-143",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-087",
+      "unlocks": [
+        {
+          "id": "STR-130",
+          "type": "str"
+        },
+        {
+          "id": "STR-142",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-088",
+      "unlocks": [
+        {
+          "id": "STR-131",
+          "type": "str"
+        },
+        {
+          "id": "STR-132",
+          "type": "str"
+        },
+        {
+          "id": "STR-133",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-089",
+      "unlocks": [
+        {
+          "id": "STR-136",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-090",
+      "unlocks": [
+        {
+          "id": "STR-137",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-091",
+      "unlocks": [
+        {
+          "id": "STR-106",
+          "type": "str"
+        },
+        {
+          "id": "STR-107",
+          "type": "str"
+        },
+        {
+          "id": "STR-108",
+          "type": "str"
+        },
+        {
+          "id": "STR-109",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-092",
+      "unlocks": [
+        {
+          "id": "STR-154",
+          "type": "str"
+        },
+        {
+          "id": "STR-155",
+          "type": "str"
+        },
+        {
+          "id": "STR-159",
+          "type": "str"
+        },
+        {
+          "id": "STR-160",
+          "type": "str"
+        },
+        {
+          "id": "STR-161",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-093",
+      "unlocks": [
+        {
+          "id": "STR-156",
+          "type": "str"
+        },
+        {
+          "id": "STR-157",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-094",
+      "unlocks": [
+        {
+          "id": "STR-162",
+          "type": "str"
+        },
+        {
+          "id": "STR-172",
+          "type": "str"
+        },
+        {
+          "id": "STR-173",
+          "type": "str"
+        },
+        {
+          "id": "STR-174",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-095",
+      "unlocks": [
+        {
+          "id": "STR-164",
+          "type": "str"
+        },
+        {
+          "id": "STR-165",
+          "type": "str"
+        },
+        {
+          "id": "STR-166",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "tech_id": "TEC-096",
+      "unlocks": [
+        {
+          "id": "STR-098",
+          "type": "str"
+        },
+        {
+          "id": "STR-101",
+          "type": "str"
+        },
+        {
+          "id": "STR-115",
+          "type": "str"
+        },
+        {
+          "id": "STR-168",
+          "type": "str"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Systems Difficulty",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["key", "name", "research_time_mult", "event_freq_mult", "event_severity_mult", "upkeep_mult", "labor_tightness", "recovery_cost_mult", "notes"],
+    "properties": {
+      "key": {"type": "string"},
+      "name": {"type": "string"},
+      "research_time_mult": {"type": "number"},
+      "event_freq_mult": {"type": "number"},
+      "event_severity_mult": {"type": "number"},
+      "upkeep_mult": {"type": "number"},
+      "labor_tightness": {"type": "string"},
+      "recovery_cost_mult": {"type": "number"},
+      "notes": {"type": "string"}
+    }
+  }
+}

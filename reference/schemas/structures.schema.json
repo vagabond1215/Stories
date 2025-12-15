@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Structures",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "type",
+      "purpose",
+      "requirements",
+      "enabled_actions",
+      "required_tech",
+      "notes",
+      "stats",
+      "upgrade_path"
+    ],
+    "properties": {
+      "id": {"type": "string", "pattern": "^STR-\\d{3}$"},
+      "name": {"type": "string"},
+      "type": {"type": "string"},
+      "purpose": {"type": "string"},
+      "requirements": {"type": "string"},
+      "enabled_actions": {
+        "type": "array",
+        "items": {"type": "string"}
+      },
+      "required_tech": {
+        "type": "array",
+        "items": {"type": "string", "pattern": "^TEC-\\d{3}$"}
+      },
+      "notes": {"type": "string"},
+      "stats": {
+        "type": "object",
+        "required": ["is_delta", "bo", "l", "em", "r", "qt", "cap", "up", "tags"],
+        "properties": {
+          "is_delta": {"type": "boolean"},
+          "bo": {"type": "number"},
+          "l": {"type": "number"},
+          "em": {"type": "number"},
+          "r": {"type": "number"},
+          "qt": {"type": "number"},
+          "cap": {"type": "number"},
+          "up": {"type": "number"},
+          "tags": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        }
+      },
+      "upgrade_path": {
+        "type": "array",
+        "items": {"type": "string", "pattern": "^STR-\\d{3}$"}
+      }
+    }
+  }
+}
