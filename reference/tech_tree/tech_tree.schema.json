@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Technology Graph Export",
+  "type": "object",
+  "required": ["nodes", "edges", "unlocks"],
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[A-Z]{3}-\\d{3}$" },
+          "name": { "type": "string" },
+          "tier": { "type": ["integer", "null"] },
+          "tags": { "type": ["array", "null"], "items": { "type": "string" } }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "type"],
+        "properties": {
+          "from": { "type": "string", "pattern": "^[A-Z]{3}-\\d{3}$" },
+          "to": { "type": "string", "pattern": "^[A-Z]{3}-\\d{3}$" },
+          "type": { "type": "string", "enum": ["prereq"] }
+        }
+      }
+    },
+    "unlocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tech_id", "unlocks"],
+        "properties": {
+          "tech_id": { "type": "string", "pattern": "^[A-Z]{3}-\\d{3}$" },
+          "unlocks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "id"],
+              "properties": {
+                "type": { "type": "string" },
+                "id": { "type": "string", "pattern": "^[A-Z]{3}-\\d{3}$" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
