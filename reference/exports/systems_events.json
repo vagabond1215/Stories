@@ -1,0 +1,114 @@
+[
+  {
+    "key": "event.bounty.rich_harvest",
+    "name": "Rich Harvest",
+    "category": "Positive",
+    "base_chance": 0.03,
+    "triggers": [
+      "district=agriculture_tier2",
+      "rotations_marked"
+    ],
+    "effects": [
+      "bo+=0.15_for_farms_2_cycles",
+      "cap+=5_for_STR-121"
+    ],
+    "mitigation": [
+      "STR-103_present",
+      "pest_control=active"
+    ]
+  },
+  {
+    "key": "event.discovery.vein",
+    "name": "Vein Discovery",
+    "category": "Positive",
+    "base_chance": 0.01,
+    "triggers": [
+      "tags=metallurgy",
+      "job=JOB-021_active"
+    ],
+    "effects": [
+      "unlock_mat=MAT-095x12",
+      "r+=0.05_for_STR-025"
+    ],
+    "mitigation": [
+      "survey_maps_prepared"
+    ]
+  },
+  {
+    "key": "event.fire.workshop",
+    "name": "Workshop Fire",
+    "category": "Hazard",
+    "base_chance": 0.03,
+    "triggers": [
+      "tags=metallurgy",
+      "r<0.80",
+      "no_fire_service"
+    ],
+    "effects": [
+      "disable=STR-130_2_cycles",
+      "r-=0.20_for_neighbors",
+      "lose_mat=MAT-041x6"
+    ],
+    "mitigation": [
+      "STR-164_present",
+      "water_source=near"
+    ]
+  },
+  {
+    "key": "event.outbreak.sickness",
+    "name": "Sickness Outbreak",
+    "category": "Hazard",
+    "base_chance": 0.025,
+    "triggers": [
+      "district=residential",
+      "sanitation<1"
+    ],
+    "effects": [
+      "labor_pool-=2_2_cycles",
+      "r-=0.10_for_housing",
+      "bo-=0.08_for_farms"
+    ],
+    "mitigation": [
+      "STR-162_present",
+      "healer=JOB-009"
+    ]
+  },
+  {
+    "key": "event.sea.storm_loss",
+    "name": "Storm Loss",
+    "category": "Maritime",
+    "base_chance": 0.02,
+    "triggers": [
+      "district=maritime",
+      "weather=storm"
+    ],
+    "effects": [
+      "disable=STR-090_1_cycle",
+      "lose_inv=INV-002x4",
+      "r-=0.10_for_maritime"
+    ],
+    "mitigation": [
+      "STR-150_present",
+      "raftering=checked"
+    ]
+  },
+  {
+    "key": "event.spoilage.pests",
+    "name": "Spoilage: Pests",
+    "category": "Economy",
+    "base_chance": 0.04,
+    "triggers": [
+      "storage_without_STR-127",
+      "tags=storage"
+    ],
+    "effects": [
+      "lose_mat=grainx10",
+      "r-=0.10_for_storage",
+      "bo-=0.05_for_farms"
+    ],
+    "mitigation": [
+      "STR-127_present",
+      "sanitation=active"
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "key": "difficulty.builder",
+    "name": "Builder",
+    "research_time_mult": 1.0,
+    "event_freq_mult": 1.0,
+    "event_severity_mult": 1.0,
+    "upkeep_mult": 1.0,
+    "labor_tightness": "balanced",
+    "recovery_cost_mult": 1.0,
+    "notes": "Baseline pacing for campaigns"
+  },
+  {
+    "key": "difficulty.epic",
+    "name": "Epic",
+    "research_time_mult": 1.1,
+    "event_freq_mult": 0.9,
+    "event_severity_mult": 0.9,
+    "upkeep_mult": 1.1,
+    "labor_tightness": "generous",
+    "recovery_cost_mult": 0.9,
+    "notes": "Longer techs but safer events"
+  },
+  {
+    "key": "difficulty.survival",
+    "name": "Survival",
+    "research_time_mult": 1.2,
+    "event_freq_mult": 1.2,
+    "event_severity_mult": 1.2,
+    "upkeep_mult": 1.1,
+    "labor_tightness": "scarce",
+    "recovery_cost_mult": 1.3,
+    "notes": "Food and fuel lean; morale low"
+  },
+  {
+    "key": "rule.diminishing_returns",
+    "name": "Diminishing Returns",
+    "research_time_mult": 1.0,
+    "event_freq_mult": 1.0,
+    "event_severity_mult": 1.0,
+    "upkeep_mult": 1.0,
+    "labor_tightness": "balanced",
+    "recovery_cost_mult": 1.0,
+    "notes": "Same-axis modules beyond 2 become 50% effective, beyond 3 become 25% effective"
+  },
+  {
+    "key": "rule.specialization_exclusive",
+    "name": "Specialization Exclusive",
+    "research_time_mult": 1.0,
+    "event_freq_mult": 1.0,
+    "event_severity_mult": 1.0,
+    "upkeep_mult": 1.0,
+    "labor_tightness": "balanced",
+    "recovery_cost_mult": 1.0,
+    "notes": "Exclusive group tags prevent stacking mutually exclusive modules"
+  },
+  {
+    "key": "rule.storage_hard_cap",
+    "name": "Storage Hard Cap",
+    "research_time_mult": 1.0,
+    "event_freq_mult": 1.0,
+    "event_severity_mult": 1.0,
+    "upkeep_mult": 1.0,
+    "labor_tightness": "balanced",
+    "recovery_cost_mult": 1.0,
+    "notes": "Storage output capped at facility capacity regardless of boosts"
+  }
+]

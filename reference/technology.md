@@ -74,3 +74,26 @@
 | TEC-071 | Steelworking | Tier 3 | TEC-070, TEC-022 | EQP-025, EQP-026, MAT-524 | 4 days research; MAT-081 flux sand x4; quenchant oil | Controls carburization boxes, soak temperatures, and staged tempers for reliable steel |
 | TEC-072 | Pattern Welding | Tier 4 | TEC-071 | EQP-027, EQP-028 | 4 days research; MAT-523 billets x4; clamp jigs | Braids layered steels, selective quenching, and peened seams for high-grade arms |
 | TEC-073 | Mythic Metallurgy | Tier 5 | TEC-072, TEC-007 | EQP-029, MAT-525 | 5 days research; MAT-020 fragments x6; MAT-006 resonance shard | Aligns arcane flux, crucible steel heats, and meteoric blends for legendary alloys |
+| TEC-074 | Fishing Practices | Tier 1 | TEC-018 | STR-090, STR-093 | 2 days research; net weights | Codifies cast timing, baiting, and river safety |
+| TEC-075 | Net Weaving | Tier 1 | TEC-018 | STR-091, STR-151 | 2 days research; cordage kits | Standardizes knots, mending, and drying lines |
+| TEC-076 | Food Preservation | Tier 2 | TEC-029 | STR-092, STR-119, STR-127 | 3 days research; salt blocks; smoke tests | Improves salting, smoking, and cool storage |
+| TEC-077 | Maritime Logistics | Tier 3 | TEC-053 | STR-094, STR-095, STR-146, STR-147, STR-149, STR-152, STR-153 | 4 days research; quay ledgers | Coordinates harbor crews, manifests, and crane signals |
+| TEC-078 | Harbor Construction | Tier 3 | TEC-053 | STR-145, STR-148 | 4 days research; piling charts | Details quay foundations, fendering, and drainage |
+| TEC-079 | Optics & Beacons | Tier 3 | TEC-037 | STR-120, STR-129, STR-144, STR-150 | 3 days research; polished lenses | Aligns lenses, mirrors, and beacon fuels |
+| TEC-080 | Grain Storage | Tier 1 | TEC-014 | STR-121 | 2 days research; grain samples | Raises floors, baffles drafts, and seals gaps |
+| TEC-081 | Bulk Handling | Tier 2 | TEC-080 | STR-122 | 3 days research; chute molds | Teaches safe fill/empty cycles for tall bins |
+| TEC-082 | Warehousing | Tier 3 | TEC-077, TEC-043 | STR-124 | 3 days research; bay plans | Organizes bays, stevedore rotas, and tally slips |
+| TEC-083 | Inventory Management | Tier 3 | TEC-043 | STR-128 | 3 days research; wax tablets | Standardizes ledgers, stock counts, and loss checks |
+| TEC-084 | Security Architecture | Tier 3 | TEC-042 | STR-125, STR-147 | 3 days research; lockwork drafts | Reinforces vaulting, warded entries, and patrol loops |
+| TEC-085 | Workshop Planning | Tier 2 | TEC-020 | STR-126, STR-135, STR-139 | 3 days research; bench layouts | Improves shop flow, benches, and shelving |
+| TEC-086 | Precision Toolmaking | Tier 3 | TEC-020, TEC-065 | STR-134, STR-138, STR-140, STR-141, STR-143 | 4 days research; fine files; oilstones | Adds fine tolerances, jigs, and inspection |
+| TEC-087 | Basic Smithing Practice | Tier 2 | TEC-001 | STR-130, STR-142 | 3 days research; fuel stock | Establishes forge cadence, quenches, and safety |
+| TEC-088 | Bellows & Airflow Control | Tier 2 | TEC-087 | STR-131, STR-132, STR-133 | 3 days research; bellows leather | Tunes blast timing, seals, and heat management |
+| TEC-089 | Weapon Forging | Tier 3 | TEC-065 | STR-136 | 4 days research; billet sets | Patterns distal tapers, edges, and heat cycles |
+| TEC-090 | Armor Construction | Tier 3 | TEC-065 | STR-137 | 4 days research; stake plans | Teaches plate raising, rivet setting, and fitting |
+| TEC-091 | Perennial Cultivation | Tier 2 | TEC-014 | STR-106, STR-107, STR-108, STR-109 | 3 days research; pruning guides | Manages pruning, trellising, and perennial rotations |
+| TEC-092 | Basic Carpentry Shelters | Tier 1 | TEC-014 | STR-154, STR-155, STR-159, STR-160, STR-161 | 2 days research; wattle frames | Sets walling, hearth siting, and weatherproofing |
+| TEC-093 | Masonry Housing | Tier 2 | TEC-012, TEC-092 | STR-156, STR-157 | 3 days research; stone lintels | Introduces stone footings, chimneys, and framing ties |
+| TEC-094 | Sanitation Works | Tier 3 | TEC-028 | STR-162, STR-172, STR-173, STR-174 | 3 days research; lime slaking | Plans drains, pits, covers, and sewage flow |
+| TEC-095 | Fire Safety & Brigade | Tier 3 | TEC-021 | STR-164, STR-165, STR-166 | 3 days research; alarm drills | Establishes alarm towers, bucket trains, and pumps |
+| TEC-096 | Preventative Maintenance | Tier 3 | TEC-020 | STR-098, STR-115, STR-168, STR-101 | 3 days research; checklist slates | Schedules inspections, lubrication, and repairs |

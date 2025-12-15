@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Systems Districts",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["key", "name", "qualifying_tags", "min_buildings", "radius", "bonuses", "penalties", "notable_adjacency_pairs"],
+    "properties": {
+      "key": {"type": "string"},
+      "name": {"type": "string"},
+      "qualifying_tags": {"type": "array", "items": {"type": "string"}},
+      "min_buildings": {"type": "integer"},
+      "radius": {"type": "integer"},
+      "bonuses": {"type": "array", "items": {"type": "string"}},
+      "penalties": {"type": "array", "items": {"type": "string"}},
+      "notable_adjacency_pairs": {"type": "array", "items": {"type": "string"}}
+    }
+  }
+}

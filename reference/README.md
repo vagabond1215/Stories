@@ -12,7 +12,7 @@ This directory contains a modular, cross-referenced knowledge base for a fantasy
 - [equipment.md](equipment.md) — Weapons, armor, accessories, consumables.
 - [crafting_recipes.md](crafting_recipes.md) — Recipes linking ingredients, tools, and structures.
 - [technology.md](technology.md) — Technology tree with unlocks and prerequisites.
-- [structures.md](structures.md) — Buildings, furniture, and tools tied to technologies.
+- [structures.md](structures.md) — Buildings, furniture, and tools tied to technologies. Now includes `Stats` and `Upgrade path` columns for balancing and modules.
 - [spells.md](spells.md) — Spell list with elements and schools.
 - [profiles.md](profiles.md) — Player and settlement profiles.
 - [inventories.md](inventories.md) — Current inventories referencing profiles and items.
@@ -21,6 +21,25 @@ This directory contains a modular, cross-referenced knowledge base for a fantasy
 - Structures, equipment, spells, and materials now include a `Required tech (TEC)` or `Unlocked by (TEC)` column to standardize tech gating. Use comma-separated TEC IDs or `None` for ungated entries.
 - Technology unlock lists should mirror these columns when a tech directly enables a recipe, structure, or item.
 - Keep existing column ordering; add new data by filling cells rather than rearranging headers.
+
+### Upgrades/Modules
+- Renovations and modules are encoded as `Type: Upgrade/Module` rows in `structures.md` and are linked to base structures through the `Upgrade path` column.
+- The `Stats` field uses compact key/value pairs (`bo`, `l`, `em`, `r`, `qt`, `cap`, `up`, optional `tags`) with semicolon separation. Modules use `+` values to indicate deltas.
+
+### Districts
+- `systems_districts.md` defines district tags, radii, bonuses, and adjacency notes with parseable columns.
+
+### Events
+- `systems_events.md` lists cycle-based events with triggers, effects, and mitigations for simulation tuning.
+
+### Difficulty
+- `systems_difficulty.md` captures presets and global rules such as diminishing returns and storage caps.
+
+### Exports & Validation
+- Regenerate JSON exports from markdown tables:
+  - `python tools/build_exports.py`
+- Validate cross-references, cycles, and schema compliance:
+  - `python tools/validate_reference_db.py`
 
 ## Indexing/search guidance
 - Unique IDs (e.g., `FAU-001`, `EQP-003`) are stable across files for cross-linking.
