@@ -1,114 +1,101 @@
 [
   {
-    "key": "event.bounty.rich_harvest",
-    "name": "Rich Harvest",
-    "category": "Positive",
-    "base_chance": 0.03,
-    "triggers": [
-      "district=agriculture_tier2",
-      "rotations_marked"
-    ],
-    "effects": [
-      "bo+=0.15_for_farms_2_cycles",
-      "cap+=5_for_STR-121"
-    ],
-    "mitigation": [
-      "STR-103_present",
-      "pest_control=active"
-    ]
+    "key": "event.arcane.surge",
+    "name": "Arcane Surge",
+    "category": "arcane",
+    "base_chance": 0.004,
+    "triggers": "district=arcane; arcane_load>50; no=grounding",
+    "effects": "r-=0.15_for_3d; qt+=1_for_2d",
+    "mitigation": "mitigation=tags=arcana+maintenance; STR-129"
   },
   {
-    "key": "event.discovery.vein",
-    "name": "Vein Discovery",
-    "category": "Positive",
+    "key": "event.blight.crop",
+    "name": "Crop Blight",
+    "category": "environment",
     "base_chance": 0.01,
-    "triggers": [
-      "tags=metallurgy",
-      "job=JOB-021_active"
-    ],
-    "effects": [
-      "unlock_mat=MAT-095x12",
-      "r+=0.05_for_STR-025"
-    ],
-    "mitigation": [
-      "survey_maps_prepared"
-    ]
+    "triggers": "farming_density>5; no=crop_rotation",
+    "effects": "bo-=0.25_for_7d; qt-=1_for_7d",
+    "mitigation": "mitigation=STR-103; sanitation"
+  },
+  {
+    "key": "event.breakdown.tools",
+    "name": "Tool Breakdown",
+    "category": "maintenance",
+    "base_chance": 0.03,
+    "triggers": "tags=craft_or_metallurgy; no=maintenance",
+    "effects": "em-=0.10_for_2d; up+=1_for_2d",
+    "mitigation": "mitigation=STR-168; spare_parts"
+  },
+  {
+    "key": "event.drought.crop",
+    "name": "Crop Drought",
+    "category": "environment",
+    "base_chance": 0.015,
+    "triggers": "district=agriculture; no=irrigation",
+    "effects": "bo-=0.20_for_7d",
+    "mitigation": "mitigation=STR-102; waterworks"
+  },
+  {
+    "key": "event.fire.district",
+    "name": "District Conflagration",
+    "category": "disaster",
+    "base_chance": 0.01,
+    "triggers": "district=industrial_or_residential; wind=high; no=fire_brigade",
+    "effects": "lose=cap:storage10%; r-=0.30_for_3d",
+    "mitigation": "mitigation=STR-166; stone_construction"
   },
   {
     "key": "event.fire.workshop",
     "name": "Workshop Fire",
-    "category": "Hazard",
-    "base_chance": 0.03,
-    "triggers": [
-      "tags=metallurgy",
-      "r<0.80",
-      "no_fire_service"
-    ],
-    "effects": [
-      "disable=STR-130_2_cycles",
-      "r-=0.20_for_neighbors",
-      "lose_mat=MAT-041x6"
-    ],
-    "mitigation": [
-      "STR-164_present",
-      "water_source=near"
-    ]
+    "category": "disaster",
+    "base_chance": 0.02,
+    "triggers": "tags=metallurgy_or_craft; heat_load>60; no=safety_watch",
+    "effects": "r-=0.20_for_3d; disable=str:nearest_workshop_2d",
+    "mitigation": "requires=safety (STR-164 or higher); water_access"
   },
   {
-    "key": "event.outbreak.sickness",
-    "name": "Sickness Outbreak",
-    "category": "Hazard",
-    "base_chance": 0.025,
-    "triggers": [
-      "district=residential",
-      "sanitation<1"
-    ],
-    "effects": [
-      "labor_pool-=2_2_cycles",
-      "r-=0.10_for_housing",
-      "bo-=0.08_for_farms"
-    ],
-    "mitigation": [
-      "STR-162_present",
-      "healer=JOB-009"
-    ]
+    "key": "event.labor.strike",
+    "name": "Labor Strike",
+    "category": "social",
+    "base_chance": 0.006,
+    "triggers": "morale<0.4; taxes=high; no=civic_presence",
+    "effects": "disable=district:affected_2d; bo-=0.10_for_3d",
+    "mitigation": "mitigation=STR-147; morale_programs"
+  },
+  {
+    "key": "event.livestock.disease",
+    "name": "Livestock Disease",
+    "category": "environment",
+    "base_chance": 0.012,
+    "triggers": "tags=husbandry; shelter<2",
+    "effects": "bo-=0.20_for_5d; r-=0.10_for_5d",
+    "mitigation": "mitigation=STR-114; STR-115"
+  },
+  {
+    "key": "event.positive.boom",
+    "name": "Prosperity Boom",
+    "category": "positive",
+    "base_chance": 0.005,
+    "triggers": "stability>0.6; storage>500",
+    "effects": "bo+=0.10_for_7d; labor_pool+0.05",
+    "mitigation": "mitigation=None"
   },
   {
     "key": "event.sea.storm_loss",
-    "name": "Storm Loss",
-    "category": "Maritime",
-    "base_chance": 0.02,
-    "triggers": [
-      "district=maritime",
-      "weather=storm"
-    ],
-    "effects": [
-      "disable=STR-090_1_cycle",
-      "lose_inv=INV-002x4",
-      "r-=0.10_for_maritime"
-    ],
-    "mitigation": [
-      "STR-150_present",
-      "raftering=checked"
-    ]
+    "name": "Storm Loss at Sea",
+    "category": "disaster",
+    "base_chance": 0.008,
+    "triggers": "district=maritime; storm=true; no=lighthouse",
+    "effects": "lose=bo:0.30_for_2d; cap_loss=10%",
+    "mitigation": "mitigation=STR-150; STR-177"
   },
   {
     "key": "event.spoilage.pests",
-    "name": "Spoilage: Pests",
-    "category": "Economy",
-    "base_chance": 0.04,
-    "triggers": [
-      "storage_without_STR-127",
-      "tags=storage"
-    ],
-    "effects": [
-      "lose_mat=grainx10",
-      "r-=0.10_for_storage",
-      "bo-=0.05_for_farms"
-    ],
-    "mitigation": [
-      "STR-127_present",
-      "sanitation=active"
-    ]
+    "name": "Pest Spoilage",
+    "category": "economy",
+    "base_chance": 0.025,
+    "triggers": "storage<r=0.9; grain_or_food>200",
+    "effects": "lose=bo:0.10_for_2d; cap_loss=5%",
+    "mitigation": "mitigation=STR-127; sanitation"
   }
 ]

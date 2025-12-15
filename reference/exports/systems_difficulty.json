@@ -6,31 +6,31 @@
     "event_freq_mult": 1.0,
     "event_severity_mult": 1.0,
     "upkeep_mult": 1.0,
-    "labor_tightness": "balanced",
+    "labor_tightness": "normal",
     "recovery_cost_mult": 1.0,
-    "notes": "Baseline pacing for campaigns"
+    "notes": "Baseline pacing"
   },
   {
     "key": "difficulty.epic",
     "name": "Epic",
-    "research_time_mult": 1.1,
-    "event_freq_mult": 0.9,
-    "event_severity_mult": 0.9,
+    "research_time_mult": 1.6,
+    "event_freq_mult": 0.8,
+    "event_severity_mult": 1.6,
     "upkeep_mult": 1.1,
-    "labor_tightness": "generous",
-    "recovery_cost_mult": 0.9,
-    "notes": "Longer techs but safer events"
+    "labor_tightness": "high",
+    "recovery_cost_mult": 1.5,
+    "notes": "Rare events hit hard"
   },
   {
     "key": "difficulty.survival",
     "name": "Survival",
-    "research_time_mult": 1.2,
-    "event_freq_mult": 1.2,
-    "event_severity_mult": 1.2,
-    "upkeep_mult": 1.1,
-    "labor_tightness": "scarce",
+    "research_time_mult": 1.3,
+    "event_freq_mult": 1.4,
+    "event_severity_mult": 1.3,
+    "upkeep_mult": 1.2,
+    "labor_tightness": "high",
     "recovery_cost_mult": 1.3,
-    "notes": "Food and fuel lean; morale low"
+    "notes": "Hard scarcity, higher failure rates"
   },
   {
     "key": "rule.diminishing_returns",
@@ -39,9 +39,9 @@
     "event_freq_mult": 1.0,
     "event_severity_mult": 1.0,
     "upkeep_mult": 1.0,
-    "labor_tightness": "balanced",
+    "labor_tightness": "normal",
     "recovery_cost_mult": 1.0,
-    "notes": "Same-axis modules beyond 2 become 50% effective, beyond 3 become 25% effective"
+    "notes": "Similar modules: full, then 50%, then 25% effectiveness"
   },
   {
     "key": "rule.specialization_exclusive",
@@ -50,9 +50,9 @@
     "event_freq_mult": 1.0,
     "event_severity_mult": 1.0,
     "upkeep_mult": 1.0,
-    "labor_tightness": "balanced",
+    "labor_tightness": "normal",
     "recovery_cost_mult": 1.0,
-    "notes": "Exclusive group tags prevent stacking mutually exclusive modules"
+    "notes": "Modules with exclusive_group tags cannot stack"
   },
   {
     "key": "rule.storage_hard_cap",
@@ -61,8 +61,8 @@
     "event_freq_mult": 1.0,
     "event_severity_mult": 1.0,
     "upkeep_mult": 1.0,
-    "labor_tightness": "balanced",
+    "labor_tightness": "normal",
     "recovery_cost_mult": 1.0,
-    "notes": "Storage output capped at facility capacity regardless of boosts"
+    "notes": "Storage capacity caps output; excess spoils"
   }
 ]

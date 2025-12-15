@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Systems Districts",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "District System Export",
   "type": "array",
   "items": {
     "type": "object",
@@ -11,9 +11,10 @@
       "qualifying_tags": {"type": "array", "items": {"type": "string"}},
       "min_buildings": {"type": "integer"},
       "radius": {"type": "integer"},
-      "bonuses": {"type": "array", "items": {"type": "string"}},
-      "penalties": {"type": "array", "items": {"type": "string"}},
-      "notable_adjacency_pairs": {"type": "array", "items": {"type": "string"}}
-    }
+      "bonuses": {"type": "string"},
+      "penalties": {"type": "string"},
+      "notable_adjacency_pairs": {"type": "string"}
+    },
+    "additionalProperties": false
   }
 }

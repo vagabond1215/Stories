@@ -10,7 +10,9 @@ This repository hosts a modular fantasy RPG reference database designed for worl
 - Domain files: `fauna.md`, `flora.md`, `materials.md`, `equipment.md`, `crafting_recipes.md`, `technology.md`, `structures.md`, `spells.md`, `profiles.md`, `inventories.md`.
 
 ## Quickstart
-- Build JSON exports from markdown tables:
+- Calendar and pacing use a fixed 13-month, 28-day calendar (364-day year) with a 1-day "cycle" cadence for production, upkeep, and events.
+- Structure `Stats` use compact keys (`bo`, `l`, `em`, `r`, `qt`, `cap`, `up`, optional `pop` and `tags`) with module deltas expressed as `+` values; `Upgrade path` lists applicable modules or later-stage structures.
+- Regenerate JSON exports from markdown system and reference tables:
   - `python tools/build_exports.py`
 - Validate IDs, cross-references, cycles, and schema compliance:
   - `python tools/validate_reference_db.py`

@@ -1,0 +1,50 @@
+[
+  {
+    "key": "calendar.days_per_month",
+    "name": "Days per month",
+    "value": 28.0,
+    "notes": "fixed"
+  },
+  {
+    "key": "calendar.days_per_year",
+    "name": "Days per year",
+    "value": 364.0,
+    "notes": "fixed"
+  },
+  {
+    "key": "calendar.months_per_year",
+    "name": "Months per year",
+    "value": 13.0,
+    "notes": "fixed"
+  },
+  {
+    "key": "cycle.length",
+    "name": "Cycle length (days)",
+    "value": 1.0,
+    "notes": "fixed"
+  },
+  {
+    "key": "spoilage.any.magical_preservation",
+    "name": "Daily spoilage",
+    "value": 0.0,
+    "notes": ""
+  },
+  {
+    "key": "spoilage.grain.granary",
+    "name": "Daily spoilage",
+    "value": 0.01,
+    "notes": ""
+  },
+  {
+    "key": "spoilage.perishables.cellar",
+    "name": "Daily spoilage",
+    "value": 0.02,
+    "notes": ""
+  },
+  {
+    "key": "spoilage.perishables.unstored",
+    "name": "Daily spoilage",
+    "value": 0.1,
+    "notes": "fraction/day"
+  }
+]

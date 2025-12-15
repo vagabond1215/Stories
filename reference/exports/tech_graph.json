@@ -3,8 +3,10 @@
     {
       "id": "TEC-001",
       "name": "Basic Bog Ironworking",
-      "tier": 1,
-      "prerequisites": [],
+      "tier": "Tier 1",
+      "prerequisites": [
+        "None"
+      ],
       "unlocks": [
         "STR-001",
         "STR-003",
@@ -22,7 +24,7 @@
     {
       "id": "TEC-002",
       "name": "Aerial Weaponry",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-001"
       ],
@@ -37,7 +39,7 @@
     {
       "id": "TEC-003",
       "name": "Arcane Conduction",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-001"
       ],
@@ -53,8 +55,10 @@
     {
       "id": "TEC-004",
       "name": "Clay Working",
-      "tier": 1,
-      "prerequisites": [],
+      "tier": "Tier 1",
+      "prerequisites": [
+        "None"
+      ],
       "unlocks": [
         "STR-006",
         "STR-008",
@@ -68,7 +72,7 @@
     {
       "id": "TEC-005",
       "name": "Kiln Construction",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-004"
       ],
@@ -85,7 +89,7 @@
     {
       "id": "TEC-006",
       "name": "Alloy Smelting",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-001"
       ],
@@ -103,7 +107,7 @@
     {
       "id": "TEC-007",
       "name": "Starsteel Refining",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-006",
         "TEC-003"
@@ -120,8 +124,10 @@
     {
       "id": "TEC-008",
       "name": "Textile Preparation",
-      "tier": 1,
-      "prerequisites": [],
+      "tier": "Tier 1",
+      "prerequisites": [
+        "None"
+      ],
       "unlocks": [
         "STR-011",
         "STR-012",
@@ -136,7 +142,7 @@
     {
       "id": "TEC-009",
       "name": "Spinning & Loomcraft",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-008"
       ],
@@ -156,7 +162,7 @@
     {
       "id": "TEC-010",
       "name": "Wool Handling",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-008"
       ],
@@ -173,7 +179,7 @@
     {
       "id": "TEC-011",
       "name": "Leather Tanning",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-010"
       ],
@@ -190,7 +196,7 @@
     {
       "id": "TEC-012",
       "name": "Stonecutting & Mortarwork",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-004",
         "TEC-001"
@@ -209,7 +215,7 @@
     {
       "id": "TEC-013",
       "name": "Ropeworking & Framing",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-008",
         "TEC-012"
@@ -226,8 +232,10 @@
     {
       "id": "TEC-014",
       "name": "Crop Stewardship & Irrigation",
-      "tier": 1,
-      "prerequisites": [],
+      "tier": "Tier 1",
+      "prerequisites": [
+        "None"
+      ],
       "unlocks": [
         "STR-019",
         "JOB-006"
@@ -238,7 +246,7 @@
     {
       "id": "TEC-015",
       "name": "Herdkeeping Basics",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-014"
       ],
@@ -251,7 +259,7 @@
     {
       "id": "TEC-016",
       "name": "Fieldcraft & Trapping",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-014"
       ],
@@ -264,7 +272,7 @@
     {
       "id": "TEC-017",
       "name": "Foraging & Herbalism",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-014"
       ],
@@ -278,7 +286,7 @@
     {
       "id": "TEC-018",
       "name": "Riverwork & Netcraft",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-013",
         "TEC-014"
@@ -292,7 +300,7 @@
     {
       "id": "TEC-019",
       "name": "Timber Felling",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-001"
       ],
@@ -306,7 +314,7 @@
     {
       "id": "TEC-020",
       "name": "Joinery & Cartwork",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-013",
         "TEC-019"
@@ -320,7 +328,7 @@
     {
       "id": "TEC-021",
       "name": "Controlled Burns",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-019"
       ],
@@ -335,7 +343,7 @@
     {
       "id": "TEC-022",
       "name": "Metallurgy Theory",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-006",
         "TEC-021"
@@ -350,7 +358,7 @@
     {
       "id": "TEC-023",
       "name": "Textile Arts",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-009"
       ],
@@ -366,7 +374,7 @@
     {
       "id": "TEC-024",
       "name": "Fermentation & Brewing",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-014"
       ],
@@ -379,7 +387,7 @@
     {
       "id": "TEC-025",
       "name": "Cooperage Basics",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-013"
       ],
@@ -393,7 +401,7 @@
     {
       "id": "TEC-026",
       "name": "Leavening & Hearth Baking",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-024"
       ],
@@ -406,7 +414,7 @@
     {
       "id": "TEC-027",
       "name": "Mechanical Drives",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-013",
         "TEC-019"
@@ -420,7 +428,7 @@
     {
       "id": "TEC-028",
       "name": "Water Control",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-014"
       ],
@@ -434,7 +442,7 @@
     {
       "id": "TEC-029",
       "name": "Smoke Preservation",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-021"
       ],
@@ -448,7 +456,7 @@
     {
       "id": "TEC-030",
       "name": "Camp Kitchen Craft",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-024"
       ],
@@ -461,7 +469,7 @@
     {
       "id": "TEC-031",
       "name": "Distillation",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-024"
       ],
@@ -474,7 +482,7 @@
     {
       "id": "TEC-032",
       "name": "Reagent Handling",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-031"
       ],
@@ -487,7 +495,7 @@
     {
       "id": "TEC-033",
       "name": "Mine Safety",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-021"
       ],
@@ -500,7 +508,7 @@
     {
       "id": "TEC-034",
       "name": "Squad Drills",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-001"
       ],
@@ -513,7 +521,7 @@
     {
       "id": "TEC-035",
       "name": "Watch Rotas",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-034"
       ],
@@ -526,7 +534,7 @@
     {
       "id": "TEC-036",
       "name": "Horsemanship",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-014"
       ],
@@ -539,7 +547,7 @@
     {
       "id": "TEC-037",
       "name": "Cartography Basics",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-035",
         "TEC-036"
@@ -553,7 +561,7 @@
     {
       "id": "TEC-038",
       "name": "Literacy & Scribes",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-023"
       ],
@@ -567,7 +575,7 @@
     {
       "id": "TEC-039",
       "name": "Rhetoric & Ciphering",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-038"
       ],
@@ -580,7 +588,7 @@
     {
       "id": "TEC-040",
       "name": "Hazard Sense",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-034"
       ],
@@ -593,7 +601,7 @@
     {
       "id": "TEC-041",
       "name": "Lockwork Basics",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-023"
       ],
@@ -606,7 +614,7 @@
     {
       "id": "TEC-042",
       "name": "Merchant Law",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-038"
       ],
@@ -620,7 +628,7 @@
     {
       "id": "TEC-043",
       "name": "Stewardship",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-042"
       ],
@@ -633,7 +641,7 @@
     {
       "id": "TEC-044",
       "name": "Civic Leadership",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-043",
         "TEC-035"
@@ -647,7 +655,7 @@
     {
       "id": "TEC-045",
       "name": "Dispute Mediation",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-044"
       ],
@@ -660,7 +668,7 @@
     {
       "id": "TEC-046",
       "name": "Liturgy & Comforts",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-038",
         "TEC-017"
@@ -674,7 +682,7 @@
     {
       "id": "TEC-047",
       "name": "Diplomacy",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-039",
         "TEC-044"
@@ -688,7 +696,7 @@
     {
       "id": "TEC-048",
       "name": "Etiquette & Heraldry",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-047"
       ],
@@ -701,7 +709,7 @@
     {
       "id": "TEC-049",
       "name": "Arcanum Basics",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-003",
         "TEC-038"
@@ -715,7 +723,7 @@
     {
       "id": "TEC-050",
       "name": "Focus Harmonics",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-049"
       ],
@@ -729,7 +737,7 @@
     {
       "id": "TEC-051",
       "name": "Elemental Forms",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-050"
       ],
@@ -742,7 +750,7 @@
     {
       "id": "TEC-052",
       "name": "Siege Engineering",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-012",
         "TEC-022"
@@ -757,7 +765,7 @@
     {
       "id": "TEC-053",
       "name": "Navigation & Shipwrighting",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-019",
         "TEC-037"
@@ -771,7 +779,7 @@
     {
       "id": "TEC-054",
       "name": "Printing Press",
-      "tier": 5,
+      "tier": "Tier 5",
       "prerequisites": [
         "TEC-038",
         "TEC-023"
@@ -786,7 +794,7 @@
     {
       "id": "TEC-055",
       "name": "Banking & Charters",
-      "tier": 5,
+      "tier": "Tier 5",
       "prerequisites": [
         "TEC-042",
         "TEC-047"
@@ -801,7 +809,7 @@
     {
       "id": "TEC-056",
       "name": "Gunpowder Formulation",
-      "tier": 5,
+      "tier": "Tier 5",
       "prerequisites": [
         "TEC-021",
         "TEC-031"
@@ -816,7 +824,7 @@
     {
       "id": "TEC-057",
       "name": "Renaissance Engineering",
-      "tier": 5,
+      "tier": "Tier 5",
       "prerequisites": [
         "TEC-052",
         "TEC-027"
@@ -830,7 +838,7 @@
     {
       "id": "TEC-058",
       "name": "Balloonry & Lift Gas",
-      "tier": 5,
+      "tier": "Tier 5",
       "prerequisites": [
         "TEC-053",
         "TEC-056"
@@ -844,7 +852,7 @@
     {
       "id": "TEC-059",
       "name": "Clay Prospecting & Quarrying",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-004"
       ],
@@ -859,7 +867,7 @@
     {
       "id": "TEC-060",
       "name": "Wheel Throwing & Finishing",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-059"
       ],
@@ -875,7 +883,7 @@
     {
       "id": "TEC-061",
       "name": "Draft Kiln Design",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-059",
         "TEC-005"
@@ -893,7 +901,7 @@
     {
       "id": "TEC-062",
       "name": "Ore Sorting & Roast Beds",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-006",
         "TEC-033"
@@ -909,7 +917,7 @@
     {
       "id": "TEC-063",
       "name": "Fulling & Dyehouse Layouts",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-009",
         "TEC-010"
@@ -928,7 +936,7 @@
     {
       "id": "TEC-064",
       "name": "Timber Seasoning & Wheelwrighting",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-019",
         "TEC-020"
@@ -948,7 +956,7 @@
     {
       "id": "TEC-065",
       "name": "Finery & Tempering Practice",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-022",
         "TEC-006"
@@ -957,7 +965,8 @@
         "STR-026",
         "CRF-040",
         "CRF-041",
-        "JOB-013"
+        "JOB-013",
+        "STR-180"
       ],
       "time_cost": "4 days research; MAT-016 tuyere bricks x8; oil brine cooled",
       "notes": "Adds finery hearth control, slag skimming, and quench recipes for sharper tools with leaner fuel draws modeled on late-medieval forges"
@@ -965,7 +974,7 @@
     {
       "id": "TEC-066",
       "name": "Charcoal Production",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-019"
       ],
@@ -982,7 +991,7 @@
     {
       "id": "TEC-067",
       "name": "Ore Roasting & Sorting",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-066",
         "TEC-033"
@@ -1000,7 +1009,7 @@
     {
       "id": "TEC-068",
       "name": "Copper Smelting",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-066"
       ],
@@ -1015,7 +1024,7 @@
     {
       "id": "TEC-069",
       "name": "Tin Smelting",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-068"
       ],
@@ -1029,7 +1038,7 @@
     {
       "id": "TEC-070",
       "name": "Bloom Refinement",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-068",
         "TEC-067"
@@ -1046,7 +1055,7 @@
     {
       "id": "TEC-071",
       "name": "Steelworking",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-070",
         "TEC-022"
@@ -1062,7 +1071,7 @@
     {
       "id": "TEC-072",
       "name": "Pattern Welding",
-      "tier": 4,
+      "tier": "Tier 4",
       "prerequisites": [
         "TEC-071"
       ],
@@ -1076,7 +1085,7 @@
     {
       "id": "TEC-073",
       "name": "Mythic Metallurgy",
-      "tier": 5,
+      "tier": "Tier 5",
       "prerequisites": [
         "TEC-072",
         "TEC-007"
@@ -1091,7 +1100,7 @@
     {
       "id": "TEC-074",
       "name": "Fishing Practices",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-018"
       ],
@@ -1105,7 +1114,7 @@
     {
       "id": "TEC-075",
       "name": "Net Weaving",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-018"
       ],
@@ -1119,14 +1128,15 @@
     {
       "id": "TEC-076",
       "name": "Food Preservation",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-029"
       ],
       "unlocks": [
         "STR-092",
         "STR-119",
-        "STR-127"
+        "STR-127",
+        "STR-178"
       ],
       "time_cost": "3 days research; salt blocks; smoke tests",
       "notes": "Improves salting, smoking, and cool storage"
@@ -1134,7 +1144,7 @@
     {
       "id": "TEC-077",
       "name": "Maritime Logistics",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-053"
       ],
@@ -1145,7 +1155,9 @@
         "STR-147",
         "STR-149",
         "STR-152",
-        "STR-153"
+        "STR-153",
+        "STR-176",
+        "STR-177"
       ],
       "time_cost": "4 days research; quay ledgers",
       "notes": "Coordinates harbor crews, manifests, and crane signals"
@@ -1153,7 +1165,7 @@
     {
       "id": "TEC-078",
       "name": "Harbor Construction",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-053"
       ],
@@ -1167,7 +1179,7 @@
     {
       "id": "TEC-079",
       "name": "Optics & Beacons",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-037"
       ],
@@ -1175,7 +1187,9 @@
         "STR-120",
         "STR-129",
         "STR-144",
-        "STR-150"
+        "STR-150",
+        "STR-175",
+        "STR-179"
       ],
       "time_cost": "3 days research; polished lenses",
       "notes": "Aligns lenses, mirrors, and beacon fuels"
@@ -1183,7 +1197,7 @@
     {
       "id": "TEC-080",
       "name": "Grain Storage",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-014"
       ],
@@ -1196,7 +1210,7 @@
     {
       "id": "TEC-081",
       "name": "Bulk Handling",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-080"
       ],
@@ -1209,7 +1223,7 @@
     {
       "id": "TEC-082",
       "name": "Warehousing",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-077",
         "TEC-043"
@@ -1223,7 +1237,7 @@
     {
       "id": "TEC-083",
       "name": "Inventory Management",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-043"
       ],
@@ -1236,7 +1250,7 @@
     {
       "id": "TEC-084",
       "name": "Security Architecture",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-042"
       ],
@@ -1250,7 +1264,7 @@
     {
       "id": "TEC-085",
       "name": "Workshop Planning",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-020"
       ],
@@ -1265,7 +1279,7 @@
     {
       "id": "TEC-086",
       "name": "Precision Toolmaking",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-020",
         "TEC-065"
@@ -1283,7 +1297,7 @@
     {
       "id": "TEC-087",
       "name": "Basic Smithing Practice",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-001"
       ],
@@ -1297,7 +1311,7 @@
     {
       "id": "TEC-088",
       "name": "Bellows & Airflow Control",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-087"
       ],
@@ -1312,7 +1326,7 @@
     {
       "id": "TEC-089",
       "name": "Weapon Forging",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-065"
       ],
@@ -1325,7 +1339,7 @@
     {
       "id": "TEC-090",
       "name": "Armor Construction",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-065"
       ],
@@ -1338,7 +1352,7 @@
     {
       "id": "TEC-091",
       "name": "Perennial Cultivation",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-014"
       ],
@@ -1354,7 +1368,7 @@
     {
       "id": "TEC-092",
       "name": "Basic Carpentry Shelters",
-      "tier": 1,
+      "tier": "Tier 1",
       "prerequisites": [
         "TEC-014"
       ],
@@ -1371,7 +1385,7 @@
     {
       "id": "TEC-093",
       "name": "Masonry Housing",
-      "tier": 2,
+      "tier": "Tier 2",
       "prerequisites": [
         "TEC-012",
         "TEC-092"
@@ -1386,7 +1400,7 @@
     {
       "id": "TEC-094",
       "name": "Sanitation Works",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-028"
       ],
@@ -1402,7 +1416,7 @@
     {
       "id": "TEC-095",
       "name": "Fire Safety & Brigade",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-021"
       ],
@@ -1417,7 +1431,7 @@
     {
       "id": "TEC-096",
       "name": "Preventative Maintenance",
-      "tier": 3,
+      "tier": "Tier 3",
       "prerequisites": [
         "TEC-020"
       ],
@@ -1429,2125 +1443,1593 @@
       ],
       "time_cost": "3 days research; checklist slates",
       "notes": "Schedules inspections, lubrication, and repairs"
+    },
+    {
+      "id": "TEC-097",
+      "name": "Waterworks",
+      "tier": "Tier 2",
+      "prerequisites": [
+        "TEC-014"
+      ],
+      "unlocks": [
+        "STR-169",
+        "STR-170",
+        "STR-171"
+      ],
+      "time_cost": "14 days / cost 100",
+      "notes": "Coordinates well lining, cistern sealing, and aqueduct upkeep"
     }
   ],
-  "edges": [
+  "prerequisite_edges": [
     {
-      "from": "TEC-001",
-      "to": "TEC-002",
-      "type": "prereq"
+      "from": "None",
+      "to": "TEC-001"
     },
     {
       "from": "TEC-001",
-      "to": "TEC-003",
-      "type": "prereq"
+      "to": "TEC-002"
     },
     {
       "from": "TEC-001",
-      "to": "TEC-006",
-      "type": "prereq"
+      "to": "TEC-003"
+    },
+    {
+      "from": "None",
+      "to": "TEC-004"
+    },
+    {
+      "from": "TEC-004",
+      "to": "TEC-005"
     },
     {
       "from": "TEC-001",
-      "to": "TEC-012",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-001",
-      "to": "TEC-019",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-001",
-      "to": "TEC-034",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-001",
-      "to": "TEC-087",
-      "type": "prereq"
+      "to": "TEC-006"
     },
     {
       "from": "TEC-003",
-      "to": "TEC-007",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-003",
-      "to": "TEC-049",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-004",
-      "to": "TEC-005",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-004",
-      "to": "TEC-012",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-004",
-      "to": "TEC-059",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-005",
-      "to": "TEC-061",
-      "type": "prereq"
+      "to": "TEC-007"
     },
     {
       "from": "TEC-006",
-      "to": "TEC-007",
-      "type": "prereq"
+      "to": "TEC-007"
     },
     {
-      "from": "TEC-006",
-      "to": "TEC-022",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-006",
-      "to": "TEC-062",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-006",
-      "to": "TEC-065",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-007",
-      "to": "TEC-073",
-      "type": "prereq"
+      "from": "None",
+      "to": "TEC-008"
     },
     {
       "from": "TEC-008",
-      "to": "TEC-009",
-      "type": "prereq"
+      "to": "TEC-009"
     },
     {
       "from": "TEC-008",
-      "to": "TEC-010",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-008",
-      "to": "TEC-013",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-009",
-      "to": "TEC-023",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-009",
-      "to": "TEC-063",
-      "type": "prereq"
+      "to": "TEC-010"
     },
     {
       "from": "TEC-010",
-      "to": "TEC-011",
-      "type": "prereq"
+      "to": "TEC-011"
     },
     {
-      "from": "TEC-010",
-      "to": "TEC-063",
-      "type": "prereq"
+      "from": "TEC-001",
+      "to": "TEC-012"
     },
     {
-      "from": "TEC-012",
-      "to": "TEC-013",
-      "type": "prereq"
+      "from": "TEC-004",
+      "to": "TEC-012"
     },
     {
-      "from": "TEC-012",
-      "to": "TEC-052",
-      "type": "prereq"
+      "from": "TEC-008",
+      "to": "TEC-013"
     },
     {
       "from": "TEC-012",
-      "to": "TEC-093",
-      "type": "prereq"
+      "to": "TEC-013"
+    },
+    {
+      "from": "None",
+      "to": "TEC-014"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-015"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-016"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-017"
     },
     {
       "from": "TEC-013",
-      "to": "TEC-018",
-      "type": "prereq"
+      "to": "TEC-018"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-018"
+    },
+    {
+      "from": "TEC-001",
+      "to": "TEC-019"
     },
     {
       "from": "TEC-013",
-      "to": "TEC-020",
-      "type": "prereq"
+      "to": "TEC-020"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-020"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-021"
+    },
+    {
+      "from": "TEC-006",
+      "to": "TEC-022"
+    },
+    {
+      "from": "TEC-021",
+      "to": "TEC-022"
+    },
+    {
+      "from": "TEC-009",
+      "to": "TEC-023"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-024"
     },
     {
       "from": "TEC-013",
-      "to": "TEC-025",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-013",
-      "to": "TEC-027",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-015",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-016",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-017",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-018",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-024",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-028",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-036",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-080",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-091",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-014",
-      "to": "TEC-092",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-017",
-      "to": "TEC-046",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-018",
-      "to": "TEC-074",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-018",
-      "to": "TEC-075",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-019",
-      "to": "TEC-020",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-019",
-      "to": "TEC-021",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-019",
-      "to": "TEC-027",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-019",
-      "to": "TEC-053",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-019",
-      "to": "TEC-064",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-019",
-      "to": "TEC-066",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-020",
-      "to": "TEC-064",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-020",
-      "to": "TEC-085",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-020",
-      "to": "TEC-086",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-020",
-      "to": "TEC-096",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-021",
-      "to": "TEC-022",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-021",
-      "to": "TEC-029",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-021",
-      "to": "TEC-033",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-021",
-      "to": "TEC-056",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-021",
-      "to": "TEC-095",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-022",
-      "to": "TEC-052",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-022",
-      "to": "TEC-065",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-022",
-      "to": "TEC-071",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-023",
-      "to": "TEC-038",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-023",
-      "to": "TEC-041",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-023",
-      "to": "TEC-054",
-      "type": "prereq"
+      "to": "TEC-025"
     },
     {
       "from": "TEC-024",
-      "to": "TEC-026",
-      "type": "prereq"
+      "to": "TEC-026"
+    },
+    {
+      "from": "TEC-013",
+      "to": "TEC-027"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-027"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-028"
+    },
+    {
+      "from": "TEC-021",
+      "to": "TEC-029"
     },
     {
       "from": "TEC-024",
-      "to": "TEC-030",
-      "type": "prereq"
+      "to": "TEC-030"
     },
     {
       "from": "TEC-024",
-      "to": "TEC-031",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-027",
-      "to": "TEC-057",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-028",
-      "to": "TEC-094",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-029",
-      "to": "TEC-076",
-      "type": "prereq"
+      "to": "TEC-031"
     },
     {
       "from": "TEC-031",
-      "to": "TEC-032",
-      "type": "prereq"
+      "to": "TEC-032"
     },
     {
-      "from": "TEC-031",
-      "to": "TEC-056",
-      "type": "prereq"
+      "from": "TEC-021",
+      "to": "TEC-033"
     },
     {
-      "from": "TEC-033",
-      "to": "TEC-062",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-033",
-      "to": "TEC-067",
-      "type": "prereq"
+      "from": "TEC-001",
+      "to": "TEC-034"
     },
     {
       "from": "TEC-034",
-      "to": "TEC-035",
-      "type": "prereq"
+      "to": "TEC-035"
     },
     {
-      "from": "TEC-034",
-      "to": "TEC-040",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-035",
-      "to": "TEC-037",
-      "type": "prereq"
+      "from": "TEC-014",
+      "to": "TEC-036"
     },
     {
       "from": "TEC-035",
-      "to": "TEC-044",
-      "type": "prereq"
+      "to": "TEC-037"
     },
     {
       "from": "TEC-036",
-      "to": "TEC-037",
-      "type": "prereq"
+      "to": "TEC-037"
     },
     {
-      "from": "TEC-037",
-      "to": "TEC-053",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-037",
-      "to": "TEC-079",
-      "type": "prereq"
+      "from": "TEC-023",
+      "to": "TEC-038"
     },
     {
       "from": "TEC-038",
-      "to": "TEC-039",
-      "type": "prereq"
+      "to": "TEC-039"
+    },
+    {
+      "from": "TEC-034",
+      "to": "TEC-040"
+    },
+    {
+      "from": "TEC-023",
+      "to": "TEC-041"
     },
     {
       "from": "TEC-038",
-      "to": "TEC-042",
-      "type": "prereq"
+      "to": "TEC-042"
+    },
+    {
+      "from": "TEC-042",
+      "to": "TEC-043"
+    },
+    {
+      "from": "TEC-035",
+      "to": "TEC-044"
+    },
+    {
+      "from": "TEC-043",
+      "to": "TEC-044"
+    },
+    {
+      "from": "TEC-044",
+      "to": "TEC-045"
+    },
+    {
+      "from": "TEC-017",
+      "to": "TEC-046"
     },
     {
       "from": "TEC-038",
-      "to": "TEC-046",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-038",
-      "to": "TEC-049",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-038",
-      "to": "TEC-054",
-      "type": "prereq"
+      "to": "TEC-046"
     },
     {
       "from": "TEC-039",
-      "to": "TEC-047",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-042",
-      "to": "TEC-043",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-042",
-      "to": "TEC-055",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-042",
-      "to": "TEC-084",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-043",
-      "to": "TEC-044",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-043",
-      "to": "TEC-082",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-043",
-      "to": "TEC-083",
-      "type": "prereq"
+      "to": "TEC-047"
     },
     {
       "from": "TEC-044",
-      "to": "TEC-045",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-044",
-      "to": "TEC-047",
-      "type": "prereq"
+      "to": "TEC-047"
     },
     {
       "from": "TEC-047",
-      "to": "TEC-048",
-      "type": "prereq"
+      "to": "TEC-048"
     },
     {
-      "from": "TEC-047",
-      "to": "TEC-055",
-      "type": "prereq"
+      "from": "TEC-003",
+      "to": "TEC-049"
+    },
+    {
+      "from": "TEC-038",
+      "to": "TEC-049"
     },
     {
       "from": "TEC-049",
-      "to": "TEC-050",
-      "type": "prereq"
+      "to": "TEC-050"
     },
     {
       "from": "TEC-050",
-      "to": "TEC-051",
-      "type": "prereq"
+      "to": "TEC-051"
+    },
+    {
+      "from": "TEC-012",
+      "to": "TEC-052"
+    },
+    {
+      "from": "TEC-022",
+      "to": "TEC-052"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-053"
+    },
+    {
+      "from": "TEC-037",
+      "to": "TEC-053"
+    },
+    {
+      "from": "TEC-023",
+      "to": "TEC-054"
+    },
+    {
+      "from": "TEC-038",
+      "to": "TEC-054"
+    },
+    {
+      "from": "TEC-042",
+      "to": "TEC-055"
+    },
+    {
+      "from": "TEC-047",
+      "to": "TEC-055"
+    },
+    {
+      "from": "TEC-021",
+      "to": "TEC-056"
+    },
+    {
+      "from": "TEC-031",
+      "to": "TEC-056"
+    },
+    {
+      "from": "TEC-027",
+      "to": "TEC-057"
     },
     {
       "from": "TEC-052",
-      "to": "TEC-057",
-      "type": "prereq"
+      "to": "TEC-057"
     },
     {
       "from": "TEC-053",
-      "to": "TEC-058",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-053",
-      "to": "TEC-077",
-      "type": "prereq"
-    },
-    {
-      "from": "TEC-053",
-      "to": "TEC-078",
-      "type": "prereq"
+      "to": "TEC-058"
     },
     {
       "from": "TEC-056",
-      "to": "TEC-058",
-      "type": "prereq"
+      "to": "TEC-058"
+    },
+    {
+      "from": "TEC-004",
+      "to": "TEC-059"
     },
     {
       "from": "TEC-059",
-      "to": "TEC-060",
-      "type": "prereq"
+      "to": "TEC-060"
+    },
+    {
+      "from": "TEC-005",
+      "to": "TEC-061"
     },
     {
       "from": "TEC-059",
-      "to": "TEC-061",
-      "type": "prereq"
+      "to": "TEC-061"
     },
     {
-      "from": "TEC-065",
-      "to": "TEC-086",
-      "type": "prereq"
+      "from": "TEC-006",
+      "to": "TEC-062"
     },
     {
-      "from": "TEC-065",
-      "to": "TEC-089",
-      "type": "prereq"
+      "from": "TEC-033",
+      "to": "TEC-062"
     },
     {
-      "from": "TEC-065",
-      "to": "TEC-090",
-      "type": "prereq"
+      "from": "TEC-009",
+      "to": "TEC-063"
+    },
+    {
+      "from": "TEC-010",
+      "to": "TEC-063"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-064"
+    },
+    {
+      "from": "TEC-020",
+      "to": "TEC-064"
+    },
+    {
+      "from": "TEC-006",
+      "to": "TEC-065"
+    },
+    {
+      "from": "TEC-022",
+      "to": "TEC-065"
+    },
+    {
+      "from": "TEC-019",
+      "to": "TEC-066"
+    },
+    {
+      "from": "TEC-033",
+      "to": "TEC-067"
     },
     {
       "from": "TEC-066",
-      "to": "TEC-067",
-      "type": "prereq"
+      "to": "TEC-067"
     },
     {
       "from": "TEC-066",
-      "to": "TEC-068",
-      "type": "prereq"
+      "to": "TEC-068"
+    },
+    {
+      "from": "TEC-068",
+      "to": "TEC-069"
     },
     {
       "from": "TEC-067",
-      "to": "TEC-070",
-      "type": "prereq"
+      "to": "TEC-070"
     },
     {
       "from": "TEC-068",
-      "to": "TEC-069",
-      "type": "prereq"
+      "to": "TEC-070"
     },
     {
-      "from": "TEC-068",
-      "to": "TEC-070",
-      "type": "prereq"
+      "from": "TEC-022",
+      "to": "TEC-071"
     },
     {
       "from": "TEC-070",
-      "to": "TEC-071",
-      "type": "prereq"
+      "to": "TEC-071"
     },
     {
       "from": "TEC-071",
-      "to": "TEC-072",
-      "type": "prereq"
+      "to": "TEC-072"
+    },
+    {
+      "from": "TEC-007",
+      "to": "TEC-073"
     },
     {
       "from": "TEC-072",
-      "to": "TEC-073",
-      "type": "prereq"
+      "to": "TEC-073"
     },
     {
-      "from": "TEC-077",
-      "to": "TEC-082",
-      "type": "prereq"
+      "from": "TEC-018",
+      "to": "TEC-074"
+    },
+    {
+      "from": "TEC-018",
+      "to": "TEC-075"
+    },
+    {
+      "from": "TEC-029",
+      "to": "TEC-076"
+    },
+    {
+      "from": "TEC-053",
+      "to": "TEC-077"
+    },
+    {
+      "from": "TEC-053",
+      "to": "TEC-078"
+    },
+    {
+      "from": "TEC-037",
+      "to": "TEC-079"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-080"
     },
     {
       "from": "TEC-080",
-      "to": "TEC-081",
-      "type": "prereq"
+      "to": "TEC-081"
+    },
+    {
+      "from": "TEC-043",
+      "to": "TEC-082"
+    },
+    {
+      "from": "TEC-077",
+      "to": "TEC-082"
+    },
+    {
+      "from": "TEC-043",
+      "to": "TEC-083"
+    },
+    {
+      "from": "TEC-042",
+      "to": "TEC-084"
+    },
+    {
+      "from": "TEC-020",
+      "to": "TEC-085"
+    },
+    {
+      "from": "TEC-020",
+      "to": "TEC-086"
+    },
+    {
+      "from": "TEC-065",
+      "to": "TEC-086"
+    },
+    {
+      "from": "TEC-001",
+      "to": "TEC-087"
     },
     {
       "from": "TEC-087",
-      "to": "TEC-088",
-      "type": "prereq"
+      "to": "TEC-088"
+    },
+    {
+      "from": "TEC-065",
+      "to": "TEC-089"
+    },
+    {
+      "from": "TEC-065",
+      "to": "TEC-090"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-091"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-092"
+    },
+    {
+      "from": "TEC-012",
+      "to": "TEC-093"
     },
     {
       "from": "TEC-092",
-      "to": "TEC-093",
-      "type": "prereq"
+      "to": "TEC-093"
+    },
+    {
+      "from": "TEC-028",
+      "to": "TEC-094"
+    },
+    {
+      "from": "TEC-021",
+      "to": "TEC-095"
+    },
+    {
+      "from": "TEC-020",
+      "to": "TEC-096"
+    },
+    {
+      "from": "TEC-014",
+      "to": "TEC-097"
     }
   ],
-  "unlocks": [
-    {
-      "tech_id": "TEC-001",
-      "unlocks": [
-        {
-          "id": "CRF-001",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-003",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-004",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-005",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-005",
-          "type": "job"
-        },
-        {
-          "id": "SPL-003",
-          "type": "spl"
-        },
-        {
-          "id": "STR-001",
-          "type": "str"
-        },
-        {
-          "id": "STR-003",
-          "type": "str"
-        },
-        {
-          "id": "STR-004",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-002",
-      "unlocks": [
-        {
-          "id": "CRF-002",
-          "type": "crf"
-        },
-        {
-          "id": "EQP-001",
-          "type": "eqp"
-        },
-        {
-          "id": "STR-002",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-003",
-      "unlocks": [
-        {
-          "id": "CRF-006",
-          "type": "crf"
-        },
-        {
-          "id": "EQP-003",
-          "type": "eqp"
-        },
-        {
-          "id": "SPL-001",
-          "type": "spl"
-        },
-        {
-          "id": "STR-005",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-004",
-      "unlocks": [
-        {
-          "id": "CRF-007",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-008",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-033",
-          "type": "job"
-        },
-        {
-          "id": "STR-006",
-          "type": "str"
-        },
-        {
-          "id": "STR-008",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-005",
-      "unlocks": [
-        {
-          "id": "CRF-009",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-010",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-034",
-          "type": "job"
-        },
-        {
-          "id": "MAT-012",
-          "type": "mat"
-        },
-        {
-          "id": "STR-007",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-006",
-      "unlocks": [
-        {
-          "id": "CRF-011",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-012",
-          "type": "crf"
-        },
-        {
-          "id": "EQP-008",
-          "type": "eqp"
-        },
-        {
-          "id": "JOB-035",
-          "type": "job"
-        },
-        {
-          "id": "STR-009",
-          "type": "str"
-        },
-        {
-          "id": "STR-010",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-007",
-      "unlocks": [
-        {
-          "id": "CRF-013",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-014",
-          "type": "crf"
-        },
-        {
-          "id": "EQP-009",
-          "type": "eqp"
-        },
-        {
-          "id": "MAT-018",
-          "type": "mat"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-008",
-      "unlocks": [
-        {
-          "id": "CRF-015",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-018",
-          "type": "crf"
-        },
-        {
-          "id": "EQP-010",
-          "type": "eqp"
-        },
-        {
-          "id": "JOB-036",
-          "type": "job"
-        },
-        {
-          "id": "STR-011",
-          "type": "str"
-        },
-        {
-          "id": "STR-012",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-009",
-      "unlocks": [
-        {
-          "id": "CRF-016",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-017",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-019",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-020",
-          "type": "crf"
-        },
-        {
-          "id": "EQP-011",
-          "type": "eqp"
-        },
-        {
-          "id": "JOB-037",
-          "type": "job"
-        },
-        {
-          "id": "STR-013",
-          "type": "str"
-        },
-        {
-          "id": "STR-014",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-010",
-      "unlocks": [
-        {
-          "id": "CRF-021",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-022",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-023",
-          "type": "crf"
-        },
-        {
-          "id": "EQP-012",
-          "type": "eqp"
-        },
-        {
-          "id": "JOB-038",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-011",
-      "unlocks": [
-        {
-          "id": "CRF-024",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-025",
-          "type": "crf"
-        },
-        {
-          "id": "EQP-013",
-          "type": "eqp"
-        },
-        {
-          "id": "JOB-039",
-          "type": "job"
-        },
-        {
-          "id": "STR-015",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-012",
-      "unlocks": [
-        {
-          "id": "CRF-026",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-027",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-002",
-          "type": "job"
-        },
-        {
-          "id": "MAT-036",
-          "type": "mat"
-        },
-        {
-          "id": "MAT-037",
-          "type": "mat"
-        },
-        {
-          "id": "STR-017",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-013",
-      "unlocks": [
-        {
-          "id": "CRF-029",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-004",
-          "type": "job"
-        },
-        {
-          "id": "MAT-039",
-          "type": "mat"
-        },
-        {
-          "id": "STR-016",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-014",
-      "unlocks": [
-        {
-          "id": "JOB-006",
-          "type": "job"
-        },
-        {
-          "id": "STR-019",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-015",
-      "unlocks": [
-        {
-          "id": "JOB-007",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-016",
-      "unlocks": [
-        {
-          "id": "JOB-008",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-017",
-      "unlocks": [
-        {
-          "id": "CRF-003",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-009",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-018",
-      "unlocks": [
-        {
-          "id": "JOB-010",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-019",
-      "unlocks": [
-        {
-          "id": "JOB-011",
-          "type": "job"
-        },
-        {
-          "id": "MAT-041",
-          "type": "mat"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-020",
-      "unlocks": [
-        {
-          "id": "JOB-012",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-021",
-      "unlocks": [
-        {
-          "id": "CRF-028",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-003",
-          "type": "job"
-        },
-        {
-          "id": "STR-018",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-022",
-      "unlocks": [
-        {
-          "id": "JOB-013",
-          "type": "job"
-        },
-        {
-          "id": "TEC-033",
-          "type": "tec"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-023",
-      "unlocks": [
-        {
-          "id": "JOB-015",
-          "type": "job"
-        },
-        {
-          "id": "MAT-024",
-          "type": "mat"
-        },
-        {
-          "id": "MAT-028",
-          "type": "mat"
-        },
-        {
-          "id": "MAT-032",
-          "type": "mat"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-024",
-      "unlocks": [
-        {
-          "id": "JOB-016",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-025",
-      "unlocks": [
-        {
-          "id": "JOB-016",
-          "type": "job"
-        },
-        {
-          "id": "JOB-019",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-026",
-      "unlocks": [
-        {
-          "id": "JOB-017",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-027",
-      "unlocks": [
-        {
-          "id": "JOB-018",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-028",
-      "unlocks": [
-        {
-          "id": "JOB-018",
-          "type": "job"
-        },
-        {
-          "id": "STR-019",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-029",
-      "unlocks": [
-        {
-          "id": "JOB-010",
-          "type": "job"
-        },
-        {
-          "id": "JOB-019",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-030",
-      "unlocks": [
-        {
-          "id": "JOB-019",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-031",
-      "unlocks": [
-        {
-          "id": "JOB-020",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-032",
-      "unlocks": [
-        {
-          "id": "JOB-020",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-033",
-      "unlocks": [
-        {
-          "id": "JOB-021",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-034",
-      "unlocks": [
-        {
-          "id": "JOB-022",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-035",
-      "unlocks": [
-        {
-          "id": "JOB-022",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-036",
-      "unlocks": [
-        {
-          "id": "JOB-023",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-037",
-      "unlocks": [
-        {
-          "id": "JOB-023",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-038",
-      "unlocks": [
-        {
-          "id": "JOB-024",
-          "type": "job"
-        },
-        {
-          "id": "JOB-026",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-039",
-      "unlocks": [
-        {
-          "id": "JOB-024",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-040",
-      "unlocks": [
-        {
-          "id": "JOB-025",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-041",
-      "unlocks": [
-        {
-          "id": "JOB-025",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-042",
-      "unlocks": [
-        {
-          "id": "JOB-026",
-          "type": "job"
-        },
-        {
-          "id": "JOB-027",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-043",
-      "unlocks": [
-        {
-          "id": "JOB-027",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-044",
-      "unlocks": [
-        {
-          "id": "JOB-028",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-045",
-      "unlocks": [
-        {
-          "id": "JOB-028",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-046",
-      "unlocks": [
-        {
-          "id": "JOB-029",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-047",
-      "unlocks": [
-        {
-          "id": "JOB-030",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-048",
-      "unlocks": [
-        {
-          "id": "JOB-030",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-049",
-      "unlocks": [
-        {
-          "id": "JOB-031",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-050",
-      "unlocks": [
-        {
-          "id": "JOB-031",
-          "type": "job"
-        },
-        {
-          "id": "JOB-032",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-051",
-      "unlocks": [
-        {
-          "id": "JOB-032",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-052",
-      "unlocks": [
-        {
-          "id": "STR-016",
-          "type": "str"
-        },
-        {
-          "id": "STR-017",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-053",
-      "unlocks": [
-        {
-          "id": "JOB-023",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-054",
-      "unlocks": [
-        {
-          "id": "CRF-030",
-          "type": "crf"
-        },
-        {
-          "id": "STR-074",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-055",
-      "unlocks": [
-        {
-          "id": "JOB-026",
-          "type": "job"
-        },
-        {
-          "id": "JOB-027",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-056",
-      "unlocks": [
-        {
-          "id": "CRF-028",
-          "type": "crf"
-        },
-        {
-          "id": "STR-018",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-057",
-      "unlocks": [
-        {
-          "id": "STR-017",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-058",
-      "unlocks": [
-        {
-          "id": "JOB-022",
-          "type": "job"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-059",
-      "unlocks": [
-        {
-          "id": "JOB-033",
-          "type": "job"
-        },
-        {
-          "id": "STR-020",
-          "type": "str"
-        },
-        {
-          "id": "STR-021",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-060",
-      "unlocks": [
-        {
-          "id": "CRF-080",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-081",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-001",
-          "type": "job"
-        },
-        {
-          "id": "STR-022",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-061",
-      "unlocks": [
-        {
-          "id": "CRF-009",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-010",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-034",
-          "type": "job"
-        },
-        {
-          "id": "STR-023",
-          "type": "str"
-        },
-        {
-          "id": "STR-024",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-062",
-      "unlocks": [
-        {
-          "id": "CRF-056",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-021",
-          "type": "job"
-        },
-        {
-          "id": "STR-025",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-063",
-      "unlocks": [
-        {
-          "id": "CRF-021",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-023",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-045",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-015",
-          "type": "job"
-        },
-        {
-          "id": "JOB-038",
-          "type": "job"
-        },
-        {
-          "id": "STR-027",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-064",
-      "unlocks": [
-        {
-          "id": "CRF-032",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-033",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-035",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-011",
-          "type": "job"
-        },
-        {
-          "id": "JOB-012",
-          "type": "job"
-        },
-        {
-          "id": "STR-028",
-          "type": "str"
-        },
-        {
-          "id": "STR-029",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-065",
-      "unlocks": [
-        {
-          "id": "CRF-040",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-041",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-013",
-          "type": "job"
-        },
-        {
-          "id": "STR-026",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-066",
-      "unlocks": [
-        {
-          "id": "CRF-028",
-          "type": "crf"
-        },
-        {
-          "id": "JOB-003",
-          "type": "job"
-        },
-        {
-          "id": "MAT-038",
-          "type": "mat"
-        },
-        {
-          "id": "MAT-537",
-          "type": "mat"
-        },
-        {
-          "id": "STR-018",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-067",
-      "unlocks": [
-        {
-          "id": "CRF-056",
-          "type": "crf"
-        },
-        {
-          "id": "MAT-532",
-          "type": "mat"
-        },
-        {
-          "id": "MAT-533",
-          "type": "mat"
-        },
-        {
-          "id": "MAT-534",
-          "type": "mat"
-        },
-        {
-          "id": "STR-025",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-068",
-      "unlocks": [
-        {
-          "id": "CRF-011",
-          "type": "crf"
-        },
-        {
-          "id": "MAT-015",
-          "type": "mat"
-        },
-        {
-          "id": "STR-009",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-069",
-      "unlocks": [
-        {
-          "id": "CRF-012",
-          "type": "crf"
-        },
-        {
-          "id": "MAT-019",
-          "type": "mat"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-070",
-      "unlocks": [
-        {
-          "id": "CRF-040",
-          "type": "crf"
-        },
-        {
-          "id": "CRF-041",
-          "type": "crf"
-        },
-        {
-          "id": "EQP-017",
-          "type": "eqp"
-        },
-        {
-          "id": "MAT-523",
-          "type": "mat"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-071",
-      "unlocks": [
-        {
-          "id": "EQP-025",
-          "type": "eqp"
-        },
-        {
-          "id": "EQP-026",
-          "type": "eqp"
-        },
-        {
-          "id": "MAT-524",
-          "type": "mat"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-072",
-      "unlocks": [
-        {
-          "id": "EQP-027",
-          "type": "eqp"
-        },
-        {
-          "id": "EQP-028",
-          "type": "eqp"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-073",
-      "unlocks": [
-        {
-          "id": "EQP-029",
-          "type": "eqp"
-        },
-        {
-          "id": "MAT-525",
-          "type": "mat"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-074",
-      "unlocks": [
-        {
-          "id": "STR-090",
-          "type": "str"
-        },
-        {
-          "id": "STR-093",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-075",
-      "unlocks": [
-        {
-          "id": "STR-091",
-          "type": "str"
-        },
-        {
-          "id": "STR-151",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-076",
-      "unlocks": [
-        {
-          "id": "STR-092",
-          "type": "str"
-        },
-        {
-          "id": "STR-119",
-          "type": "str"
-        },
-        {
-          "id": "STR-127",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-077",
-      "unlocks": [
-        {
-          "id": "STR-094",
-          "type": "str"
-        },
-        {
-          "id": "STR-095",
-          "type": "str"
-        },
-        {
-          "id": "STR-146",
-          "type": "str"
-        },
-        {
-          "id": "STR-147",
-          "type": "str"
-        },
-        {
-          "id": "STR-149",
-          "type": "str"
-        },
-        {
-          "id": "STR-152",
-          "type": "str"
-        },
-        {
-          "id": "STR-153",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-078",
-      "unlocks": [
-        {
-          "id": "STR-145",
-          "type": "str"
-        },
-        {
-          "id": "STR-148",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-079",
-      "unlocks": [
-        {
-          "id": "STR-120",
-          "type": "str"
-        },
-        {
-          "id": "STR-129",
-          "type": "str"
-        },
-        {
-          "id": "STR-144",
-          "type": "str"
-        },
-        {
-          "id": "STR-150",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-080",
-      "unlocks": [
-        {
-          "id": "STR-121",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-081",
-      "unlocks": [
-        {
-          "id": "STR-122",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-082",
-      "unlocks": [
-        {
-          "id": "STR-124",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-083",
-      "unlocks": [
-        {
-          "id": "STR-128",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-084",
-      "unlocks": [
-        {
-          "id": "STR-125",
-          "type": "str"
-        },
-        {
-          "id": "STR-147",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-085",
-      "unlocks": [
-        {
-          "id": "STR-126",
-          "type": "str"
-        },
-        {
-          "id": "STR-135",
-          "type": "str"
-        },
-        {
-          "id": "STR-139",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-086",
-      "unlocks": [
-        {
-          "id": "STR-134",
-          "type": "str"
-        },
-        {
-          "id": "STR-138",
-          "type": "str"
-        },
-        {
-          "id": "STR-140",
-          "type": "str"
-        },
-        {
-          "id": "STR-141",
-          "type": "str"
-        },
-        {
-          "id": "STR-143",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-087",
-      "unlocks": [
-        {
-          "id": "STR-130",
-          "type": "str"
-        },
-        {
-          "id": "STR-142",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-088",
-      "unlocks": [
-        {
-          "id": "STR-131",
-          "type": "str"
-        },
-        {
-          "id": "STR-132",
-          "type": "str"
-        },
-        {
-          "id": "STR-133",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-089",
-      "unlocks": [
-        {
-          "id": "STR-136",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-090",
-      "unlocks": [
-        {
-          "id": "STR-137",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-091",
-      "unlocks": [
-        {
-          "id": "STR-106",
-          "type": "str"
-        },
-        {
-          "id": "STR-107",
-          "type": "str"
-        },
-        {
-          "id": "STR-108",
-          "type": "str"
-        },
-        {
-          "id": "STR-109",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-092",
-      "unlocks": [
-        {
-          "id": "STR-154",
-          "type": "str"
-        },
-        {
-          "id": "STR-155",
-          "type": "str"
-        },
-        {
-          "id": "STR-159",
-          "type": "str"
-        },
-        {
-          "id": "STR-160",
-          "type": "str"
-        },
-        {
-          "id": "STR-161",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-093",
-      "unlocks": [
-        {
-          "id": "STR-156",
-          "type": "str"
-        },
-        {
-          "id": "STR-157",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-094",
-      "unlocks": [
-        {
-          "id": "STR-162",
-          "type": "str"
-        },
-        {
-          "id": "STR-172",
-          "type": "str"
-        },
-        {
-          "id": "STR-173",
-          "type": "str"
-        },
-        {
-          "id": "STR-174",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-095",
-      "unlocks": [
-        {
-          "id": "STR-164",
-          "type": "str"
-        },
-        {
-          "id": "STR-165",
-          "type": "str"
-        },
-        {
-          "id": "STR-166",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "tech_id": "TEC-096",
-      "unlocks": [
-        {
-          "id": "STR-098",
-          "type": "str"
-        },
-        {
-          "id": "STR-101",
-          "type": "str"
-        },
-        {
-          "id": "STR-115",
-          "type": "str"
-        },
-        {
-          "id": "STR-168",
-          "type": "str"
-        }
-      ]
+  "unlock_edges": [
+    {
+      "from": "TEC-001",
+      "to": "CRF-001"
+    },
+    {
+      "from": "TEC-001",
+      "to": "CRF-003"
+    },
+    {
+      "from": "TEC-001",
+      "to": "CRF-004"
+    },
+    {
+      "from": "TEC-001",
+      "to": "CRF-005"
+    },
+    {
+      "from": "TEC-001",
+      "to": "JOB-005"
+    },
+    {
+      "from": "TEC-001",
+      "to": "SPL-003"
+    },
+    {
+      "from": "TEC-001",
+      "to": "STR-001"
+    },
+    {
+      "from": "TEC-001",
+      "to": "STR-003"
+    },
+    {
+      "from": "TEC-001",
+      "to": "STR-004"
+    },
+    {
+      "from": "TEC-002",
+      "to": "CRF-002"
+    },
+    {
+      "from": "TEC-002",
+      "to": "EQP-001"
+    },
+    {
+      "from": "TEC-002",
+      "to": "STR-002"
+    },
+    {
+      "from": "TEC-003",
+      "to": "CRF-006"
+    },
+    {
+      "from": "TEC-003",
+      "to": "EQP-003"
+    },
+    {
+      "from": "TEC-003",
+      "to": "SPL-001"
+    },
+    {
+      "from": "TEC-003",
+      "to": "STR-005"
+    },
+    {
+      "from": "TEC-004",
+      "to": "CRF-007"
+    },
+    {
+      "from": "TEC-004",
+      "to": "CRF-008"
+    },
+    {
+      "from": "TEC-004",
+      "to": "JOB-033"
+    },
+    {
+      "from": "TEC-004",
+      "to": "STR-006"
+    },
+    {
+      "from": "TEC-004",
+      "to": "STR-008"
+    },
+    {
+      "from": "TEC-005",
+      "to": "CRF-009"
+    },
+    {
+      "from": "TEC-005",
+      "to": "CRF-010"
+    },
+    {
+      "from": "TEC-005",
+      "to": "JOB-034"
+    },
+    {
+      "from": "TEC-005",
+      "to": "MAT-012"
+    },
+    {
+      "from": "TEC-005",
+      "to": "STR-007"
+    },
+    {
+      "from": "TEC-006",
+      "to": "CRF-011"
+    },
+    {
+      "from": "TEC-006",
+      "to": "CRF-012"
+    },
+    {
+      "from": "TEC-006",
+      "to": "EQP-008"
+    },
+    {
+      "from": "TEC-006",
+      "to": "JOB-035"
+    },
+    {
+      "from": "TEC-006",
+      "to": "STR-009"
+    },
+    {
+      "from": "TEC-006",
+      "to": "STR-010"
+    },
+    {
+      "from": "TEC-007",
+      "to": "CRF-013"
+    },
+    {
+      "from": "TEC-007",
+      "to": "CRF-014"
+    },
+    {
+      "from": "TEC-007",
+      "to": "EQP-009"
+    },
+    {
+      "from": "TEC-007",
+      "to": "MAT-018"
+    },
+    {
+      "from": "TEC-008",
+      "to": "CRF-015"
+    },
+    {
+      "from": "TEC-008",
+      "to": "CRF-018"
+    },
+    {
+      "from": "TEC-008",
+      "to": "EQP-010"
+    },
+    {
+      "from": "TEC-008",
+      "to": "JOB-036"
+    },
+    {
+      "from": "TEC-008",
+      "to": "STR-011"
+    },
+    {
+      "from": "TEC-008",
+      "to": "STR-012"
+    },
+    {
+      "from": "TEC-009",
+      "to": "CRF-016"
+    },
+    {
+      "from": "TEC-009",
+      "to": "CRF-017"
+    },
+    {
+      "from": "TEC-009",
+      "to": "CRF-019"
+    },
+    {
+      "from": "TEC-009",
+      "to": "CRF-020"
+    },
+    {
+      "from": "TEC-009",
+      "to": "EQP-011"
+    },
+    {
+      "from": "TEC-009",
+      "to": "JOB-037"
+    },
+    {
+      "from": "TEC-009",
+      "to": "STR-013"
+    },
+    {
+      "from": "TEC-009",
+      "to": "STR-014"
+    },
+    {
+      "from": "TEC-010",
+      "to": "CRF-021"
+    },
+    {
+      "from": "TEC-010",
+      "to": "CRF-022"
+    },
+    {
+      "from": "TEC-010",
+      "to": "CRF-023"
+    },
+    {
+      "from": "TEC-010",
+      "to": "EQP-012"
+    },
+    {
+      "from": "TEC-010",
+      "to": "JOB-038"
+    },
+    {
+      "from": "TEC-011",
+      "to": "CRF-024"
+    },
+    {
+      "from": "TEC-011",
+      "to": "CRF-025"
+    },
+    {
+      "from": "TEC-011",
+      "to": "EQP-013"
+    },
+    {
+      "from": "TEC-011",
+      "to": "JOB-039"
+    },
+    {
+      "from": "TEC-011",
+      "to": "STR-015"
+    },
+    {
+      "from": "TEC-012",
+      "to": "CRF-026"
+    },
+    {
+      "from": "TEC-012",
+      "to": "CRF-027"
+    },
+    {
+      "from": "TEC-012",
+      "to": "JOB-002"
+    },
+    {
+      "from": "TEC-012",
+      "to": "MAT-036"
+    },
+    {
+      "from": "TEC-012",
+      "to": "MAT-037"
+    },
+    {
+      "from": "TEC-012",
+      "to": "STR-017"
+    },
+    {
+      "from": "TEC-013",
+      "to": "CRF-029"
+    },
+    {
+      "from": "TEC-013",
+      "to": "JOB-004"
+    },
+    {
+      "from": "TEC-013",
+      "to": "MAT-039"
+    },
+    {
+      "from": "TEC-013",
+      "to": "STR-016"
+    },
+    {
+      "from": "TEC-014",
+      "to": "JOB-006"
+    },
+    {
+      "from": "TEC-014",
+      "to": "STR-019"
+    },
+    {
+      "from": "TEC-015",
+      "to": "JOB-007"
+    },
+    {
+      "from": "TEC-016",
+      "to": "JOB-008"
+    },
+    {
+      "from": "TEC-017",
+      "to": "CRF-003"
+    },
+    {
+      "from": "TEC-017",
+      "to": "JOB-009"
+    },
+    {
+      "from": "TEC-018",
+      "to": "JOB-010"
+    },
+    {
+      "from": "TEC-019",
+      "to": "JOB-011"
+    },
+    {
+      "from": "TEC-019",
+      "to": "MAT-041"
+    },
+    {
+      "from": "TEC-020",
+      "to": "JOB-012"
+    },
+    {
+      "from": "TEC-021",
+      "to": "CRF-028"
+    },
+    {
+      "from": "TEC-021",
+      "to": "JOB-003"
+    },
+    {
+      "from": "TEC-021",
+      "to": "STR-018"
+    },
+    {
+      "from": "TEC-022",
+      "to": "JOB-013"
+    },
+    {
+      "from": "TEC-022",
+      "to": "TEC-033"
+    },
+    {
+      "from": "TEC-023",
+      "to": "JOB-015"
+    },
+    {
+      "from": "TEC-023",
+      "to": "MAT-024"
+    },
+    {
+      "from": "TEC-023",
+      "to": "MAT-028"
+    },
+    {
+      "from": "TEC-023",
+      "to": "MAT-032"
+    },
+    {
+      "from": "TEC-024",
+      "to": "JOB-016"
+    },
+    {
+      "from": "TEC-025",
+      "to": "JOB-016"
+    },
+    {
+      "from": "TEC-025",
+      "to": "JOB-019"
+    },
+    {
+      "from": "TEC-026",
+      "to": "JOB-017"
+    },
+    {
+      "from": "TEC-027",
+      "to": "JOB-018"
+    },
+    {
+      "from": "TEC-028",
+      "to": "JOB-018"
+    },
+    {
+      "from": "TEC-028",
+      "to": "STR-019"
+    },
+    {
+      "from": "TEC-029",
+      "to": "JOB-010"
+    },
+    {
+      "from": "TEC-029",
+      "to": "JOB-019"
+    },
+    {
+      "from": "TEC-030",
+      "to": "JOB-019"
+    },
+    {
+      "from": "TEC-031",
+      "to": "JOB-020"
+    },
+    {
+      "from": "TEC-032",
+      "to": "JOB-020"
+    },
+    {
+      "from": "TEC-033",
+      "to": "JOB-021"
+    },
+    {
+      "from": "TEC-034",
+      "to": "JOB-022"
+    },
+    {
+      "from": "TEC-035",
+      "to": "JOB-022"
+    },
+    {
+      "from": "TEC-036",
+      "to": "JOB-023"
+    },
+    {
+      "from": "TEC-037",
+      "to": "JOB-023"
+    },
+    {
+      "from": "TEC-038",
+      "to": "JOB-024"
+    },
+    {
+      "from": "TEC-038",
+      "to": "JOB-026"
+    },
+    {
+      "from": "TEC-039",
+      "to": "JOB-024"
+    },
+    {
+      "from": "TEC-040",
+      "to": "JOB-025"
+    },
+    {
+      "from": "TEC-041",
+      "to": "JOB-025"
+    },
+    {
+      "from": "TEC-042",
+      "to": "JOB-026"
+    },
+    {
+      "from": "TEC-042",
+      "to": "JOB-027"
+    },
+    {
+      "from": "TEC-043",
+      "to": "JOB-027"
+    },
+    {
+      "from": "TEC-044",
+      "to": "JOB-028"
+    },
+    {
+      "from": "TEC-045",
+      "to": "JOB-028"
+    },
+    {
+      "from": "TEC-046",
+      "to": "JOB-029"
+    },
+    {
+      "from": "TEC-047",
+      "to": "JOB-030"
+    },
+    {
+      "from": "TEC-048",
+      "to": "JOB-030"
+    },
+    {
+      "from": "TEC-049",
+      "to": "JOB-031"
+    },
+    {
+      "from": "TEC-050",
+      "to": "JOB-031"
+    },
+    {
+      "from": "TEC-050",
+      "to": "JOB-032"
+    },
+    {
+      "from": "TEC-051",
+      "to": "JOB-032"
+    },
+    {
+      "from": "TEC-052",
+      "to": "STR-016"
+    },
+    {
+      "from": "TEC-052",
+      "to": "STR-017"
+    },
+    {
+      "from": "TEC-053",
+      "to": "JOB-023"
+    },
+    {
+      "from": "TEC-054",
+      "to": "CRF-030"
+    },
+    {
+      "from": "TEC-054",
+      "to": "STR-074"
+    },
+    {
+      "from": "TEC-055",
+      "to": "JOB-026"
+    },
+    {
+      "from": "TEC-055",
+      "to": "JOB-027"
+    },
+    {
+      "from": "TEC-056",
+      "to": "CRF-028"
+    },
+    {
+      "from": "TEC-056",
+      "to": "STR-018"
+    },
+    {
+      "from": "TEC-057",
+      "to": "STR-017"
+    },
+    {
+      "from": "TEC-058",
+      "to": "JOB-022"
+    },
+    {
+      "from": "TEC-059",
+      "to": "JOB-033"
+    },
+    {
+      "from": "TEC-059",
+      "to": "STR-020"
+    },
+    {
+      "from": "TEC-059",
+      "to": "STR-021"
+    },
+    {
+      "from": "TEC-060",
+      "to": "CRF-080"
+    },
+    {
+      "from": "TEC-060",
+      "to": "CRF-081"
+    },
+    {
+      "from": "TEC-060",
+      "to": "JOB-001"
+    },
+    {
+      "from": "TEC-060",
+      "to": "STR-022"
+    },
+    {
+      "from": "TEC-061",
+      "to": "CRF-009"
+    },
+    {
+      "from": "TEC-061",
+      "to": "CRF-010"
+    },
+    {
+      "from": "TEC-061",
+      "to": "JOB-034"
+    },
+    {
+      "from": "TEC-061",
+      "to": "STR-023"
+    },
+    {
+      "from": "TEC-061",
+      "to": "STR-024"
+    },
+    {
+      "from": "TEC-062",
+      "to": "CRF-056"
+    },
+    {
+      "from": "TEC-062",
+      "to": "JOB-021"
+    },
+    {
+      "from": "TEC-062",
+      "to": "STR-025"
+    },
+    {
+      "from": "TEC-063",
+      "to": "CRF-021"
+    },
+    {
+      "from": "TEC-063",
+      "to": "CRF-023"
+    },
+    {
+      "from": "TEC-063",
+      "to": "CRF-045"
+    },
+    {
+      "from": "TEC-063",
+      "to": "JOB-015"
+    },
+    {
+      "from": "TEC-063",
+      "to": "JOB-038"
+    },
+    {
+      "from": "TEC-063",
+      "to": "STR-027"
+    },
+    {
+      "from": "TEC-064",
+      "to": "CRF-032"
+    },
+    {
+      "from": "TEC-064",
+      "to": "CRF-033"
+    },
+    {
+      "from": "TEC-064",
+      "to": "CRF-035"
+    },
+    {
+      "from": "TEC-064",
+      "to": "JOB-011"
+    },
+    {
+      "from": "TEC-064",
+      "to": "JOB-012"
+    },
+    {
+      "from": "TEC-064",
+      "to": "STR-028"
+    },
+    {
+      "from": "TEC-064",
+      "to": "STR-029"
+    },
+    {
+      "from": "TEC-065",
+      "to": "CRF-040"
+    },
+    {
+      "from": "TEC-065",
+      "to": "CRF-041"
+    },
+    {
+      "from": "TEC-065",
+      "to": "JOB-013"
+    },
+    {
+      "from": "TEC-065",
+      "to": "STR-026"
+    },
+    {
+      "from": "TEC-065",
+      "to": "STR-180"
+    },
+    {
+      "from": "TEC-066",
+      "to": "CRF-028"
+    },
+    {
+      "from": "TEC-066",
+      "to": "JOB-003"
+    },
+    {
+      "from": "TEC-066",
+      "to": "MAT-038"
+    },
+    {
+      "from": "TEC-066",
+      "to": "MAT-537"
+    },
+    {
+      "from": "TEC-066",
+      "to": "STR-018"
+    },
+    {
+      "from": "TEC-067",
+      "to": "CRF-056"
+    },
+    {
+      "from": "TEC-067",
+      "to": "MAT-532"
+    },
+    {
+      "from": "TEC-067",
+      "to": "MAT-533"
+    },
+    {
+      "from": "TEC-067",
+      "to": "MAT-534"
+    },
+    {
+      "from": "TEC-067",
+      "to": "STR-025"
+    },
+    {
+      "from": "TEC-068",
+      "to": "CRF-011"
+    },
+    {
+      "from": "TEC-068",
+      "to": "MAT-015"
+    },
+    {
+      "from": "TEC-068",
+      "to": "STR-009"
+    },
+    {
+      "from": "TEC-069",
+      "to": "CRF-012"
+    },
+    {
+      "from": "TEC-069",
+      "to": "MAT-019"
+    },
+    {
+      "from": "TEC-070",
+      "to": "CRF-040"
+    },
+    {
+      "from": "TEC-070",
+      "to": "CRF-041"
+    },
+    {
+      "from": "TEC-070",
+      "to": "EQP-017"
+    },
+    {
+      "from": "TEC-070",
+      "to": "MAT-523"
+    },
+    {
+      "from": "TEC-071",
+      "to": "EQP-025"
+    },
+    {
+      "from": "TEC-071",
+      "to": "EQP-026"
+    },
+    {
+      "from": "TEC-071",
+      "to": "MAT-524"
+    },
+    {
+      "from": "TEC-072",
+      "to": "EQP-027"
+    },
+    {
+      "from": "TEC-072",
+      "to": "EQP-028"
+    },
+    {
+      "from": "TEC-073",
+      "to": "EQP-029"
+    },
+    {
+      "from": "TEC-073",
+      "to": "MAT-525"
+    },
+    {
+      "from": "TEC-074",
+      "to": "STR-090"
+    },
+    {
+      "from": "TEC-074",
+      "to": "STR-093"
+    },
+    {
+      "from": "TEC-075",
+      "to": "STR-091"
+    },
+    {
+      "from": "TEC-075",
+      "to": "STR-151"
+    },
+    {
+      "from": "TEC-076",
+      "to": "STR-092"
+    },
+    {
+      "from": "TEC-076",
+      "to": "STR-119"
+    },
+    {
+      "from": "TEC-076",
+      "to": "STR-127"
+    },
+    {
+      "from": "TEC-076",
+      "to": "STR-178"
+    },
+    {
+      "from": "TEC-077",
+      "to": "STR-094"
+    },
+    {
+      "from": "TEC-077",
+      "to": "STR-095"
+    },
+    {
+      "from": "TEC-077",
+      "to": "STR-146"
+    },
+    {
+      "from": "TEC-077",
+      "to": "STR-147"
+    },
+    {
+      "from": "TEC-077",
+      "to": "STR-149"
+    },
+    {
+      "from": "TEC-077",
+      "to": "STR-152"
+    },
+    {
+      "from": "TEC-077",
+      "to": "STR-153"
+    },
+    {
+      "from": "TEC-077",
+      "to": "STR-176"
+    },
+    {
+      "from": "TEC-077",
+      "to": "STR-177"
+    },
+    {
+      "from": "TEC-078",
+      "to": "STR-145"
+    },
+    {
+      "from": "TEC-078",
+      "to": "STR-148"
+    },
+    {
+      "from": "TEC-079",
+      "to": "STR-120"
+    },
+    {
+      "from": "TEC-079",
+      "to": "STR-129"
+    },
+    {
+      "from": "TEC-079",
+      "to": "STR-144"
+    },
+    {
+      "from": "TEC-079",
+      "to": "STR-150"
+    },
+    {
+      "from": "TEC-079",
+      "to": "STR-175"
+    },
+    {
+      "from": "TEC-079",
+      "to": "STR-179"
+    },
+    {
+      "from": "TEC-080",
+      "to": "STR-121"
+    },
+    {
+      "from": "TEC-081",
+      "to": "STR-122"
+    },
+    {
+      "from": "TEC-082",
+      "to": "STR-124"
+    },
+    {
+      "from": "TEC-083",
+      "to": "STR-128"
+    },
+    {
+      "from": "TEC-084",
+      "to": "STR-125"
+    },
+    {
+      "from": "TEC-084",
+      "to": "STR-147"
+    },
+    {
+      "from": "TEC-085",
+      "to": "STR-126"
+    },
+    {
+      "from": "TEC-085",
+      "to": "STR-135"
+    },
+    {
+      "from": "TEC-085",
+      "to": "STR-139"
+    },
+    {
+      "from": "TEC-086",
+      "to": "STR-134"
+    },
+    {
+      "from": "TEC-086",
+      "to": "STR-138"
+    },
+    {
+      "from": "TEC-086",
+      "to": "STR-140"
+    },
+    {
+      "from": "TEC-086",
+      "to": "STR-141"
+    },
+    {
+      "from": "TEC-086",
+      "to": "STR-143"
+    },
+    {
+      "from": "TEC-087",
+      "to": "STR-130"
+    },
+    {
+      "from": "TEC-087",
+      "to": "STR-142"
+    },
+    {
+      "from": "TEC-088",
+      "to": "STR-131"
+    },
+    {
+      "from": "TEC-088",
+      "to": "STR-132"
+    },
+    {
+      "from": "TEC-088",
+      "to": "STR-133"
+    },
+    {
+      "from": "TEC-089",
+      "to": "STR-136"
+    },
+    {
+      "from": "TEC-090",
+      "to": "STR-137"
+    },
+    {
+      "from": "TEC-091",
+      "to": "STR-106"
+    },
+    {
+      "from": "TEC-091",
+      "to": "STR-107"
+    },
+    {
+      "from": "TEC-091",
+      "to": "STR-108"
+    },
+    {
+      "from": "TEC-091",
+      "to": "STR-109"
+    },
+    {
+      "from": "TEC-092",
+      "to": "STR-154"
+    },
+    {
+      "from": "TEC-092",
+      "to": "STR-155"
+    },
+    {
+      "from": "TEC-092",
+      "to": "STR-159"
+    },
+    {
+      "from": "TEC-092",
+      "to": "STR-160"
+    },
+    {
+      "from": "TEC-092",
+      "to": "STR-161"
+    },
+    {
+      "from": "TEC-093",
+      "to": "STR-156"
+    },
+    {
+      "from": "TEC-093",
+      "to": "STR-157"
+    },
+    {
+      "from": "TEC-094",
+      "to": "STR-162"
+    },
+    {
+      "from": "TEC-094",
+      "to": "STR-172"
+    },
+    {
+      "from": "TEC-094",
+      "to": "STR-173"
+    },
+    {
+      "from": "TEC-094",
+      "to": "STR-174"
+    },
+    {
+      "from": "TEC-095",
+      "to": "STR-164"
+    },
+    {
+      "from": "TEC-095",
+      "to": "STR-165"
+    },
+    {
+      "from": "TEC-095",
+      "to": "STR-166"
+    },
+    {
+      "from": "TEC-096",
+      "to": "STR-098"
+    },
+    {
+      "from": "TEC-096",
+      "to": "STR-101"
+    },
+    {
+      "from": "TEC-096",
+      "to": "STR-115"
+    },
+    {
+      "from": "TEC-096",
+      "to": "STR-168"
+    },
+    {
+      "from": "TEC-097",
+      "to": "STR-169"
+    },
+    {
+      "from": "TEC-097",
+      "to": "STR-170"
+    },
+    {
+      "from": "TEC-097",
+      "to": "STR-171"
     }
   ]
 }

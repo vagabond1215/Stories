@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Structures",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Structures Export",
   "type": "array",
   "items": {
     "type": "object",
@@ -21,38 +21,28 @@
       "name": {"type": "string"},
       "type": {"type": "string"},
       "purpose": {"type": "string"},
-      "requirements": {"type": "string"},
-      "enabled_actions": {
-        "type": "array",
-        "items": {"type": "string"}
-      },
-      "required_tech": {
-        "type": "array",
-        "items": {"type": "string", "pattern": "^TEC-\\d{3}$"}
-      },
+      "requirements": {"type": "array", "items": {"type": "string"}},
+      "enabled_actions": {"type": "array", "items": {"type": "string"}},
+      "required_tech": {"type": "array", "items": {"type": "string"}},
       "notes": {"type": "string"},
       "stats": {
         "type": "object",
-        "required": ["is_delta", "bo", "l", "em", "r", "qt", "cap", "up", "tags"],
         "properties": {
-          "is_delta": {"type": "boolean"},
+          "delta": {"type": "boolean"},
           "bo": {"type": "number"},
+          "pop": {"type": "number"},
           "l": {"type": "number"},
           "em": {"type": "number"},
           "r": {"type": "number"},
           "qt": {"type": "number"},
           "cap": {"type": "number"},
           "up": {"type": "number"},
-          "tags": {
-            "type": "array",
-            "items": {"type": "string"}
-          }
-        }
+          "tags": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
       },
-      "upgrade_path": {
-        "type": "array",
-        "items": {"type": "string", "pattern": "^STR-\\d{3}$"}
-      }
-    }
+      "upgrade_path": {"type": "array", "items": {"type": "string"}}
+    },
+    "additionalProperties": false
   }
 }

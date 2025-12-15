@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Systems Difficulty",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Difficulty Export",
   "type": "array",
   "items": {
     "type": "object",
@@ -15,6 +15,7 @@
       "labor_tightness": {"type": "string"},
       "recovery_cost_mult": {"type": "number"},
       "notes": {"type": "string"}
-    }
+    },
+    "additionalProperties": false
   }
 }
