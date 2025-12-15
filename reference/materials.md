@@ -59,6 +59,7 @@
 | MAT-535 | Alluvial Gold Flake | Precious metal | Winnowed from BIO-003/BIO-008 point bars and BIO-002 storm lag gravels | Panned, then smelted with MAT-081 flux | EQP-006 inlays, TEC-023 gilding | High trade value; JOB-021 prospectors post claims after floods |
 | MAT-536 | Sulfur Crystal | Reagent | Condensed from BIO-010 fumaroles; scraped from cave drips | Crushed and dried | CRF-028, TEC-056 charges | Chokes enclosed spaces; store away from flame and iron to avoid corrosion |
 | MAT-537 | Saltpeter Bloom | Reagent | Dug from BIO-003 midden soils and cave guano crusts | Leached and refined | TEC-056, STR-018 curing | Hygroscopic; needs dry loft storage; forms the oxidizer leg of black powder |
+| MAT-538 | Black Powder Granulate | Explosive reagent | Blended MAT-536 sulfur, MAT-537 saltpeter, and MAT-038 charcoal fines | Screened and bagged | CRF-059, CRF-060, CRF-061 | Keep aired and dry; static-safe tools required; unlocked by TEC-056 |
 | MAT-510 | Amber Barley Grain | Grain | FLR-326 steppe terraces (BIO-005) | Threshed and winnowed | CRF-030 breads and porridges | Keep dry; hulls irritate skin |
 | MAT-511 | Barley Straw | Straw | FLR-326 stalk bundles | Sun-dried in sheaves | EQP-030 thatch, EQP-031 bedding | Prickly until retted |
 | MAT-512 | Riverland Rye Grain | Grain | FLR-327 riverside fields (BIO-003) | Stone-ground or malted | CRF-031 sourdough loaves | Inspect for ergot before storage |
