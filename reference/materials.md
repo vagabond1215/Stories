@@ -55,3 +55,7 @@
 | MAT-519 | Oat Straw | Straw | FLR-330 stems | Dried and bundled | EQP-031 bedding and thatch | Soft; mats easily under weight |
 | MAT-520 | Sunstripe Maize Kernels | Grain | FLR-331 riverbend terraces (BIO-003) | Shelled and sun-dried | CRF-036 flatbreads and grits, CRF-037 sweet roast kernels | Keep sealed to deter weevils |
 | MAT-521 | Maize Husk | Husk fibre | FLR-331 outer husks | Dried and braided | CRF-036 wrap doughs, EQP-032 corded mats | Molds if packed wet |
+| MAT-522 | Brass Ingot | Metal ingot (alloy) | Traded zinc sand + MAT-015 copper bloom | Crucible alloyed | CRF-046, CRF-052 | Golden sheen; soft but corrosion-resistant |
+| MAT-523 | Folded Iron Billet | Metal billet | Refined MAT-003 with charcoal | Repeatedly folded | CRF-047, CRF-050 | Denser than bog iron; still needs quench |
+| MAT-524 | High-Carbon Steel Ingot | Metal ingot | Carburized MAT-523 in sealed box | Water or oil quenched | CRF-048, CRF-051 | Hard edge; temper to avoid brittleness |
+| MAT-525 | Mythril Ingot | Metal ingot (mythic) | Refined MAT-020 star-metal with flux | Magical quench | CRF-049, CRF-053 | Featherlight; carries arcane charge |
