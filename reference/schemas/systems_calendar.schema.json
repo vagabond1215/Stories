@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Calendar System Export",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["key", "name", "value", "notes"],
+    "properties": {
+      "key": {"type": "string"},
+      "name": {"type": "string"},
+      "value": {"type": ["number", "string"]},
+      "notes": {"type": "string"}
+    },
+    "additionalProperties": false
+  }
+}

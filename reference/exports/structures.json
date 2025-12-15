@@ -4,7 +4,11 @@
     "name": "Bloomery",
     "type": "Building/forge",
     "purpose": "Smelt low-grade ores and resins",
-    "requirements": "TEC-001; MAT-002 x20; EQP-005 fuel",
+    "requirements": [
+      "TEC-001",
+      "MAT-002 x20",
+      "EQP-005 fuel"
+    ],
     "enabled_actions": [
       "CRF-001",
       "CRF-004",
@@ -14,17 +18,7 @@
       "TEC-001"
     ],
     "notes": "Emits low smoke when using EQP-005",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -32,7 +26,11 @@
     "name": "Fletcher's Bench",
     "type": "Furniture",
     "purpose": "Craft fletched weapons and ammo",
-    "requirements": "TEC-002; MAT-003 x4; MAT-004 sample",
+    "requirements": [
+      "TEC-002",
+      "MAT-003 x4",
+      "MAT-004 sample"
+    ],
     "enabled_actions": [
       "CRF-002"
     ],
@@ -40,17 +38,7 @@
       "TEC-002"
     ],
     "notes": "Installed near STR-003 to share tools",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -58,7 +46,10 @@
     "name": "Blacksmith's Anvil",
     "type": "Tool/Furniture",
     "purpose": "Shape metal components",
-    "requirements": "TEC-001; MAT-003 x6",
+    "requirements": [
+      "TEC-001",
+      "MAT-003 x6"
+    ],
     "enabled_actions": [
       "CRF-001",
       "CRF-002",
@@ -68,17 +59,7 @@
       "TEC-001"
     ],
     "notes": "Durable surface; counts as heavy tool",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -86,7 +67,10 @@
     "name": "Herbalist's Table",
     "type": "Furniture",
     "purpose": "Mix poultices and medicines",
-    "requirements": "TEC-001; MAT-001 x4",
+    "requirements": [
+      "TEC-001",
+      "MAT-001 x4"
+    ],
     "enabled_actions": [
       "CRF-003"
     ],
@@ -94,17 +78,7 @@
       "TEC-001"
     ],
     "notes": "Built with waterproofed planks",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -112,26 +86,20 @@
     "name": "Arcane Lathe",
     "type": "Tool",
     "purpose": "Cut/set crystals with precision",
-    "requirements": "TEC-003; MAT-006 x2; MAT-003 frame",
+    "requirements": [
+      "TEC-003",
+      "MAT-006 x2",
+      "MAT-003 frame"
+    ],
     "enabled_actions": [
       "CRF-006",
-      "SPL-001"
+      "SPL-001 focuscrafting"
     ],
     "required_tech": [
       "TEC-003"
     ],
     "notes": "Requires stable mana flow; keep near grounding rods",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -139,7 +107,11 @@
     "name": "Clay Settling Pit",
     "type": "Work area",
     "purpose": "Soak and decant river clay to workable slip",
-    "requirements": "TEC-004; MAT-009 x10; MAT-010 x2",
+    "requirements": [
+      "TEC-004",
+      "MAT-009 x10",
+      "MAT-010 x2"
+    ],
     "enabled_actions": [
       "CRF-007",
       "CRF-008"
@@ -148,17 +120,7 @@
       "TEC-004"
     ],
     "notes": "Lined with straw; drain slake water away from camp",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -166,7 +128,11 @@
     "name": "Earthen Clamp Kiln",
     "type": "Building/kiln",
     "purpose": "Slow-fire bricks and pottery batches",
-    "requirements": "TEC-005; MAT-011 x12; EQP-005 fuel caps",
+    "requirements": [
+      "TEC-005",
+      "MAT-011 x12",
+      "EQP-005 fuel caps"
+    ],
     "enabled_actions": [
       "CRF-009",
       "CRF-010"
@@ -175,17 +141,7 @@
       "TEC-005"
     ],
     "notes": "Needs steady tending to avoid black core bricks",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -193,26 +149,20 @@
     "name": "Drying Rack Shed",
     "type": "Furniture",
     "purpose": "Air-dry green bricks and pottery under cover",
-    "requirements": "TEC-004; MAT-010 x4; woven reed mats",
+    "requirements": [
+      "TEC-004",
+      "MAT-010 x4",
+      "woven reed mats"
+    ],
     "enabled_actions": [
       "CRF-007",
-      "CRF-008"
+      "CRF-008 staging"
     ],
     "required_tech": [
       "TEC-004"
     ],
     "notes": "Raise off ground to deter warping",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -220,7 +170,12 @@
     "name": "Side-Draft Bloomery",
     "type": "Building/forge",
     "purpose": "Roast bog copper nodules into workable blooms",
-    "requirements": "TEC-006; MAT-014 x12; MAT-003 banding x4; EQP-005 fuel",
+    "requirements": [
+      "TEC-006",
+      "MAT-014 x12",
+      "MAT-003 banding x4",
+      "EQP-005 fuel"
+    ],
     "enabled_actions": [
       "CRF-011",
       "CRF-012"
@@ -230,17 +185,7 @@
       "TEC-068"
     ],
     "notes": "Bellows tucked low; slag tap trench",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -248,7 +193,12 @@
     "name": "Crucible Forge",
     "type": "Building/forge",
     "purpose": "Alloy bronze and refine meteoric blooms",
-    "requirements": "TEC-006; MAT-016 x4; MAT-081 flux sand x4; MAT-003 frame",
+    "requirements": [
+      "TEC-006",
+      "MAT-016 x4",
+      "MAT-081 flux sand x4",
+      "MAT-003 frame"
+    ],
     "enabled_actions": [
       "CRF-012",
       "CRF-013",
@@ -258,17 +208,7 @@
       "TEC-006"
     ],
     "notes": "Hooded vents keep smoke out of camp",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -276,26 +216,20 @@
     "name": "Retting Vat",
     "type": "Work area",
     "purpose": "Soak and weight fibre bundles for softening",
-    "requirements": "TEC-008; MAT-009 clay seal x8; MAT-011 brick footing x6",
+    "requirements": [
+      "TEC-008",
+      "MAT-009 clay seal x8",
+      "MAT-011 brick footing x6"
+    ],
     "enabled_actions": [
       "CRF-015",
-      "CRF-021"
+      "CRF-021 staging"
     ],
     "required_tech": [
       "TEC-008"
     ],
     "notes": "Keep shaded; drain slake water downhill",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -303,7 +237,11 @@
     "name": "Flax Break & Scutch Rack",
     "type": "Furniture",
     "purpose": "Crack stalks and scrape fibres clean",
-    "requirements": "TEC-008; MAT-003 frame x2; MAT-010 grit teeth x4",
+    "requirements": [
+      "TEC-008",
+      "MAT-003 frame x2",
+      "MAT-010 grit teeth x4"
+    ],
     "enabled_actions": [
       "CRF-015",
       "CRF-018"
@@ -312,17 +250,7 @@
       "TEC-008"
     ],
     "notes": "Sweep splinters after each batch",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -330,7 +258,10 @@
     "name": "Spindle Bench",
     "type": "Furniture",
     "purpose": "Seat and tool rest for hand spinning",
-    "requirements": "TEC-009; MAT-003 plank x2",
+    "requirements": [
+      "TEC-009",
+      "MAT-003 plank x2"
+    ],
     "enabled_actions": [
       "CRF-016",
       "CRF-019",
@@ -340,17 +271,7 @@
       "TEC-009"
     ],
     "notes": "Peg slots hold extra spindles",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -358,7 +279,11 @@
     "name": "Upright Loom",
     "type": "Furniture",
     "purpose": "Tension yarns and weave bolts",
-    "requirements": "TEC-009; MAT-003 beams x4; MAT-011 brick foot x2",
+    "requirements": [
+      "TEC-009",
+      "MAT-003 beams x4",
+      "MAT-011 brick foot x2"
+    ],
     "enabled_actions": [
       "CRF-017",
       "CRF-020",
@@ -368,17 +293,7 @@
       "TEC-009"
     ],
     "notes": "Needs dry corner to avoid warp",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -386,7 +301,11 @@
     "name": "Tanning Vat",
     "type": "Work area",
     "purpose": "Scrape hides and circulate tanning liquor",
-    "requirements": "TEC-011; MAT-011 brick ring x6; MAT-008 resin caulk x2",
+    "requirements": [
+      "TEC-011",
+      "MAT-011 brick ring x6",
+      "MAT-008 resin caulk x2"
+    ],
     "enabled_actions": [
       "CRF-024",
       "CRF-025"
@@ -395,17 +314,7 @@
       "TEC-011"
     ],
     "notes": "Keep paddles handy to agitate",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -413,7 +322,11 @@
     "name": "Ropewalk Stakes",
     "type": "Work area",
     "purpose": "Stretch fibre lines for twist and lay",
-    "requirements": "TEC-013; MAT-003 posts x4; MAT-039 rope guide x2",
+    "requirements": [
+      "TEC-013",
+      "MAT-003 posts x4",
+      "MAT-039 rope guide x2"
+    ],
     "enabled_actions": [
       "CRF-029"
     ],
@@ -422,17 +335,7 @@
       "TEC-052"
     ],
     "notes": "Set straight on firm ground; anchor stakes deep",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -440,7 +343,12 @@
     "name": "Stonecutters Shed",
     "type": "Work area",
     "purpose": "Dress stone blocks and mix mortar under cover",
-    "requirements": "TEC-012; MAT-035 x4; MAT-037 bed x2; MAT-003 brace x2",
+    "requirements": [
+      "TEC-012",
+      "MAT-035 x4",
+      "MAT-037 bed x2",
+      "MAT-003 brace x2"
+    ],
     "enabled_actions": [
       "CRF-026",
       "CRF-027"
@@ -450,17 +358,7 @@
       "TEC-052"
     ],
     "notes": "Keep chisels sharp; sweep slurry often",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -468,7 +366,11 @@
     "name": "Charcoal Clamp",
     "type": "Yard",
     "purpose": "Mound and smolder log stacks for fuel",
-    "requirements": "TEC-022; MAT-041 x10; MAT-009 clay seal x6",
+    "requirements": [
+      "TEC-022",
+      "MAT-041 x10",
+      "MAT-009 clay seal x6"
+    ],
     "enabled_actions": [
       "CRF-028"
     ],
@@ -477,17 +379,7 @@
       "TEC-066"
     ],
     "notes": "Vent slowly; post watch to break flare-ups",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -495,26 +387,20 @@
     "name": "Irrigation Ditch Network",
     "type": "Fieldwork",
     "purpose": "Guide water through crops; prevent washouts",
-    "requirements": "TEC-015; MAT-010 gravel x6; woven reed mats",
+    "requirements": [
+      "TEC-015",
+      "MAT-010 gravel x6",
+      "woven reed mats"
+    ],
     "enabled_actions": [
-      "JOB-006"
+      "JOB-006 staging"
     ],
     "required_tech": [
       "TEC-015",
       "TEC-028"
     ],
     "notes": "Dig along contour; line seepage spots",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -522,26 +408,22 @@
     "name": "Clay Pit & Quarry Face",
     "type": "Work area",
     "purpose": "Exposes and benches clay faces for bulk digging",
-    "requirements": "TEC-059; MAT-010 drainage gravel x6; MAT-003 cribbing x2; MAT-035 chock blocks x2; EQP-006 chisels",
+    "requirements": [
+      "TEC-059",
+      "MAT-010 drainage gravel x6",
+      "MAT-003 cribbing x2",
+      "MAT-035 chock blocks x2",
+      "EQP-006 chisels"
+    ],
     "enabled_actions": [
       "CRF-007",
-      "CRF-008"
+      "CRF-008 staging"
     ],
     "required_tech": [
       "TEC-059"
     ],
     "notes": "Sump and tarp spoil piles; pump out after storms; pair with JOB-002 stonecutters and JOB-011 loggers for corduroy walkways as in survival builders",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -549,27 +431,23 @@
     "name": "Clay Drying Racks",
     "type": "Furniture",
     "purpose": "Slatted racks for stiffening bricks and tiles",
-    "requirements": "TEC-059; MAT-003 frame x2; MAT-010 grit slats x4; woven reed mats; MAT-041 firewood spacers",
+    "requirements": [
+      "TEC-059",
+      "MAT-003 frame x2",
+      "MAT-010 grit slats x4",
+      "woven reed mats",
+      "MAT-041 firewood spacers"
+    ],
     "enabled_actions": [
       "CRF-007",
       "CRF-008",
-      "CRF-009"
+      "CRF-009 staging"
     ],
     "required_tech": [
       "TEC-059"
     ],
     "notes": "Keep under lean-to; rotate shelves to avoid warping; stack with rope lashings to mimic medieval yard drying in city-builders",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -577,7 +455,13 @@
     "name": "Pottery Kick Wheel",
     "type": "Tool/Furniture",
     "purpose": "Foot-powered wheel for throwing vessels",
-    "requirements": "TEC-060; MAT-011 brick flywheel x6; MAT-003 frame x3; EQP-006 balancing chisels; MAT-039 leather strap belt",
+    "requirements": [
+      "TEC-060",
+      "MAT-011 brick flywheel x6",
+      "MAT-003 frame x3",
+      "EQP-006 balancing chisels",
+      "MAT-039 leather strap belt"
+    ],
     "enabled_actions": [
       "CRF-080",
       "CRF-081"
@@ -586,17 +470,7 @@
       "TEC-060"
     ],
     "notes": "Shelter from rain; leather strap pedal improves cadence; ballast with river stones like rustic workshop sims",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -604,7 +478,13 @@
     "name": "Primitive Clamp Kiln",
     "type": "Building/kiln",
     "purpose": "Covered pit clamp for first glaze burns",
-    "requirements": "TEC-061; MAT-011 field bricks x18; MAT-009 clay seal x8; MAT-041 turf sod x6; EQP-005 fuel caps",
+    "requirements": [
+      "TEC-061",
+      "MAT-011 field bricks x18",
+      "MAT-009 clay seal x8",
+      "MAT-041 turf sod x6",
+      "EQP-005 fuel caps"
+    ],
     "enabled_actions": [
       "CRF-009",
       "CRF-010"
@@ -613,17 +493,7 @@
       "TEC-061"
     ],
     "notes": "Needs slow preheat; pack turf blanket to hold heat; thrives on mixed brush, straw, and charcoal fines familiar to frontier colony games",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -631,27 +501,23 @@
     "name": "Updraft Draft Kiln",
     "type": "Building/kiln",
     "purpose": "Vented brick updraft kiln for efficient firings",
-    "requirements": "TEC-061; MAT-011 fired brick shell x24; MAT-003 grate frame x2; MAT-036 capstone arch x2; EQP-005 fuel",
+    "requirements": [
+      "TEC-061",
+      "MAT-011 fired brick shell x24",
+      "MAT-003 grate frame x2",
+      "MAT-036 capstone arch x2",
+      "EQP-005 fuel"
+    ],
     "enabled_actions": [
       "CRF-009",
       "CRF-010",
-      "CRF-081"
+      "CRF-081 soak"
     ],
     "required_tech": [
       "TEC-061"
     ],
     "notes": "Chimney guard keeps rain out; baffles improve fuel use; accepts charcoal or peat bricks and benefits from JOB-034 kiln minders for even draws",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -659,27 +525,24 @@
     "name": "Ore Sorting Sluice & Roast Bed",
     "type": "Work area",
     "purpose": "Wash and grade ore nodules before bloom charging",
-    "requirements": "TEC-062; MAT-003 frame x3; MAT-010 gravel catch x4; MAT-041 firewood x6; MAT-009 clay seal x2; EQP-006 chisels",
+    "requirements": [
+      "TEC-062",
+      "MAT-003 frame x3",
+      "MAT-010 gravel catch x4",
+      "MAT-041 firewood x6",
+      "MAT-009 clay seal x2",
+      "EQP-006 chisels"
+    ],
     "enabled_actions": [
       "CRF-056",
-      "CRF-011"
+      "CRF-011 staging"
     ],
     "required_tech": [
       "TEC-062",
       "TEC-067"
     ],
     "notes": "Set plank roofs over sluice lanes; low-heat roast drives off damp like mining camps in builder sims; keep tailings piles bermed",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -687,7 +550,14 @@
     "name": "Finery Forge & Quench Bay",
     "type": "Building/forge",
     "purpose": "Refine pig iron blooms and temper tool stock",
-    "requirements": "TEC-065; MAT-016 tuyere bricks x8; MAT-003 frame x2; MAT-081 flux sand x4; EQP-005 fuel; EQP-008 smith's tongs",
+    "requirements": [
+      "TEC-065",
+      "MAT-016 tuyere bricks x8",
+      "MAT-003 frame x2",
+      "MAT-081 flux sand x4",
+      "EQP-005 fuel",
+      "EQP-008 smith's tongs"
+    ],
     "enabled_actions": [
       "CRF-040",
       "CRF-041"
@@ -696,17 +566,7 @@
       "TEC-065"
     ],
     "notes": "Needs steady blast and slag taps; cover quench troughs from grit; pair with JOB-013 forgewrights to stretch charcoal loads",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -714,7 +574,13 @@
     "name": "Fulling Troughs & Dyer's Hearth",
     "type": "Work area",
     "purpose": "Scour, full, and dye cloth bolts",
-    "requirements": "TEC-063; MAT-011 brick footing x6; MAT-008 resin caulk x2; MAT-040 dye vats x2; MAT-041 firewood x4",
+    "requirements": [
+      "TEC-063",
+      "MAT-011 brick footing x6",
+      "MAT-008 resin caulk x2",
+      "MAT-040 dye vats x2",
+      "MAT-041 firewood x4"
+    ],
     "enabled_actions": [
       "CRF-021",
       "CRF-023",
@@ -724,17 +590,7 @@
       "TEC-063"
     ],
     "notes": "Keep under canopy to control steam; treadle stocks mimic medieval fulling mills; rinse downhill from hearth to keep dyes even",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -742,26 +598,22 @@
     "name": "Timber Seasoning Shed",
     "type": "Yard",
     "purpose": "Stack and sticker logs and planks for drying",
-    "requirements": "TEC-064; MAT-003 posts x4; MAT-010 drainage gravel x4; MAT-041 stickers x12; MAT-039 lashings x4",
+    "requirements": [
+      "TEC-064",
+      "MAT-003 posts x4",
+      "MAT-010 drainage gravel x4",
+      "MAT-041 stickers x12",
+      "MAT-039 lashings x4"
+    ],
     "enabled_actions": [
       "CRF-032",
-      "CRF-033"
+      "CRF-033 staging"
     ],
     "required_tech": [
       "TEC-064"
     ],
     "notes": "South-facing vents bleed moisture; raised racks keep beetles off like sawyer camps in survival builders",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -769,7 +621,13 @@
     "name": "Wheelwright's Frame & Spoke Pit",
     "type": "Work area",
     "purpose": "Jig wheels, hubs, and carts with trued spokes",
-    "requirements": "TEC-064; MAT-003 beams x4; MAT-035 hub chocks x2; MAT-039 rope brace x2; EQP-026 brace and bit",
+    "requirements": [
+      "TEC-064",
+      "MAT-003 beams x4",
+      "MAT-035 hub chocks x2",
+      "MAT-039 rope brace x2",
+      "EQP-026 brace and bit"
+    ],
     "enabled_actions": [
       "CRF-034",
       "CRF-035"
@@ -778,17 +636,7 @@
       "TEC-064"
     ],
     "notes": "Keep undercover for glue cures; chalk circles help true rims before banding; shares crews with JOB-012 carpenters",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -796,7 +644,12 @@
     "name": "Powder Mixing Bench",
     "type": "Work area",
     "purpose": "Ventilated bench for grinding, dampening, and screening black powder",
-    "requirements": "TEC-056; MAT-003 braced frame x3; MAT-010 grit slab x2; MAT-041 staging planks x2",
+    "requirements": [
+      "TEC-056",
+      "MAT-003 braced frame x3",
+      "MAT-010 grit slab x2",
+      "MAT-041 staging planks x2"
+    ],
     "enabled_actions": [
       "CRF-059",
       "CRF-060",
@@ -806,17 +659,7 @@
       "TEC-056"
     ],
     "notes": "Grounded rods and copper tools cut static risk; isolate from forges",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -824,7 +667,12 @@
     "name": "Guild Desk & Press Bench",
     "type": "Furniture",
     "purpose": "Script copying, ledger stamping, and screw-press runs",
-    "requirements": "TEC-054; MAT-003 beams x4; MAT-040 sheets x10; MAT-039 lashings x2",
+    "requirements": [
+      "TEC-054",
+      "MAT-003 beams x4",
+      "MAT-040 sheets x10",
+      "MAT-039 lashings x2"
+    ],
     "enabled_actions": [
       "CRF-030"
     ],
@@ -832,17 +680,7 @@
       "TEC-054"
     ],
     "notes": "Clamp galleys tight; keep ink stones covered",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -850,7 +688,13 @@
     "name": "Press Room & Type Racks",
     "type": "Room/furniture",
     "purpose": "Houses screw press, type racks, and drying lines",
-    "requirements": "TEC-054; MAT-041 beams x6; MAT-036 footings x4; MAT-049 sailcloth awning x1; MAT-039 lashings x4",
+    "requirements": [
+      "TEC-054",
+      "MAT-041 beams x6",
+      "MAT-036 footings x4",
+      "MAT-049 sailcloth awning x1",
+      "MAT-039 lashings x4"
+    ],
     "enabled_actions": [
       "CRF-062",
       "CRF-065",
@@ -860,17 +704,7 @@
       "TEC-054"
     ],
     "notes": "Needs dust-free canopy; anchors EQP-039 cases and STR-074 benches for high-volume runs",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -878,7 +712,13 @@
     "name": "Lift-Gas Generator Shed",
     "type": "Building/work area",
     "purpose": "Boils resin or charcoal reagents to fill EQP-042 envelopes",
-    "requirements": "TEC-058; MAT-036 stone bed x4; MAT-041 vented walls x6; MAT-008 resin casks x2; MAT-038 charcoal x2",
+    "requirements": [
+      "TEC-058",
+      "MAT-036 stone bed x4",
+      "MAT-041 vented walls x6",
+      "MAT-008 resin casks x2",
+      "MAT-038 charcoal x2"
+    ],
     "enabled_actions": [
       "CRF-064"
     ],
@@ -886,17 +726,7 @@
       "TEC-058"
     ],
     "notes": "Vent downwind; pair with EQP-043 crews to keep bladder temps in check",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
@@ -904,7 +734,13 @@
     "name": "Mooring Mast & Winch Deck",
     "type": "Building/work area",
     "purpose": "Anchors tethered balloons and winch crews",
-    "requirements": "TEC-058; MAT-041 mast timbers x4; MAT-039 anchor ropes x4; MAT-003 iron shoes x2; MAT-036 paving x2",
+    "requirements": [
+      "TEC-058",
+      "MAT-041 mast timbers x4",
+      "MAT-039 anchor ropes x4",
+      "MAT-003 iron shoes x2",
+      "MAT-036 paving x2"
+    ],
     "enabled_actions": [
       "CRF-067"
     ],
@@ -912,43 +748,37 @@
       "TEC-058"
     ],
     "notes": "Requires clear approach; keep EQP-043 kit staged and tie-in to INV-002 rope stores",
-    "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 0,
-      "em": 1.0,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 0,
-      "up": 0,
-      "tags": []
-    },
+    "stats": {},
     "upgrade_path": []
   },
   {
     "id": "STR-078",
     "name": "Forager's Hut",
-    "type": "Building/work area",
+    "type": "Gathering",
     "purpose": "Gathers wild herbs, berries, and mushrooms with basic shelter",
-    "requirements": "TEC-017; MAT-003 frame x6; MAT-041 lashings x2",
+    "requirements": [
+      "TEC-017",
+      "MAT-003 frame x6",
+      "MAT-041 lashings x2"
+    ],
     "enabled_actions": [
-      "CRF-003"
+      "CRF-003 staging"
     ],
     "required_tech": [
       "TEC-017"
     ],
     "notes": "Low smoke fire ring; relies on nearby forage nodes",
     "stats": {
-      "is_delta": false,
-      "bo": 6,
+      "bo": 8,
       "l": 2,
       "em": 1.0,
-      "r": 0.78,
+      "r": 0.85,
       "qt": 1,
-      "cap": 8,
-      "up": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
-        "farming"
+        "gathering",
+        "food"
       ]
     },
     "upgrade_path": [
@@ -962,25 +792,28 @@
     "name": "Basketry Rack",
     "type": "Upgrade/Module",
     "purpose": "Improves carry baskets and staging for gathered goods",
-    "requirements": "STR-078; MAT-039 bindings x3",
+    "requirements": [
+      "STR-078",
+      "MAT-039 bindings x3"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-017"
     ],
     "notes": "Tight weave keeps small forage from spilling",
     "stats": {
-      "is_delta": true,
-      "bo": 1,
+      "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.02,
+      "em": 0.1,
+      "r": 0.0,
       "qt": 0,
-      "cap": 4,
+      "cap": 0,
       "up": 0,
       "tags": [
         "upgrade",
-        "farming"
-      ]
+        "gathering"
+      ],
+      "delta": true
     },
     "upgrade_path": [
       "STR-078"
@@ -991,25 +824,29 @@
     "name": "Herb Drying Loft",
     "type": "Upgrade/Module",
     "purpose": "Adds lofted racks for drying herbs and mushrooms",
-    "requirements": "STR-078; MAT-041 beams x4; MAT-008 resin caulk x1",
+    "requirements": [
+      "STR-078",
+      "MAT-041 beams x4",
+      "MAT-008 resin caulk x1"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-017"
     ],
     "notes": "Keeps damp off sensitive herbs; slow airflow",
     "stats": {
-      "is_delta": true,
-      "bo": 2,
+      "bo": 0,
       "l": 0,
-      "em": 0.1,
-      "r": 0.0,
+      "em": 0.0,
+      "r": 0.05,
       "qt": 0,
-      "cap": 3,
-      "up": 1,
+      "cap": 50,
+      "up": 0,
       "tags": [
         "upgrade",
-        "farming"
-      ]
+        "food"
+      ],
+      "delta": true
     },
     "upgrade_path": [
       "STR-078"
@@ -1020,25 +857,30 @@
     "name": "Smoke Pit (small)",
     "type": "Upgrade/Module",
     "purpose": "Small pit kiln for light smoking of forage",
-    "requirements": "STR-078; TEC-029; MAT-041 firewood x4; MAT-009 clay seal x2",
+    "requirements": [
+      "STR-078",
+      "TEC-029",
+      "MAT-041 firewood x4",
+      "MAT-009 clay seal x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-029"
     ],
     "notes": "Boosts preservation but needs tending",
     "stats": {
-      "is_delta": true,
-      "bo": 1,
+      "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.03,
+      "em": 0.0,
+      "r": 0.05,
       "qt": 0,
       "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
-        "farming"
-      ]
+        "preservation"
+      ],
+      "delta": true
     },
     "upgrade_path": [
       "STR-078"
@@ -1049,7 +891,12 @@
     "name": "Herbalist's Hut",
     "type": "Building/work area",
     "purpose": "Sheltered apothecary bay for tinctures and poultices",
-    "requirements": "STR-004; TEC-017; MAT-003 walls x6; MAT-008 resin x2",
+    "requirements": [
+      "STR-004",
+      "TEC-017",
+      "MAT-003 walls x6",
+      "MAT-008 resin x2"
+    ],
     "enabled_actions": [
       "CRF-003"
     ],
@@ -1058,7 +905,6 @@
     ],
     "notes": "Keeps ingredients dry; pairs with Forager's Hut",
     "stats": {
-      "is_delta": false,
       "bo": 4,
       "l": 2,
       "em": 1.0,
@@ -1080,7 +926,12 @@
     "name": "Distillation Coil",
     "type": "Upgrade/Module",
     "purpose": "Copper coil and cooling basin for simple distillations",
-    "requirements": "STR-082; TEC-031; MAT-016 coil x1; MAT-040 basin x1",
+    "requirements": [
+      "STR-082",
+      "TEC-031",
+      "MAT-016 coil x1",
+      "MAT-040 basin x1"
+    ],
     "enabled_actions": [
       "CRF-003",
       "CRF-062"
@@ -1090,7 +941,6 @@
     ],
     "notes": "Adds gentle heat gradients for oils and spirits",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
       "em": 0.15,
@@ -1101,7 +951,8 @@
       "tags": [
         "upgrade",
         "craft"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -1110,14 +961,17 @@
     "name": "Reagent Shelves",
     "type": "Upgrade/Module",
     "purpose": "Tiered shelving to sort reagents and sealed jars",
-    "requirements": "STR-082; MAT-003 planks x4; MAT-040 jars x6",
+    "requirements": [
+      "STR-082",
+      "MAT-003 planks x4",
+      "MAT-040 jars x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-017"
     ],
     "notes": "Faster staging and safer handling for delicate reagents",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
       "em": 0.05,
@@ -1128,34 +982,39 @@
       "tags": [
         "upgrade",
         "craft"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-085",
     "name": "Trapper's Hut",
-    "type": "Building/work area",
+    "type": "Gathering",
     "purpose": "Fields trap lines and dresses small game returns",
-    "requirements": "TEC-016; MAT-003 posts x6; MAT-039 cordage x4",
+    "requirements": [
+      "TEC-016",
+      "MAT-003 posts x6",
+      "MAT-039 cordage x4"
+    ],
     "enabled_actions": [
-      "CRF-025"
+      "CRF-025 staging"
     ],
     "required_tech": [
       "TEC-016"
     ],
     "notes": "Raised deck keeps bait dry; hides can hang",
     "stats": {
-      "is_delta": false,
       "bo": 7,
       "l": 2,
       "em": 1.0,
-      "r": 0.8,
+      "r": 0.82,
       "qt": 1,
-      "cap": 6,
-      "up": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
-        "farming"
+        "gathering",
+        "hides"
       ]
     },
     "upgrade_path": [
@@ -1168,27 +1027,33 @@
   {
     "id": "STR-086",
     "name": "Hunting Lodge",
-    "type": "Building/work area",
+    "type": "Gathering",
     "purpose": "Larger lodge for shared trapper crews and smoking racks",
-    "requirements": "STR-085; TEC-029; MAT-041 beams x6; MAT-009 clay hearth x2",
+    "requirements": [
+      "STR-085",
+      "TEC-029",
+      "MAT-041 beams x6",
+      "MAT-009 clay hearth x2"
+    ],
     "enabled_actions": [
-      "CRF-025"
+      "CRF-025 staging"
     ],
     "required_tech": [
       "TEC-029"
     ],
     "notes": "Adds bunks and smoke vents for larger batches",
     "stats": {
-      "is_delta": false,
-      "bo": 10,
+      "bo": 12,
       "l": 3,
-      "em": 1.05,
-      "r": 0.85,
-      "qt": 2,
-      "cap": 8,
-      "up": 2,
+      "em": 1.0,
+      "r": 0.78,
+      "qt": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
-        "farming"
+        "gathering",
+        "meat",
+        "hides"
       ]
     },
     "upgrade_path": [
@@ -1202,25 +1067,29 @@
     "name": "Skinning Frame",
     "type": "Upgrade/Module",
     "purpose": "Framed beam for stretching and scraping hides",
-    "requirements": "STR-085, STR-086; MAT-003 beams x2",
+    "requirements": [
+      "STR-085",
+      "STR-086",
+      "MAT-003 beams x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-016"
     ],
     "notes": "Reduces spoilage; frees floor space",
     "stats": {
-      "is_delta": true,
-      "bo": 1,
+      "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.0,
-      "qt": 0,
-      "cap": 2,
+      "em": 0.0,
+      "r": 0.05,
+      "qt": 1,
+      "cap": 0,
       "up": 0,
       "tags": [
         "upgrade",
-        "farming"
-      ]
+        "hides"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -1229,25 +1098,30 @@
     "name": "Trap Lines Cache",
     "type": "Upgrade/Module",
     "purpose": "Cache for pre-baited traps and snares",
-    "requirements": "STR-085, STR-086; MAT-039 lashings x3; MAT-008 resin x1",
+    "requirements": [
+      "STR-085",
+      "STR-086",
+      "MAT-039 lashings x3",
+      "MAT-008 resin x1"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-016"
     ],
     "notes": "Faster resets on long lines; protects bait",
     "stats": {
-      "is_delta": true,
-      "bo": 2,
+      "bo": 0,
       "l": 0,
-      "em": 0.05,
+      "em": 0.15,
       "r": 0.0,
       "qt": 0,
-      "cap": 3,
-      "up": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
         "upgrade",
-        "farming"
-      ]
+        "gathering"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -1256,53 +1130,59 @@
     "name": "Trophy Racks",
     "type": "Upgrade/Module",
     "purpose": "Display and drying racks for pelts and horns",
-    "requirements": "STR-086; MAT-003 uprights x2",
+    "requirements": [
+      "STR-086",
+      "MAT-003 uprights x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-029"
     ],
     "notes": "Improves morale, keeps pests off trophies",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
       "em": 0.0,
-      "r": 0.05,
+      "r": 0.03,
       "qt": 0,
-      "cap": 2,
+      "cap": 0,
       "up": 0,
       "tags": [
         "upgrade",
-        "civic"
-      ]
+        "morale"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-090",
     "name": "Fishing Shack",
-    "type": "Building/work area",
+    "type": "Maritime/Food",
     "purpose": "Basic riverside shack for line and net fishing",
-    "requirements": "TEC-074; MAT-003 stilts x6; MAT-039 nets x2",
+    "requirements": [
+      "TEC-074",
+      "MAT-003 stilts x6",
+      "MAT-039 nets x2"
+    ],
     "enabled_actions": [
-      "JOB-010"
+      "JOB-010 staging"
     ],
     "required_tech": [
       "TEC-074"
     ],
     "notes": "Keep near slow water; sheltered cutting block",
     "stats": {
-      "is_delta": false,
       "bo": 8,
       "l": 2,
       "em": 1.0,
-      "r": 0.8,
+      "r": 0.75,
       "qt": 1,
-      "cap": 6,
-      "up": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
         "maritime",
-        "farming"
+        "food"
       ]
     },
     "upgrade_path": [
@@ -1317,25 +1197,29 @@
     "name": "Net Drying Racks",
     "type": "Upgrade/Module",
     "purpose": "Racks to dry and mend fishing nets",
-    "requirements": "STR-090; TEC-075; MAT-039 rigging x3",
+    "requirements": [
+      "STR-090",
+      "TEC-075",
+      "MAT-039 rigging x3"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-075"
     ],
     "notes": "Prevents rot and keeps knots tight",
     "stats": {
-      "is_delta": true,
-      "bo": 1,
+      "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.02,
+      "em": 0.0,
+      "r": 0.1,
       "qt": 0,
-      "cap": 2,
+      "cap": 0,
       "up": 0,
       "tags": [
         "upgrade",
         "maritime"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -1344,25 +1228,30 @@
     "name": "Smokehouse Extension",
     "type": "Upgrade/Module",
     "purpose": "Covered smoke chamber for fish preservation",
-    "requirements": "STR-090; TEC-076; MAT-041 firewood x6; MAT-009 clay seal x3",
+    "requirements": [
+      "STR-090",
+      "TEC-076",
+      "MAT-041 firewood x6",
+      "MAT-009 clay seal x3"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-076"
     ],
     "notes": "Extends shelf life; needs steady tending",
     "stats": {
-      "is_delta": true,
-      "bo": 2,
+      "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.03,
+      "em": 0.0,
+      "r": 0.05,
       "qt": 0,
-      "cap": 0,
+      "cap": 80,
       "up": 1,
       "tags": [
         "upgrade",
-        "farming"
-      ]
+        "preservation"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -1371,53 +1260,62 @@
     "name": "Boat Slip",
     "type": "Upgrade/Module",
     "purpose": "Small slip for riverboats and skiffs",
-    "requirements": "STR-090; TEC-074; MAT-003 decking x4; MAT-039 rope x2",
+    "requirements": [
+      "STR-090",
+      "TEC-074",
+      "MAT-003 decking x4",
+      "MAT-039 rope x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-074"
     ],
     "notes": "Faster launch and haul-out for boats",
     "stats": {
-      "is_delta": true,
-      "bo": 1,
-      "l": 1,
-      "em": 0.1,
-      "r": 0.02,
+      "bo": 0,
+      "l": 0,
+      "em": 0.15,
+      "r": -0.03,
       "qt": 0,
-      "cap": 2,
+      "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
         "maritime"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-094",
     "name": "Fishing Wharf",
-    "type": "Building/work area",
+    "type": "Maritime/Food",
     "purpose": "Piled wharf with stalls for multiple crews",
-    "requirements": "STR-090; TEC-077; MAT-041 pilings x6; MAT-003 planks x6",
+    "requirements": [
+      "STR-090",
+      "TEC-077",
+      "MAT-041 pilings x6",
+      "MAT-003 planks x6"
+    ],
     "enabled_actions": [
-      "JOB-010"
+      "JOB-010 staging"
     ],
     "required_tech": [
       "TEC-077"
     ],
     "notes": "Supports small cranes and salting tables",
     "stats": {
-      "is_delta": false,
-      "bo": 12,
-      "l": 3,
-      "em": 1.1,
-      "r": 0.84,
-      "qt": 2,
-      "cap": 10,
+      "bo": 20,
+      "l": 4,
+      "em": 1.0,
+      "r": 0.8,
+      "qt": 1,
+      "cap": 100,
       "up": 2,
       "tags": [
         "maritime",
-        "logistics"
+        "food"
       ]
     },
     "upgrade_path": [
@@ -1430,28 +1328,34 @@
   {
     "id": "STR-095",
     "name": "Fishery Complex",
-    "type": "Building/work area",
+    "type": "Maritime/Processing",
     "purpose": "Consolidated fishery with chilling pits and smoke bays",
-    "requirements": "STR-094; TEC-077; TEC-076; MAT-041 beams x8; MAT-009 clay seal x4",
+    "requirements": [
+      "STR-094",
+      "TEC-077",
+      "TEC-076",
+      "MAT-041 beams x8",
+      "MAT-009 clay seal x4"
+    ],
     "enabled_actions": [
-      "JOB-010"
+      "JOB-010 staging"
     ],
     "required_tech": [
       "TEC-077"
     ],
     "notes": "Integrates slips, smoke bays, and salting cellars",
     "stats": {
-      "is_delta": false,
-      "bo": 16,
-      "l": 4,
-      "em": 1.15,
-      "r": 0.86,
+      "bo": 28,
+      "l": 5,
+      "em": 1.0,
+      "r": 0.85,
       "qt": 2,
-      "cap": 14,
+      "cap": 300,
       "up": 3,
       "tags": [
         "maritime",
-        "logistics"
+        "processing",
+        "storage"
       ]
     },
     "upgrade_path": [
@@ -1463,27 +1367,30 @@
   {
     "id": "STR-096",
     "name": "Rabbit Warren",
-    "type": "Building/husbandry",
+    "type": "Food",
     "purpose": "Managed burrows for small game meat and pelts",
-    "requirements": "TEC-015; MAT-003 stakes x4; MAT-039 netting x2",
+    "requirements": [
+      "TEC-015",
+      "MAT-003 stakes x4",
+      "MAT-039 netting x2"
+    ],
     "enabled_actions": [
-      "CRF-025"
+      "CRF-025 staging"
     ],
     "required_tech": [
       "TEC-015"
     ],
     "notes": "Needs routine cleaning to prevent disease",
     "stats": {
-      "is_delta": false,
-      "bo": 5,
+      "bo": 4,
       "l": 1,
-      "em": 0.95,
-      "r": 0.75,
+      "em": 1.0,
+      "r": 0.88,
       "qt": 1,
-      "cap": 6,
-      "up": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
-        "farming"
+        "food"
       ]
     },
     "upgrade_path": [
@@ -1493,27 +1400,31 @@
   {
     "id": "STR-097",
     "name": "Managed Warren",
-    "type": "Building/husbandry",
+    "type": "Food",
     "purpose": "Enlarged warrens with feeding runs and cleaning grates",
-    "requirements": "STR-096; TEC-015; MAT-003 rails x4; MAT-008 resin x1",
+    "requirements": [
+      "STR-096",
+      "TEC-015",
+      "MAT-003 rails x4",
+      "MAT-008 resin x1"
+    ],
     "enabled_actions": [
-      "CRF-025"
+      "CRF-025 staging"
     ],
     "required_tech": [
       "TEC-015"
     ],
     "notes": "Better airflow reduces losses",
     "stats": {
-      "is_delta": false,
-      "bo": 8,
-      "l": 2,
-      "em": 1.05,
-      "r": 0.82,
+      "bo": 7,
+      "l": 1,
+      "em": 1.0,
+      "r": 0.9,
       "qt": 1,
-      "cap": 10,
-      "up": 2,
+      "cap": 0,
+      "up": 1,
       "tags": [
-        "farming"
+        "food"
       ]
     },
     "upgrade_path": [
@@ -1523,26 +1434,29 @@
   {
     "id": "STR-098",
     "name": "Breeding Pens",
-    "type": "Upgrade/Module",
+    "type": "Food",
     "purpose": "Segregated pens for selective breeding and quarantine",
-    "requirements": "STR-097; TEC-096; MAT-003 timbers x4; MAT-041 bedding x3",
+    "requirements": [
+      "STR-097",
+      "TEC-096",
+      "MAT-003 timbers x4",
+      "MAT-041 bedding x3"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-096"
     ],
     "notes": "Stabilizes output quality but needs upkeep",
     "stats": {
-      "is_delta": true,
-      "bo": 3,
-      "l": 1,
-      "em": 0.05,
-      "r": 0.03,
-      "qt": 0,
-      "cap": 4,
-      "up": 1,
+      "bo": 10,
+      "l": 2,
+      "em": 1.0,
+      "r": 0.92,
+      "qt": 2,
+      "cap": 0,
+      "up": 2,
       "tags": [
-        "upgrade",
-        "farming"
+        "food"
       ]
     },
     "upgrade_path": []
@@ -1550,25 +1464,28 @@
   {
     "id": "STR-099",
     "name": "Farm Plot (small)",
-    "type": "Fieldwork",
+    "type": "Farming",
     "purpose": "Small rotated plots for staple crops",
-    "requirements": "TEC-014; MAT-010 gravel x4; MAT-041 stakes x4",
+    "requirements": [
+      "TEC-014",
+      "MAT-010 gravel x4",
+      "MAT-041 stakes x4"
+    ],
     "enabled_actions": [
-      "JOB-006"
+      "JOB-006 staging"
     ],
     "required_tech": [
       "TEC-014"
     ],
     "notes": "Simple ditches and seedbeds",
     "stats": {
-      "is_delta": false,
-      "bo": 6,
-      "l": 1,
+      "bo": 18,
+      "l": 2,
       "em": 1.0,
-      "r": 0.78,
+      "r": 0.85,
       "qt": 1,
-      "cap": 6,
-      "up": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
         "farming"
       ]
@@ -1584,27 +1501,32 @@
   {
     "id": "STR-100",
     "name": "Farmstead",
-    "type": "Building/fieldwork",
+    "type": "Farming",
     "purpose": "Centralized sheds, granaries, and fields",
-    "requirements": "STR-099; TEC-014; MAT-003 beams x6; MAT-041 planks x6",
+    "requirements": [
+      "STR-099",
+      "TEC-014",
+      "MAT-003 beams x6",
+      "MAT-041 planks x6"
+    ],
     "enabled_actions": [
-      "JOB-006"
+      "JOB-006 staging"
     ],
     "required_tech": [
       "TEC-014"
     ],
     "notes": "Adds staging barn and shared tools",
     "stats": {
-      "is_delta": false,
-      "bo": 10,
-      "l": 2,
-      "em": 1.05,
-      "r": 0.82,
+      "bo": 24,
+      "l": 3,
+      "em": 1.0,
+      "r": 0.88,
       "qt": 1,
-      "cap": 10,
-      "up": 2,
+      "cap": 120,
+      "up": 1,
       "tags": [
-        "farming"
+        "farming",
+        "storage"
       ]
     },
     "upgrade_path": [
@@ -1618,11 +1540,17 @@
   {
     "id": "STR-101",
     "name": "Manor Farm",
-    "type": "Building/fieldwork",
+    "type": "Farming",
     "purpose": "Estate-scale farm with multiple rotations and storage",
-    "requirements": "STR-100; TEC-028; TEC-096; MAT-003 frames x8; MAT-036 paving x4",
+    "requirements": [
+      "STR-100",
+      "TEC-028",
+      "TEC-096",
+      "MAT-003 frames x8",
+      "MAT-036 paving x4"
+    ],
     "enabled_actions": [
-      "JOB-006"
+      "JOB-006 staging"
     ],
     "required_tech": [
       "TEC-028",
@@ -1630,17 +1558,16 @@
     ],
     "notes": "Overseer ledgering and drainage supports",
     "stats": {
-      "is_delta": false,
-      "bo": 14,
-      "l": 3,
-      "em": 1.1,
-      "r": 0.86,
+      "bo": 30,
+      "l": 4,
+      "em": 1.0,
+      "r": 0.9,
       "qt": 2,
-      "cap": 14,
-      "up": 3,
+      "cap": 250,
+      "up": 2,
       "tags": [
         "farming",
-        "logistics"
+        "storage"
       ]
     },
     "upgrade_path": [
@@ -1655,25 +1582,31 @@
     "name": "Irrigation Channels",
     "type": "Upgrade/Module",
     "purpose": "Dug channels and gates for better watering",
-    "requirements": "STR-099, STR-100, STR-101; TEC-028; MAT-010 gravel x6",
+    "requirements": [
+      "STR-099",
+      "STR-100",
+      "STR-101",
+      "TEC-028",
+      "MAT-010 gravel x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-028"
     ],
     "notes": "Reduces drought risk, can flood if untended",
     "stats": {
-      "is_delta": true,
-      "bo": 2,
+      "bo": 0,
       "l": 0,
-      "em": 0.1,
-      "r": 0.02,
+      "em": 0.0,
+      "r": 0.0,
       "qt": 0,
       "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
         "farming"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -1682,25 +1615,30 @@
     "name": "Crop Rotation Markers",
     "type": "Upgrade/Module",
     "purpose": "Marker stones and logs to guide rotations",
-    "requirements": "STR-099, STR-100, STR-101; TEC-014",
+    "requirements": [
+      "STR-099",
+      "STR-100",
+      "STR-101",
+      "TEC-014"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-014"
     ],
     "notes": "Keeps soil fertile and reduces pests",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.08,
-      "r": 0.03,
+      "em": 0.0,
+      "r": 0.05,
       "qt": 0,
       "cap": 0,
       "up": 0,
       "tags": [
         "upgrade",
         "farming"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -1709,25 +1647,32 @@
     "name": "Tool Shed",
     "type": "Upgrade/Module",
     "purpose": "Weatherproof shed for hoes, plows, and seed drills",
-    "requirements": "STR-099, STR-100, STR-101; TEC-020; MAT-003 planks x4; MAT-041 shingles x2",
+    "requirements": [
+      "STR-099",
+      "STR-100",
+      "STR-101",
+      "TEC-020",
+      "MAT-003 planks x4",
+      "MAT-041 shingles x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-020"
     ],
     "notes": "Protects tools and speeds field setup",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.05,
+      "em": 0.1,
+      "r": 0.0,
       "qt": 0,
-      "cap": 4,
-      "up": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
         "upgrade",
-        "logistics"
-      ]
+        "farming"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -1736,36 +1681,46 @@
     "name": "Barn Expansion",
     "type": "Upgrade/Module",
     "purpose": "Extra bays for hay, beasts, and wagons",
-    "requirements": "STR-100, STR-101; TEC-020; MAT-003 beams x6; MAT-041 planks x4",
+    "requirements": [
+      "STR-100",
+      "STR-101",
+      "TEC-020",
+      "MAT-003 beams x6",
+      "MAT-041 planks x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-020"
     ],
     "notes": "Supports winter fodder and larger teams",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.02,
+      "em": 0.0,
+      "r": 0.0,
       "qt": 0,
-      "cap": 6,
+      "cap": 200,
       "up": 1,
       "tags": [
         "upgrade",
         "farming"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-106",
     "name": "Orchard",
-    "type": "Fieldwork",
+    "type": "Farming",
     "purpose": "Tree rows for fruit and nut production",
-    "requirements": "TEC-014; MAT-010 mulch x4; MAT-003 stakes x4",
+    "requirements": [
+      "TEC-014",
+      "MAT-010 mulch x4",
+      "MAT-003 stakes x4"
+    ],
     "enabled_actions": [
-      "CRF-021"
+      "CRF-021 staging"
     ],
     "required_tech": [
       "TEC-014",
@@ -1773,14 +1728,13 @@
     ],
     "notes": "Needs pruning and pest watch",
     "stats": {
-      "is_delta": false,
-      "bo": 7,
+      "bo": 12,
       "l": 2,
       "em": 1.0,
-      "r": 0.8,
+      "r": 0.88,
       "qt": 1,
-      "cap": 8,
-      "up": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
         "farming"
       ]
@@ -1795,9 +1749,13 @@
     "name": "Vineyard",
     "type": "Fieldwork",
     "purpose": "Trellised vines for grapes and specialty fruit",
-    "requirements": "TEC-014; MAT-010 gravel x4; MAT-039 ties x2",
+    "requirements": [
+      "TEC-014",
+      "MAT-010 gravel x4",
+      "MAT-039 ties x2"
+    ],
     "enabled_actions": [
-      "CRF-024"
+      "CRF-024 staging"
     ],
     "required_tech": [
       "TEC-014",
@@ -1805,7 +1763,6 @@
     ],
     "notes": "Requires steady pruning and drainage",
     "stats": {
-      "is_delta": false,
       "bo": 8,
       "l": 2,
       "em": 1.02,
@@ -1827,27 +1784,33 @@
     "name": "Press Shed",
     "type": "Upgrade/Module",
     "purpose": "Shed with small press for cider or wine",
-    "requirements": "STR-106, STR-107; TEC-024; MAT-003 beams x4; MAT-011 brick footing x2",
+    "requirements": [
+      "STR-106",
+      "STR-107",
+      "TEC-024",
+      "MAT-003 beams x4",
+      "MAT-011 brick footing x2"
+    ],
     "enabled_actions": [
-      "CRF-024"
+      "CRF-024 staging"
     ],
     "required_tech": [
       "TEC-024"
     ],
     "notes": "Improves juice yields and storage",
     "stats": {
-      "is_delta": true,
-      "bo": 2,
+      "bo": 0,
       "l": 0,
-      "em": 0.08,
-      "r": 0.02,
+      "em": 0.0,
+      "r": 0.0,
       "qt": 1,
       "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
-        "farming"
-      ]
+        "processing"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -1856,52 +1819,60 @@
     "name": "Trellis Upgrade",
     "type": "Upgrade/Module",
     "purpose": "Extra trellising and pruning rails",
-    "requirements": "STR-106, STR-107; TEC-014; MAT-039 lashings x3",
+    "requirements": [
+      "STR-106",
+      "STR-107",
+      "TEC-014",
+      "MAT-039 lashings x3"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-014"
     ],
     "notes": "Keeps vines airy and resistant to rot",
     "stats": {
-      "is_delta": true,
-      "bo": 1,
+      "bo": 0,
       "l": 0,
-      "em": 0.06,
-      "r": 0.02,
+      "em": 0.0,
+      "r": 0.03,
       "qt": 0,
-      "cap": 2,
-      "up": 0,
+      "cap": 0,
+      "up": 1,
       "tags": [
         "upgrade",
         "farming"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-110",
     "name": "Pasture (small)",
-    "type": "Fieldwork",
+    "type": "Husbandry",
     "purpose": "Small grazing lot with simple fencing",
-    "requirements": "TEC-015; MAT-003 stakes x6; MAT-039 rope x4",
+    "requirements": [
+      "TEC-015",
+      "MAT-003 stakes x6",
+      "MAT-039 rope x4"
+    ],
     "enabled_actions": [
-      "JOB-007"
+      "JOB-007 staging"
     ],
     "required_tech": [
       "TEC-015"
     ],
     "notes": "Rotational pasture for few animals",
     "stats": {
-      "is_delta": false,
-      "bo": 5,
-      "l": 1,
+      "bo": 8,
+      "l": 2,
       "em": 1.0,
-      "r": 0.78,
+      "r": 0.85,
       "qt": 1,
-      "cap": 6,
+      "cap": 0,
       "up": 1,
       "tags": [
-        "farming"
+        "husbandry"
       ]
     },
     "upgrade_path": [
@@ -1914,27 +1885,31 @@
   {
     "id": "STR-111",
     "name": "Pasture (medium)",
-    "type": "Fieldwork",
+    "type": "Husbandry",
     "purpose": "Expanded grazing with water troughs",
-    "requirements": "STR-110; TEC-015; MAT-003 rails x6; MAT-009 clay trough x2",
+    "requirements": [
+      "STR-110",
+      "TEC-015",
+      "MAT-003 rails x6",
+      "MAT-009 clay trough x2"
+    ],
     "enabled_actions": [
-      "JOB-007"
+      "JOB-007 staging"
     ],
     "required_tech": [
       "TEC-015"
     ],
     "notes": "Supports more headcount and fodder",
     "stats": {
-      "is_delta": false,
-      "bo": 9,
-      "l": 2,
-      "em": 1.05,
-      "r": 0.82,
+      "bo": 12,
+      "l": 3,
+      "em": 1.0,
+      "r": 0.87,
       "qt": 1,
-      "cap": 10,
+      "cap": 0,
       "up": 2,
       "tags": [
-        "farming"
+        "husbandry"
       ]
     },
     "upgrade_path": [
@@ -1947,27 +1922,31 @@
   {
     "id": "STR-112",
     "name": "Pasture (large)",
-    "type": "Fieldwork",
+    "type": "Husbandry",
     "purpose": "Broad pasture with lane fencing and wells",
-    "requirements": "STR-111; TEC-028; MAT-003 beams x8; MAT-010 gravel x6",
+    "requirements": [
+      "STR-111",
+      "TEC-028",
+      "MAT-003 beams x8",
+      "MAT-010 gravel x6"
+    ],
     "enabled_actions": [
-      "JOB-007"
+      "JOB-007 staging"
     ],
     "required_tech": [
       "TEC-028"
     ],
     "notes": "Allows wagon access and herd rotation",
     "stats": {
-      "is_delta": false,
-      "bo": 13,
-      "l": 3,
-      "em": 1.1,
-      "r": 0.85,
+      "bo": 16,
+      "l": 4,
+      "em": 1.0,
+      "r": 0.88,
       "qt": 2,
-      "cap": 14,
+      "cap": 0,
       "up": 3,
       "tags": [
-        "farming"
+        "husbandry"
       ]
     },
     "upgrade_path": [
@@ -1981,25 +1960,31 @@
     "name": "Fencing Upgrade",
     "type": "Upgrade/Module",
     "purpose": "Reinforced fencing and gates",
-    "requirements": "STR-110, STR-111, STR-112; TEC-015; MAT-003 rails x4",
+    "requirements": [
+      "STR-110",
+      "STR-111",
+      "STR-112",
+      "TEC-015",
+      "MAT-003 rails x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-015"
     ],
     "notes": "Reduces escapes and predator losses",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.04,
+      "em": 0.0,
+      "r": 0.03,
       "qt": 0,
-      "cap": 2,
-      "up": 0,
+      "cap": 0,
+      "up": 1,
       "tags": [
         "upgrade",
-        "farming"
-      ]
+        "husbandry"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2008,25 +1993,32 @@
     "name": "Shelter Sheds",
     "type": "Upgrade/Module",
     "purpose": "Simple sheds to shield animals",
-    "requirements": "STR-110, STR-111, STR-112; TEC-015; MAT-041 planks x4; MAT-008 resin x1",
+    "requirements": [
+      "STR-110",
+      "STR-111",
+      "STR-112",
+      "TEC-015",
+      "MAT-041 planks x4",
+      "MAT-008 resin x1"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-015"
     ],
     "notes": "Cuts weather losses, improves health",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.04,
-      "r": 0.03,
+      "em": 0.0,
+      "r": 0.05,
       "qt": 0,
-      "cap": 2,
+      "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
-        "farming"
-      ]
+        "husbandry"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2035,52 +2027,60 @@
     "name": "Selective Breeding Pens",
     "type": "Upgrade/Module",
     "purpose": "Pens for bloodline control and feed trials",
-    "requirements": "STR-111, STR-112; TEC-096; MAT-003 braces x4; MAT-041 bedding x4",
+    "requirements": [
+      "STR-111",
+      "STR-112",
+      "TEC-096",
+      "MAT-003 braces x4",
+      "MAT-041 bedding x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-096"
     ],
     "notes": "Raises quality at cost of upkeep",
     "stats": {
-      "is_delta": true,
-      "bo": 2,
+      "bo": -2,
       "l": 0,
-      "em": 0.06,
+      "em": 0.0,
       "r": 0.0,
-      "qt": 0,
+      "qt": 1,
       "cap": 0,
-      "up": 1,
+      "up": 2,
       "tags": [
-        "upgrade",
-        "farming"
-      ]
+        "quality"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-116",
     "name": "Stable",
-    "type": "Building/husbandry",
+    "type": "Husbandry",
     "purpose": "Houses mounts with tack storage and grooming bay",
-    "requirements": "TEC-036; MAT-003 beams x6; MAT-041 planks x6",
+    "requirements": [
+      "TEC-036",
+      "MAT-003 beams x6",
+      "MAT-041 planks x6"
+    ],
     "enabled_actions": [
-      "JOB-023"
+      "JOB-023 staging"
     ],
     "required_tech": [
       "TEC-036"
     ],
     "notes": "Needs fodder stock and drainage",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 2,
       "em": 1.0,
-      "r": 0.85,
-      "qt": 0,
-      "cap": 8,
-      "up": 2,
+      "r": 0.88,
+      "qt": 1,
+      "cap": 0,
+      "up": 1,
       "tags": [
-        "housing",
+        "husbandry",
         "logistics"
       ]
     },
@@ -2091,27 +2091,31 @@
   {
     "id": "STR-117",
     "name": "Kennels",
-    "type": "Building/husbandry",
+    "type": "Husbandry",
     "purpose": "Housing for hounds and working dogs",
-    "requirements": "TEC-016; MAT-003 frames x4; MAT-041 shingles x2",
+    "requirements": [
+      "TEC-016",
+      "MAT-003 frames x4",
+      "MAT-041 shingles x2"
+    ],
     "enabled_actions": [
-      "JOB-008"
+      "JOB-008 staging"
     ],
     "required_tech": [
       "TEC-016"
     ],
     "notes": "Secure runs with cleaning drains",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 1,
       "em": 1.0,
-      "r": 0.8,
+      "r": 0.9,
       "qt": 0,
-      "cap": 6,
+      "cap": 0,
       "up": 1,
       "tags": [
-        "housing"
+        "security",
+        "hunting"
       ]
     },
     "upgrade_path": []
@@ -2119,27 +2123,31 @@
   {
     "id": "STR-118",
     "name": "Poultry Yard",
-    "type": "Building/husbandry",
+    "type": "Husbandry",
     "purpose": "Coops and scratching yard for fowl and eggs",
-    "requirements": "TEC-015; MAT-003 posts x4; MAT-039 netting x3",
+    "requirements": [
+      "TEC-015",
+      "MAT-003 posts x4",
+      "MAT-039 netting x3"
+    ],
     "enabled_actions": [
-      "CRF-024"
+      "CRF-024 staging"
     ],
     "required_tech": [
       "TEC-015"
     ],
     "notes": "Guard from foxes; provide grit and feed",
     "stats": {
-      "is_delta": false,
-      "bo": 4,
+      "bo": 6,
       "l": 1,
       "em": 1.0,
-      "r": 0.78,
+      "r": 0.9,
       "qt": 1,
-      "cap": 8,
+      "cap": 0,
       "up": 1,
       "tags": [
-        "farming"
+        "food",
+        "feathers"
       ]
     },
     "upgrade_path": [
@@ -2151,23 +2159,27 @@
     "name": "Cellar",
     "type": "Storage",
     "purpose": "Cool underground storage for mixed foods",
-    "requirements": "TEC-076; MAT-011 bricks x8; MAT-009 clay seal x2",
+    "requirements": [
+      "TEC-076",
+      "MAT-011 bricks x8",
+      "MAT-009 clay seal x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-076"
     ],
     "notes": "Damp-resistant shelving; watch for mold",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 1,
+      "l": 0,
       "em": 1.0,
-      "r": 0.82,
+      "r": 0.92,
       "qt": 0,
-      "cap": 20,
+      "cap": 200,
       "up": 1,
       "tags": [
-        "storage"
+        "storage",
+        "food"
       ]
     },
     "upgrade_path": [
@@ -2182,23 +2194,28 @@
     "name": "Cold Cellar",
     "type": "Storage",
     "purpose": "Ice-assisted cellar for perishables",
-    "requirements": "STR-119; TEC-079; MAT-009 clay seal x2; MAT-040 ice blocks x4",
+    "requirements": [
+      "STR-119",
+      "TEC-079",
+      "MAT-009 clay seal x2",
+      "MAT-040 ice blocks x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-079"
     ],
     "notes": "Needs ice deliveries or cooling runes",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 1,
+      "l": 0,
       "em": 1.0,
-      "r": 0.86,
+      "r": 0.95,
       "qt": 0,
-      "cap": 18,
+      "cap": 200,
       "up": 2,
       "tags": [
-        "storage"
+        "storage",
+        "cold"
       ]
     },
     "upgrade_path": [
@@ -2213,24 +2230,27 @@
     "name": "Granary",
     "type": "Storage",
     "purpose": "Ventilated grain store with raised floors",
-    "requirements": "TEC-080; MAT-003 posts x6; MAT-041 planks x6",
+    "requirements": [
+      "TEC-080",
+      "MAT-003 posts x6",
+      "MAT-041 planks x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-080"
     ],
     "notes": "Reduces spoilage; keep swept",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 1,
+      "l": 0,
       "em": 1.0,
-      "r": 0.85,
+      "r": 0.95,
       "qt": 0,
-      "cap": 30,
-      "up": 2,
+      "cap": 400,
+      "up": 1,
       "tags": [
         "storage",
-        "logistics"
+        "grain"
       ]
     },
     "upgrade_path": [
@@ -2245,24 +2265,28 @@
     "name": "Silo",
     "type": "Storage",
     "purpose": "Tall bin for bulk grain with chutes",
-    "requirements": "STR-121; TEC-081; MAT-003 framing x8; MAT-041 decking x4",
+    "requirements": [
+      "STR-121",
+      "TEC-081",
+      "MAT-003 framing x8",
+      "MAT-041 decking x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-081"
     ],
     "notes": "High capacity but needs careful loading",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 1,
-      "em": 0.95,
-      "r": 0.8,
+      "l": 0,
+      "em": 1.0,
+      "r": 0.93,
       "qt": 0,
-      "cap": 40,
+      "cap": 900,
       "up": 2,
       "tags": [
         "storage",
-        "logistics"
+        "grain"
       ]
     },
     "upgrade_path": [
@@ -2277,21 +2301,24 @@
     "name": "Storehouse",
     "type": "Storage",
     "purpose": "General goods store for mixed wares",
-    "requirements": "TEC-043; MAT-003 beams x6; MAT-041 siding x6",
+    "requirements": [
+      "TEC-043",
+      "MAT-003 beams x6",
+      "MAT-041 siding x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-043"
     ],
     "notes": "Track inventories to avoid loss",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 2,
+      "l": 1,
       "em": 1.0,
-      "r": 0.84,
+      "r": 0.9,
       "qt": 0,
-      "cap": 32,
-      "up": 2,
+      "cap": 400,
+      "up": 1,
       "tags": [
         "storage",
         "logistics"
@@ -2309,21 +2336,25 @@
     "name": "Warehouse",
     "type": "Storage",
     "purpose": "Large-scale covered storage with bays",
-    "requirements": "STR-123; TEC-082; MAT-041 beams x8; MAT-036 paving x4",
+    "requirements": [
+      "STR-123",
+      "TEC-082",
+      "MAT-041 beams x8",
+      "MAT-036 paving x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-082"
     ],
     "notes": "Requires stevedores and ledgers",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 3,
-      "em": 1.05,
-      "r": 0.86,
+      "l": 2,
+      "em": 1.0,
+      "r": 0.92,
       "qt": 0,
-      "cap": 50,
-      "up": 3,
+      "cap": 900,
+      "up": 2,
       "tags": [
         "storage",
         "logistics"
@@ -2340,26 +2371,30 @@
   {
     "id": "STR-125",
     "name": "Trade Vault",
-    "type": "Storage",
+    "type": "Storage/Security",
     "purpose": "Secured vault for coin, contracts, and valuables",
-    "requirements": "STR-123; TEC-084; MAT-036 stone blocks x6; MAT-003 iron bands x4",
+    "requirements": [
+      "STR-123",
+      "TEC-084",
+      "MAT-036 stone blocks x6",
+      "MAT-003 iron bands x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-084"
     ],
     "notes": "Guarded entry and heavy locks",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 2,
+      "l": 1,
       "em": 1.0,
-      "r": 0.9,
+      "r": 0.95,
       "qt": 0,
-      "cap": 20,
-      "up": 3,
+      "cap": 300,
+      "up": 2,
       "tags": [
         "storage",
-        "civic"
+        "security"
       ]
     },
     "upgrade_path": [
@@ -2374,25 +2409,35 @@
     "name": "Shelving Systems",
     "type": "Upgrade/Module",
     "purpose": "Modular shelves and bins to improve density",
-    "requirements": "STR-119, STR-120, STR-121, STR-122, STR-123, STR-124, STR-125; TEC-085; MAT-003 planks x6",
+    "requirements": [
+      "STR-119",
+      "STR-120",
+      "STR-121",
+      "STR-122",
+      "STR-123",
+      "STR-124",
+      "STR-125",
+      "TEC-085",
+      "MAT-003 planks x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-085"
     ],
     "notes": "Safer stacking and faster retrieval",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.05,
+      "em": 0.0,
       "r": 0.0,
       "qt": 0,
-      "cap": 10,
+      "cap": 200,
       "up": 1,
       "tags": [
         "upgrade",
         "storage"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2401,25 +2446,35 @@
     "name": "Pest Control",
     "type": "Upgrade/Module",
     "purpose": "Traps, cats, and sealing to deter pests",
-    "requirements": "STR-119, STR-120, STR-121, STR-122, STR-123, STR-124, STR-125; TEC-076; MAT-008 resin x2",
+    "requirements": [
+      "STR-119",
+      "STR-120",
+      "STR-121",
+      "STR-122",
+      "STR-123",
+      "STR-124",
+      "STR-125",
+      "TEC-076",
+      "MAT-008 resin x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-076"
     ],
     "notes": "Reduces spoilage risk",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
       "em": 0.0,
-      "r": 0.06,
+      "r": 0.03,
       "qt": 0,
       "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
         "storage"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2428,25 +2483,33 @@
     "name": "Inventory Ledgers",
     "type": "Upgrade/Module",
     "purpose": "Ledger station and slates for counts",
-    "requirements": "STR-121, STR-122, STR-123, STR-124, STR-125; TEC-083; MAT-040 sheets x6",
+    "requirements": [
+      "STR-121",
+      "STR-122",
+      "STR-123",
+      "STR-124",
+      "STR-125",
+      "TEC-083",
+      "MAT-040 sheets x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-083"
     ],
     "notes": "Cuts loss and improves throughput",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.08,
-      "r": 0.02,
+      "em": 0.05,
+      "r": 0.0,
       "qt": 0,
       "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
         "logistics"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2455,35 +2518,49 @@
     "name": "Magical Preservation Runes",
     "type": "Upgrade/Module",
     "purpose": "Rune set for cooling and warding spoilage",
-    "requirements": "STR-119, STR-120, STR-121, STR-122, STR-123, STR-124, STR-125; TEC-079; MAT-006 shards x2",
+    "requirements": [
+      "STR-119",
+      "STR-120",
+      "STR-121",
+      "STR-122",
+      "STR-123",
+      "STR-124",
+      "STR-125",
+      "TEC-079",
+      "MAT-006 shards x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-079"
     ],
     "notes": "Consumes mana upkeep; steady temperature",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.1,
-      "r": 0.08,
+      "em": 0.0,
+      "r": 0.03,
       "qt": 0,
       "cap": 0,
       "up": 2,
       "tags": [
         "upgrade",
-        "arcana",
-        "storage"
-      ]
+        "arcana"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-130",
     "name": "Smithy",
-    "type": "Building/forge",
+    "type": "Craft/Metallurgy",
     "purpose": "Covered forge with anvil, quench, and prep benches",
-    "requirements": "TEC-087; MAT-003 frame x6; MAT-016 tuyere x2; EQP-005 fuel",
+    "requirements": [
+      "TEC-087",
+      "MAT-003 frame x6",
+      "MAT-016 tuyere x2",
+      "EQP-005 fuel"
+    ],
     "enabled_actions": [
       "CRF-001",
       "CRF-012"
@@ -2493,14 +2570,13 @@
     ],
     "notes": "Core metalworking space distinct from bloomery",
     "stats": {
-      "is_delta": false,
       "bo": 10,
       "l": 2,
       "em": 1.0,
-      "r": 0.83,
-      "qt": 2,
-      "cap": 4,
-      "up": 2,
+      "r": 0.85,
+      "qt": 1,
+      "cap": 0,
+      "up": 1,
       "tags": [
         "metallurgy",
         "craft"
@@ -2522,17 +2598,21 @@
     "name": "Enlarged Furnace",
     "type": "Upgrade/Module",
     "purpose": "Larger hearth box for hotter charges",
-    "requirements": "STR-130; TEC-088; MAT-016 bricks x6; MAT-003 braces x2",
+    "requirements": [
+      "STR-130",
+      "TEC-088",
+      "MAT-016 bricks x6",
+      "MAT-003 braces x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-088"
     ],
     "notes": "Better heat retention but more fuel hungry",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.1,
+      "em": 0.25,
       "r": 0.0,
       "qt": 0,
       "cap": 0,
@@ -2540,7 +2620,8 @@
       "tags": [
         "upgrade",
         "metallurgy"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2549,25 +2630,29 @@
     "name": "Manual Bellows",
     "type": "Upgrade/Module",
     "purpose": "Single bellows for steadier airflow",
-    "requirements": "STR-130; TEC-088; MAT-039 bellows skin x1",
+    "requirements": [
+      "STR-130",
+      "TEC-088",
+      "MAT-039 bellows skin x1"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-088"
     ],
     "notes": "Allows longer heats with less fatigue",
     "stats": {
-      "is_delta": true,
       "bo": 0,
-      "l": 0,
-      "em": 0.08,
-      "r": 0.02,
+      "l": 1,
+      "em": 0.2,
+      "r": 0.0,
       "qt": 0,
       "cap": 0,
-      "up": 1,
+      "up": 0,
       "tags": [
         "upgrade",
         "metallurgy"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2576,25 +2661,30 @@
     "name": "Dual Bellows System",
     "type": "Upgrade/Module",
     "purpose": "Twin bellows with foot treadles",
-    "requirements": "STR-130; TEC-088; MAT-039 bellows skins x2; MAT-003 frame x2",
+    "requirements": [
+      "STR-130",
+      "TEC-088",
+      "MAT-039 bellows skins x2",
+      "MAT-003 frame x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-088"
     ],
     "notes": "Higher blast for larger heats",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.15,
-      "r": 0.03,
+      "em": 0.35,
+      "r": 0.0,
       "qt": 0,
       "cap": 0,
-      "up": 2,
+      "up": 1,
       "tags": [
         "upgrade",
         "metallurgy"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2603,25 +2693,29 @@
     "name": "Tool Racks & Jigs",
     "type": "Upgrade/Module",
     "purpose": "Pegs, racks, and jigs for rapid tool swaps",
-    "requirements": "STR-130; TEC-086; MAT-003 pegs x6",
+    "requirements": [
+      "STR-130",
+      "TEC-086",
+      "MAT-003 pegs x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-086"
     ],
     "notes": "Faster throughput and consistent shapes",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.07,
-      "r": 0.03,
+      "em": 0.05,
+      "r": 0.1,
       "qt": 0,
-      "cap": 2,
-      "up": 0,
+      "cap": 0,
+      "up": 1,
       "tags": [
         "upgrade",
         "craft"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2630,25 +2724,30 @@
     "name": "Expanded Workbenches",
     "type": "Upgrade/Module",
     "purpose": "Added benches and fixtures for assistants",
-    "requirements": "STR-130; TEC-085; MAT-003 planks x6; MAT-041 braces x2",
+    "requirements": [
+      "STR-130",
+      "TEC-085",
+      "MAT-003 planks x6",
+      "MAT-041 braces x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-085"
     ],
     "notes": "Supports more helpers and layouts",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 1,
-      "em": 0.1,
-      "r": 0.02,
+      "em": 0.0,
+      "r": 0.0,
       "qt": 0,
-      "cap": 2,
+      "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
         "craft"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2657,26 +2756,29 @@
     "name": "Weaponsmithing Workshop Module",
     "type": "Upgrade/Module",
     "purpose": "Specialized tooling for weapons and edges",
-    "requirements": "STR-130; TEC-089; MAT-003 quench racks x2; MAT-081 flux sand x2",
+    "requirements": [
+      "STR-130",
+      "TEC-089",
+      "MAT-003 quench racks x2",
+      "MAT-081 flux sand x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-089"
     ],
     "notes": "Exclusive focus for blades and points",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.12,
+      "em": -0.1,
       "r": 0.0,
       "qt": 1,
       "cap": 0,
       "up": 1,
       "tags": [
-        "upgrade",
-        "metallurgy",
-        "exclusive_group:smithy_focus"
-      ]
+        "exclusive_group:smithy_specialization"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2685,26 +2787,29 @@
     "name": "Armorsmithing Workshop Module",
     "type": "Upgrade/Module",
     "purpose": "Stakes, forms, and hammers for armor",
-    "requirements": "STR-130; TEC-090; MAT-003 stakes x2; MAT-016 rivets x4",
+    "requirements": [
+      "STR-130",
+      "TEC-090",
+      "MAT-003 stakes x2",
+      "MAT-016 rivets x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-090"
     ],
     "notes": "Exclusive focus for plates, scales, and links",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.12,
+      "em": -0.1,
       "r": 0.0,
       "qt": 1,
       "cap": 0,
-      "up": 1,
+      "up": 2,
       "tags": [
-        "upgrade",
-        "metallurgy",
-        "exclusive_group:smithy_focus"
-      ]
+        "exclusive_group:smithy_specialization"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2713,53 +2818,60 @@
     "name": "Toolmaker's Bench Module",
     "type": "Upgrade/Module",
     "purpose": "Benches for dies, clamps, and precision tooling",
-    "requirements": "STR-130; TEC-086; MAT-003 beams x2; MAT-039 clamps x2",
+    "requirements": [
+      "STR-130",
+      "TEC-086",
+      "MAT-003 beams x2",
+      "MAT-039 clamps x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-086"
     ],
     "notes": "Exclusive focus for tools and jigs",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.12,
-      "r": 0.02,
+      "em": -0.05,
+      "r": 0.0,
       "qt": 1,
       "cap": 0,
       "up": 1,
       "tags": [
-        "upgrade",
-        "metallurgy",
-        "exclusive_group:smithy_focus"
-      ]
+        "exclusive_group:smithy_specialization"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-139",
-    "name": "Jeweler's Bench",
-    "type": "Furniture",
+    "name": "Jeweler's Workshop",
+    "type": "Craft/Fine",
     "purpose": "Bench for fine metal and gem work",
-    "requirements": "TEC-085; MAT-003 plank x4; MAT-039 clamps x2",
+    "requirements": [
+      "TEC-085",
+      "MAT-003 plank x4",
+      "MAT-039 clamps x2"
+    ],
     "enabled_actions": [
-      "CRF-006"
+      "CRF-006 staging"
     ],
     "required_tech": [
       "TEC-085"
     ],
     "notes": "Needs bright light and steady stools",
     "stats": {
-      "is_delta": false,
       "bo": 6,
-      "l": 1,
+      "l": 2,
       "em": 1.0,
-      "r": 0.85,
+      "r": 0.9,
       "qt": 2,
-      "cap": 4,
-      "up": 2,
+      "cap": 0,
+      "up": 1,
       "tags": [
-        "craft"
+        "craft",
+        "jewelry"
       ]
     },
     "upgrade_path": [
@@ -2772,28 +2884,31 @@
   {
     "id": "STR-140",
     "name": "Gemcutting Station",
-    "type": "Tool/Furniture",
+    "type": "Craft/Fine",
     "purpose": "Rig for precise gem shaping, can pair with STR-005",
-    "requirements": "TEC-086; MAT-006 shard x1; MAT-003 frame x3",
+    "requirements": [
+      "TEC-086",
+      "MAT-006 shard x1",
+      "MAT-003 frame x3"
+    ],
     "enabled_actions": [
-      "CRF-006"
+      "CRF-006 staging"
     ],
     "required_tech": [
       "TEC-086"
     ],
     "notes": "Dampened vibration bed improves yields",
     "stats": {
-      "is_delta": false,
-      "bo": 7,
-      "l": 1,
-      "em": 1.05,
-      "r": 0.84,
-      "qt": 3,
-      "cap": 4,
-      "up": 2,
+      "bo": 6,
+      "l": 2,
+      "em": 1.0,
+      "r": 0.9,
+      "qt": 2,
+      "cap": 0,
+      "up": 1,
       "tags": [
         "craft",
-        "arcana"
+        "jewelry"
       ]
     },
     "upgrade_path": [
@@ -2808,25 +2923,30 @@
     "name": "Precision Loupe Kit",
     "type": "Upgrade/Module",
     "purpose": "Adjustable lenses for inspection",
-    "requirements": "STR-139, STR-140; TEC-086; MAT-006 shard x1",
+    "requirements": [
+      "STR-139",
+      "STR-140",
+      "TEC-086",
+      "MAT-006 shard x1"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-086"
     ],
     "notes": "Raises accuracy on cuts and inlays",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.07,
-      "r": 0.03,
-      "qt": 0,
+      "em": 0.0,
+      "r": 0.0,
+      "qt": 1,
       "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
         "craft"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2835,19 +2955,23 @@
     "name": "Gold/Silver Casting Tray",
     "type": "Upgrade/Module",
     "purpose": "Small crucible and tray for soft metal pours",
-    "requirements": "STR-139; TEC-087; MAT-016 crucible x1; EQP-005 fuel",
+    "requirements": [
+      "STR-139",
+      "TEC-087",
+      "MAT-016 crucible x1",
+      "EQP-005 fuel"
+    ],
     "enabled_actions": [
-      "CRF-006"
+      "CRF-006 staging"
     ],
     "required_tech": [
       "TEC-087"
     ],
     "notes": "Adds casting options for fine metals",
     "stats": {
-      "is_delta": true,
-      "bo": 1,
+      "bo": 0,
       "l": 0,
-      "em": 0.06,
+      "em": 0.1,
       "r": 0.0,
       "qt": 0,
       "cap": 0,
@@ -2855,7 +2979,8 @@
       "tags": [
         "upgrade",
         "craft"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2864,25 +2989,30 @@
     "name": "Setting Jig",
     "type": "Upgrade/Module",
     "purpose": "Micro-vices and clamps for stone setting",
-    "requirements": "STR-139, STR-140; TEC-086; MAT-039 clamps x3",
+    "requirements": [
+      "STR-139",
+      "STR-140",
+      "TEC-086",
+      "MAT-039 clamps x3"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-086"
     ],
     "notes": "Prevents slips when setting gems",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.02,
+      "em": 0.0,
+      "r": 0.05,
       "qt": 0,
       "cap": 0,
-      "up": 0,
+      "up": 1,
       "tags": [
         "upgrade",
         "craft"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -2891,53 +3021,63 @@
     "name": "Enchantment Socketing Block",
     "type": "Upgrade/Module",
     "purpose": "Stabilized block for rune socketing and binding",
-    "requirements": "STR-139, STR-140; TEC-079; MAT-006 shards x2; MAT-003 braces x1",
+    "requirements": [
+      "STR-139",
+      "STR-140",
+      "TEC-079",
+      "MAT-006 shards x2",
+      "MAT-003 braces x1"
+    ],
     "enabled_actions": [
-      "SPL-001"
+      "SPL-001 staging"
     ],
     "required_tech": [
       "TEC-079"
     ],
     "notes": "Supports arcane bindings without cracking",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.05,
-      "r": 0.02,
+      "em": 0.0,
+      "r": 0.0,
       "qt": 1,
       "cap": 0,
-      "up": 1,
+      "up": 2,
       "tags": [
         "upgrade",
         "arcana"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-145",
     "name": "Dock",
-    "type": "Building/work area",
+    "type": "Maritime/Logistics",
     "purpose": "Simple dock for loading skiffs and barges",
-    "requirements": "TEC-078; MAT-041 pilings x6; MAT-003 decking x6",
+    "requirements": [
+      "TEC-078",
+      "MAT-041 pilings x6",
+      "MAT-003 decking x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-078"
     ],
     "notes": "Ties into quay roads and rope posts",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 2,
+      "l": 1,
       "em": 1.0,
-      "r": 0.82,
+      "r": 0.88,
       "qt": 0,
-      "cap": 20,
-      "up": 2,
+      "cap": 200,
+      "up": 1,
       "tags": [
         "maritime",
-        "logistics"
+        "logistics",
+        "storage"
       ]
     },
     "upgrade_path": [
@@ -2951,9 +3091,15 @@
   {
     "id": "STR-146",
     "name": "Harbor",
-    "type": "Building/work area",
+    "type": "Maritime/Logistics",
     "purpose": "Reinforced harbor with quays, customs post, and mooring",
-    "requirements": "STR-145; TEC-077; TEC-078; MAT-036 stone fill x8; MAT-041 piling caps x4",
+    "requirements": [
+      "STR-145",
+      "TEC-077",
+      "TEC-078",
+      "MAT-036 stone fill x8",
+      "MAT-041 piling caps x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-077",
@@ -2961,17 +3107,17 @@
     ],
     "notes": "Handles multiple vessels and cargo",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 3,
-      "em": 1.05,
-      "r": 0.85,
+      "l": 2,
+      "em": 1.0,
+      "r": 0.9,
       "qt": 0,
-      "cap": 30,
-      "up": 3,
+      "cap": 400,
+      "up": 2,
       "tags": [
         "maritime",
-        "logistics"
+        "trade",
+        "storage"
       ]
     },
     "upgrade_path": [
@@ -2984,9 +3130,15 @@
   {
     "id": "STR-147",
     "name": "Port Authority",
-    "type": "Building/civic",
+    "type": "Civic/Maritime",
     "purpose": "Offices, barracks, and ledgers for harbor oversight",
-    "requirements": "STR-146; TEC-077; TEC-084; MAT-036 blocks x6; MAT-040 ledgers x2",
+    "requirements": [
+      "STR-146",
+      "TEC-077",
+      "TEC-084",
+      "MAT-036 blocks x6",
+      "MAT-040 ledgers x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-077",
@@ -2994,18 +3146,17 @@
     ],
     "notes": "Regulates tolls, manifests, and security",
     "stats": {
-      "is_delta": false,
       "bo": 0,
-      "l": 4,
-      "em": 1.1,
-      "r": 0.88,
+      "l": 3,
+      "em": 1.0,
+      "r": 0.92,
       "qt": 0,
-      "cap": 40,
-      "up": 4,
+      "cap": 600,
+      "up": 3,
       "tags": [
+        "maritime",
         "civic",
-        "logistics",
-        "maritime"
+        "trade"
       ]
     },
     "upgrade_path": [
@@ -3017,23 +3168,26 @@
   {
     "id": "STR-148",
     "name": "Boatyard",
-    "type": "Building/work area",
+    "type": "Maritime/Craft",
     "purpose": "Yard for hull repairs and small craft builds",
-    "requirements": "TEC-078; MAT-041 beams x6; MAT-003 cradles x4",
+    "requirements": [
+      "TEC-078",
+      "MAT-041 beams x6",
+      "MAT-003 cradles x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-078"
     ],
     "notes": "Needs tar kettles and sawpits nearby",
     "stats": {
-      "is_delta": false,
-      "bo": 0,
+      "bo": 4,
       "l": 3,
-      "em": 1.02,
-      "r": 0.83,
-      "qt": 0,
-      "cap": 24,
-      "up": 3,
+      "em": 1.0,
+      "r": 0.8,
+      "qt": 2,
+      "cap": 0,
+      "up": 2,
       "tags": [
         "maritime",
         "craft"
@@ -3048,27 +3202,30 @@
   {
     "id": "STR-149",
     "name": "Shipyard",
-    "type": "Building/work area",
+    "type": "Maritime/Craft",
     "purpose": "Large slipways and sheds for major hulls",
-    "requirements": "STR-148; TEC-077; MAT-036 paving x6; MAT-041 cranes x2",
+    "requirements": [
+      "STR-148",
+      "TEC-077",
+      "MAT-036 paving x6",
+      "MAT-041 cranes x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-077"
     ],
     "notes": "Supports mast stepping and caulking bays",
     "stats": {
-      "is_delta": false,
-      "bo": 0,
-      "l": 4,
-      "em": 1.08,
-      "r": 0.86,
-      "qt": 0,
-      "cap": 32,
-      "up": 4,
+      "bo": 7,
+      "l": 5,
+      "em": 1.0,
+      "r": 0.82,
+      "qt": 3,
+      "cap": 0,
+      "up": 3,
       "tags": [
         "maritime",
-        "craft",
-        "logistics"
+        "craft"
       ]
     },
     "upgrade_path": [
@@ -3080,26 +3237,29 @@
   {
     "id": "STR-150",
     "name": "Lighthouse",
-    "type": "Building/civic",
+    "type": "Maritime/Safety",
     "purpose": "Beacon tower for navigation and hazard warnings",
-    "requirements": "TEC-079; MAT-036 blocks x8; MAT-006 lenses x1",
+    "requirements": [
+      "TEC-079",
+      "MAT-036 blocks x8",
+      "MAT-006 lenses x1"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-079"
     ],
     "notes": "Needs fuel deliveries and optics upkeep",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 1,
       "em": 1.0,
-      "r": 0.9,
+      "r": 0.95,
       "qt": 0,
       "cap": 0,
       "up": 2,
       "tags": [
         "maritime",
-        "civic"
+        "safety"
       ]
     },
     "upgrade_path": []
@@ -3109,14 +3269,17 @@
     "name": "Net Loft",
     "type": "Building/work area",
     "purpose": "Loft for drying sailcloth and netting out of spray",
-    "requirements": "TEC-075; MAT-041 rafters x6; MAT-039 rigging x4",
+    "requirements": [
+      "TEC-075",
+      "MAT-041 rafters x6",
+      "MAT-039 rigging x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-075"
     ],
     "notes": "Keeps rigging serviceable; supports lofting",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 1,
       "em": 1.0,
@@ -3138,14 +3301,18 @@
     "name": "Sailmaker's Loft",
     "type": "Building/work area",
     "purpose": "Dedicated sail and rigging loft with cutting floors",
-    "requirements": "STR-151; TEC-077; MAT-049 sailcloth x4; MAT-039 rigging x4",
+    "requirements": [
+      "STR-151",
+      "TEC-077",
+      "MAT-049 sailcloth x4",
+      "MAT-039 rigging x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-077"
     ],
     "notes": "Improves sail throughput and repair quality",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 2,
       "em": 1.05,
@@ -3167,49 +3334,60 @@
     "name": "Port Crane & Hoist",
     "type": "Upgrade/Module",
     "purpose": "Crane and hoist system for bays and warehouses",
-    "requirements": "STR-124, STR-145, STR-146, STR-149; TEC-077; MAT-041 booms x2; MAT-039 rigging x4",
+    "requirements": [
+      "STR-124",
+      "STR-145",
+      "STR-146",
+      "STR-149",
+      "TEC-077",
+      "MAT-041 booms x2",
+      "MAT-039 rigging x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-077"
     ],
     "notes": "Speeds loading and unloading; needs crew",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 1,
-      "em": 0.12,
-      "r": 0.02,
+      "em": 0.1,
+      "r": 0.0,
       "qt": 0,
-      "cap": 6,
-      "up": 2,
+      "cap": 0,
+      "up": 1,
       "tags": [
         "upgrade",
         "logistics",
         "maritime"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-154",
     "name": "Hovel",
-    "type": "Building/housing",
+    "type": "Housing",
     "purpose": "Rudimentary shelter for small families",
-    "requirements": "TEC-092; MAT-003 wattle x6; MAT-041 thatch x6",
+    "requirements": [
+      "TEC-092",
+      "MAT-003 wattle x6",
+      "MAT-041 thatch x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-092"
     ],
     "notes": "Smoky firepit; low comfort",
     "stats": {
-      "is_delta": false,
-      "bo": 0,
+      "pop": 4,
       "l": 0,
       "em": 1.0,
-      "r": 0.6,
+      "r": 0.8,
       "qt": 0,
-      "cap": 4,
-      "up": 1,
+      "cap": 0,
+      "up": 0,
       "tags": [
         "housing"
       ]
@@ -3226,22 +3404,26 @@
   {
     "id": "STR-155",
     "name": "Cottage",
-    "type": "Building/housing",
+    "type": "Housing",
     "purpose": "Simple timber cottage with hearth and loft",
-    "requirements": "STR-154; TEC-092; MAT-003 beams x6; MAT-041 planks x6",
+    "requirements": [
+      "STR-154",
+      "TEC-092",
+      "MAT-003 beams x6",
+      "MAT-041 planks x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-092"
     ],
     "notes": "Dry loft storage and better warmth",
     "stats": {
-      "is_delta": false,
-      "bo": 0,
+      "pop": 6,
       "l": 0,
-      "em": 1.02,
-      "r": 0.7,
+      "em": 1.0,
+      "r": 0.85,
       "qt": 0,
-      "cap": 6,
+      "cap": 0,
       "up": 1,
       "tags": [
         "housing"
@@ -3259,22 +3441,26 @@
   {
     "id": "STR-156",
     "name": "Townhouse",
-    "type": "Building/housing",
+    "type": "Housing",
     "purpose": "Multi-room townhouse for urban blocks",
-    "requirements": "STR-155; TEC-093; MAT-036 stone footing x4; MAT-003 framing x6",
+    "requirements": [
+      "STR-155",
+      "TEC-093",
+      "MAT-036 stone footing x4",
+      "MAT-003 framing x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-093"
     ],
     "notes": "Shared walls reduce heat loss",
     "stats": {
-      "is_delta": false,
-      "bo": 0,
+      "pop": 8,
       "l": 0,
-      "em": 1.05,
-      "r": 0.78,
+      "em": 1.0,
+      "r": 0.88,
       "qt": 1,
-      "cap": 8,
+      "cap": 0,
       "up": 2,
       "tags": [
         "housing"
@@ -3292,22 +3478,26 @@
   {
     "id": "STR-157",
     "name": "Manor House",
-    "type": "Building/housing",
+    "type": "Housing",
     "purpose": "High-quality manor with service rooms",
-    "requirements": "STR-156; TEC-093; MAT-036 dressed stone x6; MAT-041 roofing x4",
+    "requirements": [
+      "STR-156",
+      "TEC-093",
+      "MAT-036 dressed stone x6",
+      "MAT-041 roofing x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-093"
     ],
     "notes": "Includes study and cellar access",
     "stats": {
-      "is_delta": false,
-      "bo": 0,
+      "pop": 10,
       "l": 0,
-      "em": 1.08,
-      "r": 0.82,
+      "em": 1.0,
+      "r": 0.9,
       "qt": 1,
-      "cap": 10,
+      "cap": 0,
       "up": 3,
       "tags": [
         "housing"
@@ -3325,22 +3515,26 @@
   {
     "id": "STR-158",
     "name": "Estate",
-    "type": "Building/housing",
+    "type": "Housing",
     "purpose": "Estate complex with hall, wings, and gardens",
-    "requirements": "STR-157; TEC-043; MAT-036 foundations x8; MAT-003 beams x8",
+    "requirements": [
+      "STR-157",
+      "TEC-043",
+      "MAT-036 foundations x8",
+      "MAT-003 beams x8"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-043"
     ],
     "notes": "Servant quarters and ledgered upkeep",
     "stats": {
-      "is_delta": false,
-      "bo": 0,
+      "pop": 12,
       "l": 0,
-      "em": 1.1,
-      "r": 0.86,
+      "em": 1.0,
+      "r": 0.92,
       "qt": 2,
-      "cap": 14,
+      "cap": 0,
       "up": 4,
       "tags": [
         "housing"
@@ -3359,25 +3553,33 @@
     "name": "Insulation/Weatherproofing",
     "type": "Upgrade/Module",
     "purpose": "Chinking, shutters, and weatherproof coats",
-    "requirements": "STR-154, STR-155, STR-156, STR-157, STR-158; TEC-092; MAT-008 resin x2",
+    "requirements": [
+      "STR-154",
+      "STR-155",
+      "STR-156",
+      "STR-157",
+      "STR-158",
+      "TEC-092",
+      "MAT-008 resin x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-092"
     ],
     "notes": "Improves warmth and durability",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.03,
-      "r": 0.08,
+      "em": 0.0,
+      "r": 0.03,
       "qt": 0,
       "cap": 0,
-      "up": 0,
+      "up": 1,
       "tags": [
         "upgrade",
         "housing"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -3386,25 +3588,34 @@
     "name": "Hearth & Chimney",
     "type": "Upgrade/Module",
     "purpose": "Proper hearth, chimney, and flue",
-    "requirements": "STR-154, STR-155, STR-156, STR-157, STR-158; TEC-092; MAT-011 bricks x4; MAT-041 firewood x2",
+    "requirements": [
+      "STR-154",
+      "STR-155",
+      "STR-156",
+      "STR-157",
+      "STR-158",
+      "TEC-092",
+      "MAT-011 bricks x4",
+      "MAT-041 firewood x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-092"
     ],
     "notes": "Safer fires and better comfort",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.02,
-      "r": 0.05,
+      "em": 0.0,
+      "r": 0.02,
       "qt": 0,
       "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
         "housing"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -3413,25 +3624,33 @@
     "name": "Additional Room Wing",
     "type": "Upgrade/Module",
     "purpose": "Extra room or loft wing for occupants",
-    "requirements": "STR-155, STR-156, STR-157, STR-158; TEC-092; MAT-003 frames x4; MAT-041 planks x4",
+    "requirements": [
+      "STR-155",
+      "STR-156",
+      "STR-157",
+      "STR-158",
+      "TEC-092",
+      "MAT-003 frames x4",
+      "MAT-041 planks x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-092"
     ],
     "notes": "Raises capacity with modest upkeep",
     "stats": {
-      "is_delta": true,
-      "bo": 0,
+      "pop": 2,
       "l": 0,
       "em": 0.0,
       "r": 0.02,
       "qt": 0,
-      "cap": 2,
-      "up": 1,
+      "cap": 0,
+      "up": 2,
       "tags": [
         "upgrade",
         "housing"
-      ]
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -3440,25 +3659,34 @@
     "name": "Sanitation Latrine",
     "type": "Upgrade/Module",
     "purpose": "Lined pit or chute with cover and wash",
-    "requirements": "STR-155, STR-156, STR-157, STR-158; TEC-094; MAT-009 clay seal x2; MAT-040 lime x2",
+    "requirements": [
+      "STR-155",
+      "STR-156",
+      "STR-157",
+      "STR-158",
+      "TEC-094",
+      "MAT-009 clay seal x2",
+      "MAT-040 lime x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-094"
     ],
     "notes": "Cuts disease risk; needs cleaning",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
       "em": 0.0,
-      "r": 0.06,
+      "r": 0.03,
       "qt": 0,
       "cap": 0,
       "up": 1,
       "tags": [
         "upgrade",
-        "housing"
-      ]
+        "housing",
+        "sanitation"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
@@ -3467,50 +3695,62 @@
     "name": "Garden Plot",
     "type": "Upgrade/Module",
     "purpose": "Small garden for herbs and morale",
-    "requirements": "STR-154, STR-155, STR-156, STR-157, STR-158; TEC-014; MAT-010 soil beds x2",
+    "requirements": [
+      "STR-154",
+      "STR-155",
+      "STR-156",
+      "STR-157",
+      "STR-158",
+      "TEC-014",
+      "MAT-010 soil beds x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-014"
     ],
     "notes": "Provides fresh garnish and rest spot",
     "stats": {
-      "is_delta": true,
       "bo": 0,
       "l": 0,
-      "em": 0.02,
-      "r": 0.02,
+      "em": 0.0,
+      "r": 0.01,
       "qt": 0,
       "cap": 0,
-      "up": 0,
+      "up": 1,
       "tags": [
         "upgrade",
-        "housing"
-      ]
+        "housing",
+        "morale"
+      ],
+      "delta": true
     },
     "upgrade_path": []
   },
   {
     "id": "STR-164",
     "name": "Fire Watch Post",
-    "type": "Building/civic",
+    "type": "Safety",
     "purpose": "Elevated post with alarm bell and buckets",
-    "requirements": "TEC-095; MAT-003 stilts x4; MAT-039 bell rope x1",
+    "requirements": [
+      "TEC-095",
+      "MAT-003 stilts x4",
+      "MAT-039 bell rope x1"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-095"
     ],
     "notes": "Early warning against fires",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 1,
       "em": 1.0,
-      "r": 0.75,
+      "r": 0.9,
       "qt": 0,
       "cap": 0,
       "up": 1,
       "tags": [
-        "civic"
+        "safety"
       ]
     },
     "upgrade_path": [
@@ -3520,25 +3760,29 @@
   {
     "id": "STR-165",
     "name": "Fire Bell Tower",
-    "type": "Building/civic",
+    "type": "Safety",
     "purpose": "Stone bell tower and lookout",
-    "requirements": "STR-164; TEC-095; MAT-036 stone blocks x4; MAT-039 bell rope x1",
+    "requirements": [
+      "STR-164",
+      "TEC-095",
+      "MAT-036 stone blocks x4",
+      "MAT-039 bell rope x1"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-095"
     ],
     "notes": "Wider alarm coverage and water staging",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 2,
-      "em": 1.05,
-      "r": 0.82,
+      "em": 1.0,
+      "r": 0.92,
       "qt": 0,
       "cap": 0,
       "up": 2,
       "tags": [
-        "civic"
+        "safety"
       ]
     },
     "upgrade_path": [
@@ -3548,25 +3792,29 @@
   {
     "id": "STR-166",
     "name": "Fire Brigade House",
-    "type": "Building/civic",
+    "type": "Safety",
     "purpose": "Crew hall with pumps, carts, and cistern taps",
-    "requirements": "STR-165; TEC-095; MAT-036 paving x4; MAT-003 beams x4",
+    "requirements": [
+      "STR-165",
+      "TEC-095",
+      "MAT-036 paving x4",
+      "MAT-003 beams x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-095"
     ],
     "notes": "Houses trained crews and equipment",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 3,
-      "em": 1.1,
-      "r": 0.88,
+      "em": 1.0,
+      "r": 0.95,
       "qt": 0,
       "cap": 0,
       "up": 3,
       "tags": [
-        "civic"
+        "safety"
       ]
     },
     "upgrade_path": []
@@ -3574,26 +3822,28 @@
   {
     "id": "STR-167",
     "name": "Maintenance Shed",
-    "type": "Building/work area",
+    "type": "Maintenance",
     "purpose": "Holds tools for field repairs and patching",
-    "requirements": "TEC-020; MAT-003 planks x6; MAT-041 shingles x2",
+    "requirements": [
+      "TEC-020",
+      "MAT-003 planks x6",
+      "MAT-041 shingles x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-020"
     ],
     "notes": "Basic upkeep on roads and fences",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 1,
       "em": 1.0,
-      "r": 0.8,
+      "r": 0.9,
       "qt": 0,
-      "cap": 6,
+      "cap": 0,
       "up": 1,
       "tags": [
-        "civic",
-        "logistics"
+        "maintenance"
       ]
     },
     "upgrade_path": [
@@ -3603,26 +3853,29 @@
   {
     "id": "STR-168",
     "name": "Maintenance Workshop",
-    "type": "Building/work area",
+    "type": "Maintenance",
     "purpose": "Bench-lined shop for structured upkeep",
-    "requirements": "STR-167; TEC-096; MAT-003 beams x6; MAT-036 paving x2",
+    "requirements": [
+      "STR-167",
+      "TEC-096",
+      "MAT-003 beams x6",
+      "MAT-036 paving x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-096"
     ],
     "notes": "Improves reliability across structures",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 2,
-      "em": 1.1,
-      "r": 0.86,
+      "em": 1.0,
+      "r": 0.92,
       "qt": 0,
-      "cap": 10,
+      "cap": 0,
       "up": 2,
       "tags": [
-        "civic",
-        "logistics"
+        "maintenance"
       ]
     },
     "upgrade_path": []
@@ -3630,25 +3883,29 @@
   {
     "id": "STR-169",
     "name": "Well",
-    "type": "Building/civic",
+    "type": "Water",
     "purpose": "Dug well with cap and bucket",
-    "requirements": "TEC-014; MAT-010 gravel x6; MAT-003 frame x2",
+    "requirements": [
+      "TEC-014",
+      "MAT-010 gravel x6",
+      "MAT-003 frame x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
-      "TEC-014"
+      "TEC-014",
+      "TEC-097"
     ],
     "notes": "Provides local water draw",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 1,
       "em": 1.0,
-      "r": 0.8,
+      "r": 0.88,
       "qt": 0,
       "cap": 0,
       "up": 1,
       "tags": [
-        "civic"
+        "water"
       ]
     },
     "upgrade_path": [
@@ -3658,26 +3915,30 @@
   {
     "id": "STR-170",
     "name": "Cistern",
-    "type": "Building/civic",
+    "type": "Water",
     "purpose": "Lined cistern with cover and spouts",
-    "requirements": "STR-169; TEC-014; MAT-009 clay seal x4; MAT-011 bricks x6",
+    "requirements": [
+      "STR-169",
+      "TEC-014",
+      "MAT-009 clay seal x4",
+      "MAT-011 bricks x6"
+    ],
     "enabled_actions": [],
     "required_tech": [
-      "TEC-014"
+      "TEC-014",
+      "TEC-097"
     ],
     "notes": "Collects runoff; reduces hauling",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 1,
-      "em": 1.02,
-      "r": 0.83,
+      "em": 1.0,
+      "r": 0.9,
       "qt": 0,
-      "cap": 12,
+      "cap": 0,
       "up": 2,
       "tags": [
-        "civic",
-        "logistics"
+        "water"
       ]
     },
     "upgrade_path": [
@@ -3687,26 +3948,31 @@
   {
     "id": "STR-171",
     "name": "Aqueduct",
-    "type": "Building/civic",
+    "type": "Water",
     "purpose": "Elevated channel bringing water from source",
-    "requirements": "STR-170; TEC-057; MAT-036 arches x6; MAT-003 scaffolds x4",
+    "requirements": [
+      "STR-170",
+      "TEC-057",
+      "MAT-036 arches x6",
+      "MAT-003 scaffolds x4"
+    ],
     "enabled_actions": [],
     "required_tech": [
-      "TEC-057"
+      "TEC-014",
+      "TEC-097"
     ],
     "notes": "Requires maintenance crews and watch",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 2,
-      "em": 1.08,
-      "r": 0.85,
+      "em": 1.0,
+      "r": 0.93,
       "qt": 0,
-      "cap": 20,
+      "cap": 0,
       "up": 3,
       "tags": [
-        "civic",
-        "logistics"
+        "water",
+        "civic"
       ]
     },
     "upgrade_path": []
@@ -3714,25 +3980,28 @@
   {
     "id": "STR-172",
     "name": "Open Drainage",
-    "type": "Building/civic",
+    "type": "Sanitation",
     "purpose": "Shallow open drains to move runoff",
-    "requirements": "TEC-094; MAT-010 gravel x6; MAT-039 stakes x2",
+    "requirements": [
+      "TEC-094",
+      "MAT-010 gravel x6",
+      "MAT-039 stakes x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-094"
     ],
     "notes": "Reduces standing water but visible",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 1,
       "em": 1.0,
-      "r": 0.7,
+      "r": 0.85,
       "qt": 0,
       "cap": 0,
       "up": 1,
       "tags": [
-        "civic"
+        "sanitation"
       ]
     },
     "upgrade_path": [
@@ -3742,25 +4011,29 @@
   {
     "id": "STR-173",
     "name": "Covered Drains",
-    "type": "Building/civic",
+    "type": "Sanitation",
     "purpose": "Boarded or stone-covered drains",
-    "requirements": "STR-172; TEC-094; MAT-041 planks x4; MAT-036 stones x2",
+    "requirements": [
+      "STR-172",
+      "TEC-094",
+      "MAT-041 planks x4",
+      "MAT-036 stones x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-094"
     ],
     "notes": "Safer streets, reduced odor",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 1,
-      "em": 1.02,
-      "r": 0.78,
+      "em": 1.0,
+      "r": 0.88,
       "qt": 0,
       "cap": 0,
-      "up": 1,
+      "up": 2,
       "tags": [
-        "civic"
+        "sanitation"
       ]
     },
     "upgrade_path": [
@@ -3770,25 +4043,231 @@
   {
     "id": "STR-174",
     "name": "Stone Sewers",
-    "type": "Building/civic",
+    "type": "Sanitation",
     "purpose": "Vaulted stone sewers with maintenance hatches",
-    "requirements": "STR-173; TEC-094; MAT-036 arches x4; MAT-003 ladders x2",
+    "requirements": [
+      "STR-173",
+      "TEC-094",
+      "MAT-036 arches x4",
+      "MAT-003 ladders x2"
+    ],
     "enabled_actions": [],
     "required_tech": [
       "TEC-094"
     ],
     "notes": "Needs inspection crews; keeps streets clean",
     "stats": {
-      "is_delta": false,
       "bo": 0,
       "l": 2,
-      "em": 1.05,
-      "r": 0.85,
+      "em": 1.0,
+      "r": 0.92,
       "qt": 0,
       "cap": 0,
+      "up": 3,
+      "tags": [
+        "sanitation"
+      ]
+    },
+    "upgrade_path": []
+  },
+  {
+    "id": "STR-175",
+    "name": "Cold Hooks",
+    "type": "Upgrade/Module",
+    "purpose": "Hanging hooks for chilled storage and aging",
+    "requirements": [
+      "STR-086",
+      "TEC-079",
+      "MAT-003 braces x2"
+    ],
+    "enabled_actions": [],
+    "required_tech": [
+      "TEC-079"
+    ],
+    "notes": "Requires cold storage or winter ice to keep temperatures low",
+    "stats": {
+      "bo": 0,
+      "l": 0,
+      "em": 0.0,
+      "r": 0.05,
+      "qt": 0,
+      "cap": 0,
+      "up": 1,
+      "tags": [
+        "upgrade",
+        "cold"
+      ],
+      "delta": true
+    },
+    "upgrade_path": [
+      "STR-086"
+    ]
+  },
+  {
+    "id": "STR-176",
+    "name": "Crane & Hoist (Wharf)",
+    "type": "Upgrade/Module",
+    "purpose": "Small crane and hoist for waterfront unloading",
+    "requirements": [
+      "STR-094",
+      "TEC-077",
+      "MAT-041 booms x2",
+      "MAT-039 rigging x2"
+    ],
+    "enabled_actions": [],
+    "required_tech": [
+      "TEC-077"
+    ],
+    "notes": "Improves turnaround for boats and barges",
+    "stats": {
+      "bo": 0,
+      "l": 0,
+      "em": 0.1,
+      "r": 0.0,
+      "qt": 0,
+      "cap": 0,
+      "up": 1,
+      "tags": [
+        "upgrade",
+        "maritime"
+      ],
+      "delta": true
+    },
+    "upgrade_path": [
+      "STR-094"
+    ]
+  },
+  {
+    "id": "STR-177",
+    "name": "Repair Shed",
+    "type": "Upgrade/Module",
+    "purpose": "Covered shed for maintaining nets and boats",
+    "requirements": [
+      "STR-094",
+      "TEC-077",
+      "MAT-003 planks x4",
+      "MAT-041 shingles x2"
+    ],
+    "enabled_actions": [],
+    "required_tech": [
+      "TEC-077"
+    ],
+    "notes": "Keeps crews working in foul weather",
+    "stats": {
+      "bo": 0,
+      "l": 0,
+      "em": 0.0,
+      "r": 0.05,
+      "qt": 0,
+      "cap": 0,
+      "up": 1,
+      "tags": [
+        "upgrade",
+        "maritime"
+      ],
+      "delta": true
+    },
+    "upgrade_path": [
+      "STR-094"
+    ]
+  },
+  {
+    "id": "STR-178",
+    "name": "Salting House",
+    "type": "Upgrade/Module",
+    "purpose": "Dedicated salting room and racks for fish curing",
+    "requirements": [
+      "STR-095",
+      "TEC-076",
+      "MAT-041 planks x6",
+      "MAT-009 clay seal x2"
+    ],
+    "enabled_actions": [],
+    "required_tech": [
+      "TEC-076"
+    ],
+    "notes": "Reduces spoilage across large catches",
+    "stats": {
+      "bo": 0,
+      "l": 0,
+      "em": 0.0,
+      "r": 0.05,
+      "qt": 0,
+      "cap": 0,
+      "up": 1,
+      "tags": [
+        "upgrade",
+        "preservation"
+      ],
+      "delta": true
+    },
+    "upgrade_path": [
+      "STR-095"
+    ]
+  },
+  {
+    "id": "STR-179",
+    "name": "Cold Storage Annex",
+    "type": "Upgrade/Module",
+    "purpose": "Cold pit or chilled cellar for fishery output",
+    "requirements": [
+      "STR-095",
+      "TEC-079",
+      "MAT-011 bricks x6",
+      "MAT-009 clay seal x2"
+    ],
+    "enabled_actions": [],
+    "required_tech": [
+      "TEC-079"
+    ],
+    "notes": "Uses packed ice or runes; slows spoilage",
+    "stats": {
+      "bo": 0,
+      "l": 0,
+      "em": 0.0,
+      "r": 0.0,
+      "qt": 0,
+      "cap": 200,
       "up": 2,
       "tags": [
-        "civic"
+        "upgrade",
+        "cold"
+      ],
+      "delta": true
+    },
+    "upgrade_path": [
+      "STR-095"
+    ]
+  },
+  {
+    "id": "STR-180",
+    "name": "Foundry",
+    "type": "Craft/Metallurgy",
+    "purpose": "Heavy furnace bay for bulk metal casting",
+    "requirements": [
+      "TEC-065",
+      "MAT-016 tuyere bricks x12",
+      "MAT-003 framing x6",
+      "EQP-005 fuel"
+    ],
+    "enabled_actions": [
+      "CRF-012",
+      "CRF-040"
+    ],
+    "required_tech": [
+      "TEC-065"
+    ],
+    "notes": "Handles larger heats and molds than a smithy",
+    "stats": {
+      "bo": 16,
+      "l": 3,
+      "em": 1.0,
+      "r": 0.82,
+      "qt": 2,
+      "cap": 0,
+      "up": 3,
+      "tags": [
+        "metallurgy"
       ]
     },
     "upgrade_path": []

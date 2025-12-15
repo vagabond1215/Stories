@@ -65,7 +65,7 @@
 | TEC-062 | Ore Sorting & Roast Beds | Tier 2 | TEC-006, TEC-033 | STR-025, CRF-056, JOB-021 | 3 days research; MAT-095 ore samples x6; MAT-010 drainage gravel x4 | Teaches grading ores, washing fines, and pre-roasting to drive off damp like frontier mining camps; stresses tailings berms and roofed sluices |
 | TEC-063 | Fulling & Dyehouse Layouts | Tier 2 | TEC-009, TEC-010 | STR-027, CRF-021, CRF-023, CRF-045, JOB-038, JOB-015 | 3 days research; MAT-040 dye tests x4; heated water tubs | Outlines treadle fulling, vat stacking, and cloth staging under awnings so wool and linen finishing can stay weather-safe as in medieval cloth halls |
 | TEC-064 | Timber Seasoning & Wheelwrighting | Tier 2 | TEC-019, TEC-020 | STR-028, STR-029, CRF-032, CRF-033, CRF-035, JOB-011, JOB-012 | 3 days research; MAT-041 stickers x12; MAT-003 beams x4 | Schedules air-drying stacks, sticker spacing, and hub-jig layouts to prevent warp; mirrors sawpit yards and wagon shops from survival builders |
-| TEC-065 | Finery & Tempering Practice | Tier 3 | TEC-022, TEC-006 | STR-026, CRF-040, CRF-041, JOB-013 | 4 days research; MAT-016 tuyere bricks x8; oil brine cooled | Adds finery hearth control, slag skimming, and quench recipes for sharper tools with leaner fuel draws modeled on late-medieval forges |
+| TEC-065 | Finery & Tempering Practice | Tier 3 | TEC-022, TEC-006 | STR-026, CRF-040, CRF-041, JOB-013, STR-180 | 4 days research; MAT-016 tuyere bricks x8; oil brine cooled | Adds finery hearth control, slag skimming, and quench recipes for sharper tools with leaner fuel draws modeled on late-medieval forges |
 | TEC-066 | Charcoal Production | Tier 1 | TEC-019 | STR-018, CRF-028, MAT-038, MAT-537, JOB-003 | 2 days research; MAT-041 log stacks x8; draft maps | Codifies mound stacking, soil sealing, and ember arresting for clean fuel batches |
 | TEC-067 | Ore Roasting & Sorting | Tier 2 | TEC-066, TEC-033 | STR-025, CRF-056, MAT-532, MAT-533, MAT-534 | 3 days research; ore trays; vented roofs staged | Grades ores, dries damp loads, and channels tailings for safer bloom charges |
 | TEC-068 | Copper Smelting | Tier 1 | TEC-066 | STR-009, CRF-011, MAT-015 | 3 days research; MAT-014 nodules x8; slag ladles | Establishes wind control, slag tapping, and bloom folding for first workable copper |
@@ -76,10 +76,10 @@
 | TEC-073 | Mythic Metallurgy | Tier 5 | TEC-072, TEC-007 | EQP-029, MAT-525 | 5 days research; MAT-020 fragments x6; MAT-006 resonance shard | Aligns arcane flux, crucible steel heats, and meteoric blends for legendary alloys |
 | TEC-074 | Fishing Practices | Tier 1 | TEC-018 | STR-090, STR-093 | 2 days research; net weights | Codifies cast timing, baiting, and river safety |
 | TEC-075 | Net Weaving | Tier 1 | TEC-018 | STR-091, STR-151 | 2 days research; cordage kits | Standardizes knots, mending, and drying lines |
-| TEC-076 | Food Preservation | Tier 2 | TEC-029 | STR-092, STR-119, STR-127 | 3 days research; salt blocks; smoke tests | Improves salting, smoking, and cool storage |
-| TEC-077 | Maritime Logistics | Tier 3 | TEC-053 | STR-094, STR-095, STR-146, STR-147, STR-149, STR-152, STR-153 | 4 days research; quay ledgers | Coordinates harbor crews, manifests, and crane signals |
+| TEC-076 | Food Preservation | Tier 2 | TEC-029 | STR-092, STR-119, STR-127, STR-178 | 3 days research; salt blocks; smoke tests | Improves salting, smoking, and cool storage |
+| TEC-077 | Maritime Logistics | Tier 3 | TEC-053 | STR-094, STR-095, STR-146, STR-147, STR-149, STR-152, STR-153, STR-176, STR-177 | 4 days research; quay ledgers | Coordinates harbor crews, manifests, and crane signals |
 | TEC-078 | Harbor Construction | Tier 3 | TEC-053 | STR-145, STR-148 | 4 days research; piling charts | Details quay foundations, fendering, and drainage |
-| TEC-079 | Optics & Beacons | Tier 3 | TEC-037 | STR-120, STR-129, STR-144, STR-150 | 3 days research; polished lenses | Aligns lenses, mirrors, and beacon fuels |
+| TEC-079 | Optics & Beacons | Tier 3 | TEC-037 | STR-120, STR-129, STR-144, STR-150, STR-175, STR-179 | 3 days research; polished lenses | Aligns lenses, mirrors, and beacon fuels |
 | TEC-080 | Grain Storage | Tier 1 | TEC-014 | STR-121 | 2 days research; grain samples | Raises floors, baffles drafts, and seals gaps |
 | TEC-081 | Bulk Handling | Tier 2 | TEC-080 | STR-122 | 3 days research; chute molds | Teaches safe fill/empty cycles for tall bins |
 | TEC-082 | Warehousing | Tier 3 | TEC-077, TEC-043 | STR-124 | 3 days research; bay plans | Organizes bays, stevedore rotas, and tally slips |
@@ -97,3 +97,4 @@
 | TEC-094 | Sanitation Works | Tier 3 | TEC-028 | STR-162, STR-172, STR-173, STR-174 | 3 days research; lime slaking | Plans drains, pits, covers, and sewage flow |
 | TEC-095 | Fire Safety & Brigade | Tier 3 | TEC-021 | STR-164, STR-165, STR-166 | 3 days research; alarm drills | Establishes alarm towers, bucket trains, and pumps |
 | TEC-096 | Preventative Maintenance | Tier 3 | TEC-020 | STR-098, STR-115, STR-168, STR-101 | 3 days research; checklist slates | Schedules inspections, lubrication, and repairs |
+| TEC-097 | Waterworks | Tier 2 | TEC-014 | STR-169, STR-170, STR-171 | 14 days / cost 100 | Coordinates well lining, cistern sealing, and aqueduct upkeep |

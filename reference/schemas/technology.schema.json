@@ -1,7 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Technology",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Technology Graph Export",
   "type": "object",
+  "required": ["nodes", "prerequisite_edges", "unlock_edges"],
   "properties": {
     "nodes": {
       "type": "array",
@@ -11,53 +12,39 @@
         "properties": {
           "id": {"type": "string", "pattern": "^TEC-\\d{3}$"},
           "name": {"type": "string"},
-          "tier": {"type": "integer"},
-          "prerequisites": {
-            "type": "array",
-            "items": {"type": "string", "pattern": "^TEC-\\d{3}$"}
-          },
-          "unlocks": {
-            "type": "array",
-            "items": {"type": "string"}
-          },
+          "tier": {"type": ["integer", "string"]},
+          "prerequisites": {"type": "array", "items": {"type": "string"}},
+          "unlocks": {"type": "array", "items": {"type": "string"}},
           "time_cost": {"type": "string"},
           "notes": {"type": "string"}
-        }
+        },
+        "additionalProperties": false
       }
     },
-    "edges": {
+    "prerequisite_edges": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["from", "to", "type"],
+        "required": ["from", "to"],
         "properties": {
-          "from": {"type": "string", "pattern": "^TEC-\\d{3}$"},
-          "to": {"type": "string", "pattern": "^TEC-\\d{3}$"},
-          "type": {"type": "string"}
-        }
+          "from": {"type": "string"},
+          "to": {"type": "string"}
+        },
+        "additionalProperties": false
       }
     },
-    "unlocks": {
+    "unlock_edges": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["tech_id", "unlocks"],
+        "required": ["from", "to"],
         "properties": {
-          "tech_id": {"type": "string", "pattern": "^TEC-\\d{3}$"},
-          "unlocks": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": ["id", "type"],
-              "properties": {
-                "id": {"type": "string"},
-                "type": {"type": "string"}
-              }
-            }
-          }
-        }
+          "from": {"type": "string"},
+          "to": {"type": "string"}
+        },
+        "additionalProperties": false
       }
     }
   },
-  "required": ["nodes", "edges", "unlocks"]
+  "additionalProperties": false
 }

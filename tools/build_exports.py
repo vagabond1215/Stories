@@ -1,205 +1,180 @@
-from __future__ import annotations
-
 import json
 import re
 from pathlib import Path
-from typing import Dict, List
+from typing import Callable, Dict, List
 
-from parse_markdown_tables import first_table
+from parse_markdown_tables import parse_markdown_tables
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent.parent
 REFERENCE = ROOT / "reference"
-EXPORT_DIR = REFERENCE / "exports"
-ID_PATTERN = re.compile(r"[A-Z]{3}-\d{3}")
+EXPORTS = REFERENCE / "exports"
 
 
-def extract_ids(raw: str, prefix: str | None = None) -> List[str]:
-    tokens = []
-    for match in ID_PATTERN.finditer(raw or ""):
-        token = match.group(0)
-        if prefix is None or token.startswith(prefix):
+def _split_tokens(cell: str) -> List[str]:
+    tokens: List[str] = []
+    for part in re.split(r"[;,]", cell or ""):
+        token = part.strip()
+        if token:
             tokens.append(token)
     return tokens
 
 
-def parse_number(value: str) -> float:
+def _parse_numeric(value: str):
     try:
-        return float(value)
+        return float(value) if '.' in value else int(value)
     except ValueError:
-        return 0.0
+        return value
 
 
-def parse_stats(cell: str) -> Dict[str, object]:
-    stats = {"is_delta": False, "bo": 0, "l": 0, "em": 1.0, "r": 0.0, "qt": 0, "cap": 0, "up": 0, "tags": []}
-    if not cell or not cell.strip():
+def _parse_stats(raw: str, is_module: bool) -> Dict[str, object]:
+    stats: Dict[str, object] = {}
+    if not raw:
         return stats
-    parts = [part.strip() for part in cell.split(";") if part.strip()]
-    for part in parts:
-        if "=" not in part:
+    pairs = [p.strip() for p in raw.split(';') if p.strip()]
+    delta = False
+    for pair in pairs:
+        if '=' not in pair:
             continue
-        key, raw_val = [p.strip() for p in part.split("=", 1)]
-        if key == "tags":
-            tags = [tag.strip() for tag in raw_val.split(",") if tag.strip()]
-            stats["tags"] = tags
+        key, value = [p.strip() for p in pair.split('=', 1)]
+        if key == 'tags':
+            stats['tags'] = [t.strip() for t in value.split(',') if t.strip()]
             continue
-        is_delta = raw_val.startswith("+")
-        if is_delta:
-            raw_val = raw_val[1:]
-            stats["is_delta"] = True
-        if key in {"bo", "l", "qt", "cap", "up"}:
-            stats[key] = int(raw_val) if raw_val else 0
-        elif key in {"em", "r"}:
-            stats[key] = float(raw_val) if raw_val else 0.0
+        has_prefix = value.startswith('+') or value.startswith('-')
+        clean_value = value[1:] if value.startswith('+') else value.lstrip('+')
+        parsed = _parse_numeric(clean_value)
+        stats[key] = parsed
+        if has_prefix:
+            delta = True
+    if delta or is_module:
+        stats['delta'] = True
     return stats
 
 
-def parse_structures() -> List[Dict[str, object]]:
-    headers, rows = first_table(REFERENCE / "structures.md")
+def build_structures_export() -> List[Dict[str, object]]:
+    _, rows = parse_markdown_tables(REFERENCE / "structures.md")[0]
     structures: List[Dict[str, object]] = []
     for row in rows:
-        struct = {
-            "id": row.get("ID", ""),
-            "name": row.get("Name", ""),
-            "type": row.get("Type", ""),
-            "purpose": row.get("Purpose", ""),
-            "requirements": row.get("Requirements (IDs)", ""),
-            "enabled_actions": extract_ids(row.get("Enabled actions (IDs)", "")),
-            "required_tech": extract_ids(row.get("Required tech (TEC)", ""), prefix="TEC"),
-            "notes": row.get("Notes", ""),
-            "stats": parse_stats(row.get("Stats", "")),
-            "upgrade_path": extract_ids(row.get("Upgrade path", ""), prefix="STR"),
-        }
-        structures.append(struct)
-    structures.sort(key=lambda s: int(s["id"].split("-", 1)[1]))
+        stats = _parse_stats(row.get('Stats', ''), 'Upgrade/Module' in row.get('Type', ''))
+        structures.append({
+            "id": row.get('ID', ''),
+            "name": row.get('Name', ''),
+            "type": row.get('Type', ''),
+            "purpose": row.get('Purpose', ''),
+            "requirements": _split_tokens(row.get('Requirements (IDs)', '')),
+            "enabled_actions": _split_tokens(row.get('Enabled actions (IDs)', '')),
+            "required_tech": _split_tokens(row.get('Required tech (TEC)', '')),
+            "notes": row.get('Notes', ''),
+            "stats": stats,
+            "upgrade_path": _split_tokens(row.get('Upgrade path', '')),
+        })
+    structures.sort(key=lambda r: int(re.search(r"(\d+)$", r["id"]).group(1)))
     return structures
 
 
-def tier_to_int(tier: str) -> int:
-    match = re.search(r"(\d+)", tier or "")
-    return int(match.group(1)) if match else 0
-
-
-def parse_technology() -> Dict[str, object]:
-    headers, rows = first_table(REFERENCE / "technology.md")
-    nodes = []
-    edges = []
-    unlock_map: Dict[str, List[Dict[str, str]]] = {}
+def build_technology_export() -> Dict[str, object]:
+    _, rows = parse_markdown_tables(REFERENCE / "technology.md")[0]
+    nodes: List[Dict[str, object]] = []
+    prereq_edges: List[Dict[str, str]] = []
+    unlock_edges: List[Dict[str, str]] = []
     for row in rows:
-        tech_id = row.get("ID", "")
-        prereqs = extract_ids(row.get("Prerequisites (IDs)", ""), prefix="TEC")
-        unlocks = extract_ids(row.get("Unlocks (IDs)", ""))
-        nodes.append(
-            {
-                "id": tech_id,
-                "name": row.get("Name", ""),
-                "tier": tier_to_int(row.get("Tier", "")),
-                "prerequisites": prereqs,
-                "unlocks": unlocks,
-                "time_cost": row.get("Time/Cost", ""),
-                "notes": row.get("Notes", ""),
-            }
-        )
-        for prereq in prereqs:
-            edges.append({"from": prereq, "to": tech_id, "type": "prereq"})
-        if unlocks:
-            unlock_map[tech_id] = [{"id": target, "type": target.split("-", 1)[0].lower()} for target in unlocks]
-    nodes.sort(key=lambda n: int(n["id"].split("-", 1)[1]))
-    edges.sort(key=lambda e: (e["from"], e["to"], e["type"]))
-    unlocks_sorted = []
-    for tech_id in sorted(unlock_map):
-        unlocks_sorted.append({"tech_id": tech_id, "unlocks": sorted(unlock_map[tech_id], key=lambda u: (u["type"], u["id"]))})
-    return {"nodes": nodes, "edges": edges, "unlocks": unlocks_sorted}
+        tid = row.get('ID', '')
+        prerequisites = _split_tokens(row.get('Prerequisites (IDs)', ''))
+        unlocks = _split_tokens(row.get('Unlocks (IDs)', ''))
+        nodes.append({
+            "id": tid,
+            "name": row.get('Name', ''),
+            "tier": row.get('Tier', ''),
+            "prerequisites": prerequisites,
+            "unlocks": unlocks,
+            "time_cost": row.get('Time/Cost', ''),
+            "notes": row.get('Notes', ''),
+        })
+        for pre in prerequisites:
+            prereq_edges.append({"from": pre, "to": tid})
+        for unlock in unlocks:
+            unlock_edges.append({"from": tid, "to": unlock})
+    nodes.sort(key=lambda n: int(re.search(r"(\d+)$", n["id"]).group(1)))
+    prereq_edges.sort(key=lambda e: (e["to"], e["from"]))
+    unlock_edges.sort(key=lambda e: (e["from"], e["to"]))
+    return {"nodes": nodes, "prerequisite_edges": prereq_edges, "unlock_edges": unlock_edges}
 
 
-def parse_list(value: str, sep: str = ",") -> List[str]:
-    return [token.strip() for token in (value or "").split(sep) if token.strip()]
-
-
-def parse_districts() -> List[Dict[str, object]]:
-    _, rows = first_table(REFERENCE / "systems_districts.md")
-    districts: List[Dict[str, object]] = []
+def _build_simple_system(path: Path, transforms: Dict[str, Callable[[str], object]]) -> List[Dict[str, object]]:
+    _, rows = parse_markdown_tables(path)[0]
+    entries: List[Dict[str, object]] = []
     for row in rows:
-        districts.append(
-            {
-                "key": row.get("Key", ""),
-                "name": row.get("Name", ""),
-                "qualifying_tags": parse_list(row.get("Qualifying tags", "")),
-                "min_buildings": int(row.get("Min buildings", "0") or 0),
-                "radius": int(row.get("Radius", "0") or 0),
-                "bonuses": parse_list(row.get("Bonuses", ""), sep=";"),
-                "penalties": parse_list(row.get("Penalties", ""), sep=";"),
-                "notable_adjacency_pairs": parse_list(row.get("Notable adjacency pairs", ""), sep=";"),
-            }
-        )
-    districts.sort(key=lambda d: d["key"])
-    return districts
+        entry: Dict[str, object] = {}
+        for key, value in row.items():
+            canonical = key.lower().replace(' ', '_')
+            transform = transforms.get(canonical)
+            entry_field = canonical.replace('(ids)', '').replace('(', '').replace(')', '')
+            entry[entry_field] = transform(value) if transform else value
+        entries.append(entry)
+    entries.sort(key=lambda e: e.get('key', ''))
+    return entries
 
 
-def parse_events() -> List[Dict[str, object]]:
-    _, rows = first_table(REFERENCE / "systems_events.md")
-    events: List[Dict[str, object]] = []
-    for row in rows:
-        events.append(
-            {
-                "key": row.get("Key", ""),
-                "name": row.get("Name", ""),
-                "category": row.get("Category", ""),
-                "base_chance": parse_number(row.get("Base chance", "0")),
-                "triggers": parse_list(row.get("Triggers", ""), sep=";"),
-                "effects": parse_list(row.get("Effects", ""), sep=";"),
-                "mitigation": parse_list(row.get("Mitigation", ""), sep=";"),
-            }
-        )
-    events.sort(key=lambda e: e["key"])
-    return events
+def build_calendar_export() -> List[Dict[str, object]]:
+    return _build_simple_system(REFERENCE / "systems_calendar.md", {
+        'value': lambda v: float(v) if re.match(r"^-?\d+(\.\d+)?$", v) else v
+    })
 
 
-def parse_difficulty() -> List[Dict[str, object]]:
-    _, rows = first_table(REFERENCE / "systems_difficulty.md")
-    difficulties: List[Dict[str, object]] = []
-    for row in rows:
-        difficulties.append(
-            {
-                "key": row.get("Key", ""),
-                "name": row.get("Name", ""),
-                "research_time_mult": parse_number(row.get("Research time mult", "1")),
-                "event_freq_mult": parse_number(row.get("Event freq mult", "1")),
-                "event_severity_mult": parse_number(row.get("Event severity mult", "1")),
-                "upkeep_mult": parse_number(row.get("Upkeep mult", "1")),
-                "labor_tightness": row.get("Labor tightness", ""),
-                "recovery_cost_mult": parse_number(row.get("Recovery cost mult", "1")),
-                "notes": row.get("Notes", ""),
-            }
-        )
-    difficulties.sort(key=lambda d: d["key"])
-    return difficulties
+def build_districts_export() -> List[Dict[str, object]]:
+    return _build_simple_system(REFERENCE / "systems_districts.md", {
+        'qualifying_tags': lambda v: [t.strip() for t in v.split(',') if t.strip()],
+        'min_buildings': lambda v: int(v) if v else 0,
+        'radius': lambda v: int(v) if v else 0,
+    })
 
 
-def build_exports(write_files: bool = True) -> Dict[str, object]:
-    structures = parse_structures()
-    tech_graph = parse_technology()
-    districts = parse_districts()
-    events = parse_events()
-    difficulty = parse_difficulty()
+def build_events_export() -> List[Dict[str, object]]:
+    return _build_simple_system(REFERENCE / "systems_events.md", {
+        'base_chance': lambda v: float(v) if v else 0.0,
+    })
 
-    payloads = {
+
+def build_difficulty_export() -> List[Dict[str, object]]:
+    return _build_simple_system(REFERENCE / "systems_difficulty.md", {
+        'research_time_mult': lambda v: float(v) if v else 0.0,
+        'event_freq_mult': lambda v: float(v) if v else 0.0,
+        'event_severity_mult': lambda v: float(v) if v else 0.0,
+        'upkeep_mult': lambda v: float(v) if v else 0.0,
+        'recovery_cost_mult': lambda v: float(v) if v else 0.0,
+    })
+
+
+def write_json(path: Path, data: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, indent=2))
+
+
+def build_all() -> Dict[str, object]:
+    structures = build_structures_export()
+    technology = build_technology_export()
+    calendar = build_calendar_export()
+    districts = build_districts_export()
+    events = build_events_export()
+    difficulty = build_difficulty_export()
+    return {
         "structures": structures,
-        "tech_graph": tech_graph,
-        "systems_districts": districts,
-        "systems_events": events,
-        "systems_difficulty": difficulty,
+        "technology": technology,
+        "calendar": calendar,
+        "districts": districts,
+        "events": events,
+        "difficulty": difficulty,
     }
 
-    if write_files:
-        EXPORT_DIR.mkdir(parents=True, exist_ok=True)
-        (EXPORT_DIR / "structures.json").write_text(json.dumps(structures, indent=2) + "\n")
-        (EXPORT_DIR / "tech_graph.json").write_text(json.dumps(tech_graph, indent=2) + "\n")
-        (EXPORT_DIR / "systems_districts.json").write_text(json.dumps(districts, indent=2) + "\n")
-        (EXPORT_DIR / "systems_events.json").write_text(json.dumps(events, indent=2) + "\n")
-        (EXPORT_DIR / "systems_difficulty.json").write_text(json.dumps(difficulty, indent=2) + "\n")
-    return payloads
+
+def main() -> None:
+    exports = build_all()
+    write_json(EXPORTS / "structures.json", exports["structures"])
+    write_json(EXPORTS / "tech_graph.json", exports["technology"])
+    write_json(EXPORTS / "systems_calendar.json", exports["calendar"])
+    write_json(EXPORTS / "systems_districts.json", exports["districts"])
+    write_json(EXPORTS / "systems_events.json", exports["events"])
+    write_json(EXPORTS / "systems_difficulty.json", exports["difficulty"])
 
 
 if __name__ == "__main__":
-    build_exports()
-    print("Exports written to", EXPORT_DIR)
+    main()

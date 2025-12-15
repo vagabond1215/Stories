@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Systems Events",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Events Export",
   "type": "array",
   "items": {
     "type": "object",
@@ -10,9 +10,10 @@
       "name": {"type": "string"},
       "category": {"type": "string"},
       "base_chance": {"type": "number"},
-      "triggers": {"type": "array", "items": {"type": "string"}},
-      "effects": {"type": "array", "items": {"type": "string"}},
-      "mitigation": {"type": "array", "items": {"type": "string"}}
-    }
+      "triggers": {"type": "string"},
+      "effects": {"type": "string"},
+      "mitigation": {"type": "string"}
+    },
+    "additionalProperties": false
   }
 }

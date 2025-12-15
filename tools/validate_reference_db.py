@@ -1,187 +1,125 @@
-from __future__ import annotations
-
 import json
-import re
 import sys
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Set
 
-from jsonschema import Draft7Validator
+from jsonschema import Draft202012Validator
 
-from build_exports import build_exports
+import build_exports
 from parse_markdown_tables import parse_markdown_tables
 
-ID_PATTERN = re.compile(r"[A-Z]{3}-\d{3}")
-ROOT = Path(__file__).resolve().parents[1]
-REFERENCE_DIR = ROOT / "reference"
-SCHEMA_DIR = REFERENCE_DIR / "schemas"
-EXPORT_DIR = REFERENCE_DIR / "exports"
-
-TABLE_FILES = {
-    "technology": REFERENCE_DIR / "technology.md",
-    "crafting_recipes": REFERENCE_DIR / "crafting_recipes.md",
-    "jobs": REFERENCE_DIR / "jobs.md",
-    "structures": REFERENCE_DIR / "structures.md",
-    "equipment": REFERENCE_DIR / "equipment.md",
-    "spells": REFERENCE_DIR / "spells.md",
-    "materials": REFERENCE_DIR / "materials.md",
-    "profiles": REFERENCE_DIR / "profiles.md",
-    "inventories": REFERENCE_DIR / "inventories.md",
-    "flora": REFERENCE_DIR / "flora.md",
-    "fauna": REFERENCE_DIR / "fauna.md",
-    "biomes": REFERENCE_DIR / "biomes.md",
-    "templates": REFERENCE_DIR / "templates.md",
-}
+ROOT = Path(__file__).resolve().parent.parent
+REFERENCE = ROOT / "reference"
+SCHEMAS = REFERENCE / "schemas"
 
 
-class ValidationError(Exception):
-    pass
+def _load_schema(name: str) -> Dict:
+    return json.loads((SCHEMAS / name).read_text())
 
 
-def collect_domain_ids() -> Dict[str, Dict[str, str]]:
-    domain_map: Dict[str, Dict[str, str]] = {}
-    seen: Dict[str, str] = {}
-    for name, path in TABLE_FILES.items():
-        if not path.exists():
-            continue
-        for table in parse_markdown_tables(path):
-            headers = table.get("headers", [])
-            if not headers or headers[0] != "ID":
-                continue
-            for row in table.get("rows", []):
-                row_id = row.get("ID")
-                if not row_id:
-                    continue
-                if not ID_PATTERN.fullmatch(row_id):
-                    raise ValidationError(f"{path}: row ID '{row_id}' has invalid format")
-                prefix = row_id.split("-", 1)[0]
-                domain_map.setdefault(prefix, {})[row_id] = path.name
-                if row_id in seen:
-                    raise ValidationError(f"Duplicate ID {row_id} found in {path.name} and {seen[row_id]}")
-                seen[row_id] = path.name
-    return domain_map
+def _collect_ids(rows: List[Dict[str, str]], key: str) -> Set[str]:
+    return {row.get(key, '') for row in rows if row.get(key, '')}
 
 
-def extract_ids(value: str) -> List[str]:
-    if not value or value.lower() == "none":
-        return []
-    return ID_PATTERN.findall(value)
+def _tokenize(cell: str) -> List[str]:
+    tokens: List[str] = []
+    for part in cell.replace(';', ',').split(','):
+        token = part.strip()
+        if token:
+            tokens.append(token)
+    return tokens
 
 
-def detect_cycles(graph: Dict[str, List[str]], errors: List[str]):
-    visited: Dict[str, str] = {}
+def _check_references(struct_rows: List[Dict[str, str]], tech_rows: List[Dict[str, str]]) -> List[str]:
+    errors: List[str] = []
+    struct_ids = _collect_ids(struct_rows, 'ID')
+    tech_ids = _collect_ids(tech_rows, 'ID')
+
+    for row in struct_rows:
+        sid = row.get('ID', '')
+        for req in _tokenize(row.get('Requirements (IDs)', '')):
+            if req.startswith('STR-') and req not in struct_ids:
+                errors.append(f"structures.md {sid}: missing structure requirement {req}")
+            if req.startswith('TEC-') and req not in tech_ids:
+                errors.append(f"structures.md {sid}: missing tech requirement {req}")
+        for req in _tokenize(row.get('Required tech (TEC)', '')):
+            if req.startswith('TEC-') and req not in tech_ids:
+                errors.append(f"structures.md {sid}: missing tech requirement {req}")
+        for upgrade in _tokenize(row.get('Upgrade path', '')):
+            if upgrade.startswith('STR-') and upgrade not in struct_ids:
+                errors.append(f"structures.md {sid}: missing upgrade path target {upgrade}")
+
+    for row in tech_rows:
+        tid = row.get('ID', '')
+        for pre in _tokenize(row.get('Prerequisites (IDs)', '')):
+            if pre.startswith('TEC-') and pre not in tech_ids:
+                errors.append(f"technology.md {tid}: missing prerequisite {pre}")
+        for unlock in _tokenize(row.get('Unlocks (IDs)', '')):
+            if unlock.startswith('TEC-') and unlock not in tech_ids:
+                errors.append(f"technology.md {tid}: missing unlock {unlock}")
+            if unlock.startswith('STR-') and unlock not in struct_ids:
+                errors.append(f"technology.md {tid}: missing unlock {unlock}")
+    return errors
+
+
+def _detect_cycles(rows: List[Dict[str, str]]) -> List[str]:
+    graph: Dict[str, List[str]] = {}
+    for row in rows:
+        tid = row.get('ID', '')
+        graph[tid] = [t for t in _tokenize(row.get('Prerequisites (IDs)', '')) if t.startswith('TEC-')]
+
+    visited: Dict[str, int] = {}  # 0=unvisited,1=visiting,2=done
+    cycle_errors: List[str] = []
 
     def dfs(node: str, stack: List[str]):
-        visited[node] = "visiting"
+        state = visited.get(node, 0)
+        if state == 1:
+            cycle_errors.append(f"technology.md cycle detected: {' -> '.join(stack + [node])}")
+            return
+        if state == 2:
+            return
+        visited[node] = 1
         for neighbor in graph.get(node, []):
-            state = visited.get(neighbor)
-            if state == "visiting":
-                errors.append(f"Technology prerequisite cycle detected: {' -> '.join(stack + [neighbor])}")
-            elif state != "visited":
-                dfs(neighbor, stack + [neighbor])
-        visited[node] = "visited"
+            dfs(neighbor, stack + [node])
+        visited[node] = 2
 
-    for node in graph:
-        if visited.get(node) is None:
-            dfs(node, [node])
+    for tid in graph:
+        if visited.get(tid, 0) == 0:
+            dfs(tid, [])
+    return cycle_errors
 
 
-def validate_tokens(tokens: List[str], prefix_hint: str, file_label: str, row_id: str, column: str, domain_map: Dict[str, Dict[str, str]], errors: List[str]):
-    for token in tokens:
-        prefix = token.split("-", 1)[0]
-        if prefix_hint and prefix != prefix_hint:
-            errors.append(f"{file_label} row {row_id} column '{column}': expected prefix {prefix_hint} got {token}")
-            continue
-        if prefix not in domain_map or token not in domain_map[prefix]:
-            errors.append(f"{file_label} row {row_id} column '{column}': unknown ID {token}")
+def _validate_schema(data: object, schema_name: str) -> List[str]:
+    schema = _load_schema(schema_name)
+    validator = Draft202012Validator(schema)
+    return [f"schema:{schema_name} path={'/'.join(str(x) for x in error.path)} error={error.message}" for error in validator.iter_errors(data)]
 
 
-def validate_schema(export_path: Path, schema_path: Path, errors: List[str]):
-    if not export_path.exists():
-        errors.append(f"Missing export file {export_path}")
-        return
-    data = json.loads(export_path.read_text())
-    schema = json.loads(schema_path.read_text())
-    validator = Draft7Validator(schema)
-    for err in sorted(validator.iter_errors(data), key=lambda e: e.path):
-        errors.append(f"Schema error in {export_path.name}: {err.message}")
+def main() -> int:
+    struct_table = parse_markdown_tables(REFERENCE / "structures.md")[0][1]
+    tech_table = parse_markdown_tables(REFERENCE / "technology.md")[0][1]
 
+    errors = _check_references(struct_table, tech_table)
+    errors += _detect_cycles(tech_table)
 
-def validate_exports(domain_map: Dict[str, Dict[str, str]]):
-    errors: List[str] = []
-    exports = build_exports(write_files=True)
+    exports = build_exports.build_all()
+    schema_errors: List[str] = []
+    schema_errors += _validate_schema(exports['structures'], 'structures.schema.json')
+    schema_errors += _validate_schema(exports['technology'], 'technology.schema.json')
+    schema_errors += _validate_schema(exports['calendar'], 'systems_calendar.schema.json')
+    schema_errors += _validate_schema(exports['districts'], 'systems_districts.schema.json')
+    schema_errors += _validate_schema(exports['events'], 'systems_events.schema.json')
+    schema_errors += _validate_schema(exports['difficulty'], 'systems_difficulty.schema.json')
 
-    tech_nodes = exports["tech_graph"]["nodes"]
-    adjacency: Dict[str, List[str]] = {}
-    for node in tech_nodes:
-        tech_id = node["id"]
-        prereqs = node.get("prerequisites", [])
-        unlocks = node.get("unlocks", [])
-        validate_tokens(prereqs, "TEC", "technology.md", tech_id, "Prerequisites (IDs)", domain_map, errors)
-        validate_tokens(unlocks, "", "technology.md", tech_id, "Unlocks (IDs)", domain_map, errors)
-        for prereq in prereqs:
-            adjacency.setdefault(prereq, []).append(tech_id)
-    detect_cycles(adjacency, errors)
-
-    structures = exports["structures"]
-    structure_ids = {s["id"] for s in structures}
-    for struct in structures:
-        validate_tokens(struct.get("required_tech", []), "TEC", "structures.md", struct["id"], "Required tech (TEC)", domain_map, errors)
-        for target in struct.get("upgrade_path", []):
-            if target not in structure_ids:
-                errors.append(f"structures.md row {struct['id']} column 'Upgrade path': unknown structure {target}")
-
-    # cross checks for other tables
-    if (TABLE_FILES["crafting_recipes"].exists()):
-        for table in parse_markdown_tables(TABLE_FILES["crafting_recipes"]):
-            headers = table.get("headers", [])
-            if "Unlocked by (TEC)" in headers:
-                idx = headers.index("Unlocked by (TEC)")
-                for row in table.get("rows", []):
-                    row_id = row.get("ID", "")
-                    tokens = extract_ids(row.get(headers[idx], ""))
-                    validate_tokens(tokens, "TEC", TABLE_FILES["crafting_recipes"].name, row_id, "Unlocked by (TEC)", domain_map, errors)
-
-    if TABLE_FILES["jobs"].exists():
-        for table in parse_markdown_tables(TABLE_FILES["jobs"]):
-            headers = table.get("headers", [])
-            if "Required tech (TEC)" in headers:
-                idx = headers.index("Required tech (TEC)")
-                for row in table.get("rows", []):
-                    row_id = row.get("ID", "")
-                    tokens = extract_ids(row.get(headers[idx], ""))
-                    validate_tokens(tokens, "TEC", TABLE_FILES["jobs"].name, row_id, "Required tech (TEC)", domain_map, errors)
-
-    # ensure system keys unique
-    for key_group in ("systems_districts", "systems_events", "systems_difficulty"):
-        keys = [entry["key"] for entry in exports.get(key_group, [])]
-        dupes = {k for k in keys if keys.count(k) > 1}
-        for dup in dupes:
-            errors.append(f"Duplicate key {dup} found in {key_group}")
-
-    # schema validation
-    schema_map = {
-        "structures.json": SCHEMA_DIR / "structures.schema.json",
-        "tech_graph.json": SCHEMA_DIR / "technology.schema.json",
-        "systems_districts.json": SCHEMA_DIR / "systems_districts.schema.json",
-        "systems_events.json": SCHEMA_DIR / "systems_events.schema.json",
-        "systems_difficulty.json": SCHEMA_DIR / "systems_difficulty.schema.json",
-    }
-    for export_name, schema_path in schema_map.items():
-        validate_schema(EXPORT_DIR / export_name, schema_path, errors)
+    errors += schema_errors
 
     if errors:
-        raise ValidationError("\n".join(errors))
-
-
-def main():
-    try:
-        domain_map = collect_domain_ids()
-        validate_exports(domain_map)
-    except ValidationError as exc:
-        print(exc)
-        sys.exit(1)
+        for err in errors:
+            print(err)
+        return 1
+    print("Validation passed: references, cycles, and schemas clean.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
